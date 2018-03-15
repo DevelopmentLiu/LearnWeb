@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            height:auto;
+            background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521109163978&di=1fb9e4ea3ebcd2ef5dbda45dc6108e4b&imgtype=0&src=http%3A%2F%2Fimg17.3lian.com%2Fd%2Ffile%2F201702%2F27%2F9721817cfac79528e823de2e633a0d07.jpg');
+            /*<!-是否重复->*/
+            /*background-repeat: no-repeat;*/
+        }
+        p.date{
+            text-align: left;
+            /*<!- 文本缩进 ->*/
+            text-indent: 10px;
+        }
+        p.main{
+            text-align: justify;
+        }
+        p.name{
+            text-align: right;
+        }
+        p.capital{
+            text-transform:uppercase;
+        }
+        p.lowercase{
+            text-transform: lowercase;
+        }
+        p.bigWrite{
+            text-transform: capitalize;
+        }
+        h1.sapce1{
+            letter-spacing: 2px;
+        }
+        h2.sapce2{
+            letter-spacing:-3px;
+        }
+        p.small{
+            line-height: 70%;
+        }
+        p.big{
+            line-height: 200%;
+        }
+        div.letters{
+            /*文本元素的方向*/
+            direction: rtl;
+        }
+        p.aboutspaces{
+            word-spacing: 30px;
+        }
+        img.top{
+            /*图片垂直对齐*/
+            vertical-align: text-top;
+        }
+        img.bottom{
+            /*图片垂直对齐*/
+            vertical-align: text-bottom;
+        }
+        h3.backh3{
+            text-shadow: 2px 2px #FF0000;
+        }
+        a.one:link{color: #FF0000;}
+        a.one:visited{color: #0000ff;}
+        a.one:hover{color: #ffcc00;}
+
+        a.two:link{color: #FF0000;}
+        a.two:visited{color:#0000ff;}
+        a.two:hover{font-size: 150%;}
+
+        a.three:link{color: #ffcc00;}
+        a.three:visited{color: #0000ff;}
+        a.three:hover{background: #66ff66;}
+
+        a.four:link{color: #FF0000;}
+        a.four:visited{color:#0000ff;}
+        a.four:hover{font-family:Georgia,serif;}
+
+        ul.wuxu{
+            list-style-type: circle;
+        }
+        div.aboutDiv{
+            width: auto;
+            height: 200px;
+            margin-top: 10px;
+            background: #66ff66;
+            border: 1px solid gray;
+
+        }
+
+        p.outP{
+            border: 1px solid #ffcc00;
+            outline: blue dotted thick;
+        }
+
+        h4.pos_left{
+            position: relative;
+            left: -50px;
+        }
+        h4.post_right{
+            position: relative;
+            left: 20px;
+            top: -40px;
+        }
+
+        h4.abso_all{
+            position: absolute;
+            left: 500px;
+            top: 100px;
+        }
+        img.abso_img{
+            position: absolute;
+            left: 500px;
+            top: 100px;
+            /*表示展示层级顺序*/
+            z-index: -1;
+            /*表示图片裁剪的位置*/
+            clip: rect(0px,60px,200px,0px);
+        }
+
+        div.scroll{
+            background: gray;
+            width: 200px;
+            height: 100px;
+            overflow:auto;
+        }
+        img.thumbnail{
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+
+        .topMenu{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow:hidden;
+            background-color:#777;
+        }
+        .topMenu li{
+            float: left;
+        }
+        .topMenu li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        .topMenu li a:hover{
+            background-color:#222;
+        }
+        .topMenu li a.active{
+            color: white;
+            background-color: #4CAF50;
+        }
+        .column {
+            float: left;
+            padding: 15px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .sidemenu {
+            width: 10%;
+        }
+        .content {
+            width: 80%;
+        }
+        .sidemenu ul {
+            list-style-type: none;
+            margin:0;
+            padding:0;
+        }
+        .sidemenu li a {
+            margin-bottom:4px;
+            display: block;
+            padding: 10px;
+            background-color: #eee;
+            text-decoration: none;
+            color: #666;
+        }
+        .sidemenu li a:hover {
+            background-color: #555;
+            color: white;
+        }
+        .sidemenu li a.active {
+            background-color: #008CBA;
+            color: white;
+        }
+        .header{
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .footer{
+            background-color: #444;
+            color: white;
+            padding: 15px;
+        }
+        .footer p{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-创建表单->
+    <form action="">
+        姓名:<input type="text" name="firstname"><br>
+        密码:<input type="password" name="lastname"><br>
+        单选框:<br>
+              <input type="radio" name="sex" value="allen">Allen<br>
+              <input type="radio" name="sex" value="diudiu">Diudiu<br>
+        复选框:<br>
+              <input type="checkbox" name="check1" value="bar">I have a check<br>
+              <input type="checkbox" name="check2" value="bar2">I have a pen<br>
+    </form><br>
+    <form name="input" action="http://www.runoob.com/try/demo_source/html_form_action.php?user=da+">
+        <!-提交按钮跳转界面->
+        userName:<input type="text" name="user">
+                 <input type="submit" value="submit">
+    </form><br>
+    <form action="">
+       <!-创建预选指的下拉菜单->
+       这是预选下拉菜单
+        <select name="carName">
+            <option value="changAn">长安</option>
+            <option value="bengbeng">奔奔</option>
+            <option value="dazhong" selected>大众</option>
+            <option value="fute">福特</option>
+        </select>
+    </form><br>
+    <!-创建文本框->
+    <form action="">
+            <textarea rows="5" cols="30">
+        我是一个文本框
+    </textarea>
+    </form><br>
+    <!-创建按钮->
+    <form action="">
+        <input type="button" value="Hello onclieck me!">
+    </form>
+    <!-带边框的表单->
+    <form action="">
+        <fieldset>
+            <legend>Personal information:</legend>
+            name:<input type="text" size="30"><br>
+            E-mail:<input type="text" size="30"><br>
+            Date of birth:<input type="text" size="10"><br>
+        </fieldset>
+    </form><br>
+    <!-带有输入框和确认按钮的表单->
+    <form action="http://www.runoob.com/try/demo_source/demo-form.php?FirstName=Mickey&LastName=Mouse">
+        age:<input type="text" size="20"><br>
+        sex:<input type="radio" name="sex" value="boy">男
+            <input type="radio" name="sex" value="girl">女<br>
+            <input type="submit" value="提交">
+    </form><br>
+    <!-从表单发送电子邮件->
+    <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name" value="your name"><br>
+        E-mail:<br>
+        <input type="text" name="e-mail" value="you E-mail"><br>
+        Comment:<br>
+        <input type="text" name="comment" value="your comment"><br>
+        <input type="submit" value="发送">
+        <input type="reset" value="重置">
+    </form><br>
+    <!- 通过 optgroup 标签把相关的选项组合在一起->
+    <form>
+        组合选择器：
+        <select>
+            <optgroup label="samll car">
+                <option value="lingmu">铃木</option>
+                <option value="qqche">QQ车</option>
+            </optgroup>
+            <optgroup label="big car">
+                <option value="dazhong">大众</option>
+                <option value="bengci">奔驰</option>
+            </optgroup>
+        </select>
+    </form><br>
+    <!- datalist 指定一个预先定义的输入控件选项列表->
+    <form action="">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+        <input type="submit">
+    </form><br>
+    <!- output 定义一个计算结果->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" value="50">100+<input type="number" id="b" value="50">=
+        <output name="x" for="a b"></output>
+    </form><br>
+    <!- 定义一个内联的iframe ->
+    <iframe src="https://www.baidu.com" name="iframe_a"></iframe>
+    <a href="http://top.baidu.com/?fr=mhd_card" target="iframe_a">点击我</a><br>
+
+    <h3>我是第一个javaScript</h3>
+    <p id="demo">可以触发事件，就像按钮</p>
+    <script>
+        function  myFuncation() {
+            document.getElementById("demo").innerHTML="hello JavaScript!";
+        }
+    </script>
+    <button type="button" onclick="myFuncation()">点我</button><br>
+    <p id="yangshi">触发事件以后，字体颜色会改变</p>
+    <script>
+        function onclike() {
+           x = document.getElementById("yangshi")
+            x.style.color="red";
+        }
+    </script>
+    <button type="button" onclick="onclike()">touch me</button>
+    <!
+    -插入样式表的方法有三种:
+    内联样式(元素内部) -> 内部样式表(头部 style) -> 外部样式表(头部 link)
+
+    <h4>这个字段的头部</h4>
+    <p  class="date">2015年4曰15日</p>
+    <p  class="main">“当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，</p>
+    <p  class="name">署名：mo</p>
+    <p  class="capital">This is some text.</p> <!-全部大写->
+    <p  class="lowercase">This is some text</p> <!-全部小写->
+    <p  class="bigWrite">This is some text</p> <!-全部首字母大写->
+
+    <!-指定字符之间的空间->
+    <h1 class="sapce1">This is heading 1</h1>
+    <h2 class="sapce2">This is heading 2</h2>
+
+    <!-指定在一个段落中行之间的空间->
+    <p class="small">
+        这是测试行高<br>
+        这是测试行高<br>
+        这是测试行高<br>
+        这是测试行高<br>
+    </p>
+    <p class="big">
+        这是测试行高<br>
+        这是测试行高<br>
+        这是测试行高<br>
+        这是测试行高<br>
+    </p>
+    <!-如何改变元素的文本方向。->
+    <div>这是文本的方向</div>
+    <div class="letters">这是文本的方向</div>
+
+    <p class="aboutspaces">This is some text. This is some text.</p>
+
+    <!-文本的垂直对齐图像->
+    <p>
+        <img src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="50" height="50">
+    </p>
+    <p>
+        <img class="top" src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="50" height="50">
+    </p>
+    <p>
+        <img class="bottom" src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="50" height="50">
+    </p>
+
+    <h3 class="backh3">注意这个文字有阴影</h3>
+
+    <p><b><a class="one" href=""  target="_blank">这个链接改变颜色</a></b></p>
+    <p><b><a class="two" href=""  target="_blank">这个连接改变字体大小</a></b></p>
+    <p><b><a class="three" href="" target="_blank">这个链接改变背景颜色</a></b></p>
+    <p><b><a class="four" href="" target="_blank">这个连接改变字体类型</a> </b></p>
+
+    <p>
+        <ul class="wuxu">
+        <li>coffee</li>
+        <li>Tea</li>
+        <li>Coco Cola</li>
+    </ul>
+    </p>
+
+    <div class="aboutDiv">
+        这个一个大的框架
+    </div>
+
+    <p class="outP">这是一个框框</p>
+
+    <!-相对定位  relative  即使相对定位元素的内容是移动,预留空间的元素仍保存在正常流动。 ->
+    <h4 class="pos_left">这是相对于正常位置向左移动</h4>
+    <h4 class="post_right">这是想对于正常位置向上向右移动</h4>
+
+    <!-绝对定位  absolute 的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于html ->
+    <h4 class="abso_all">这个是绝对定位</h4>
+
+    <img class="abso_img" src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="100px" height="100px">
+
+    <!-overflow属性创建一个滚动条，当一个元素的内容在指定的区域过大时如何设置以适应。->
+    <div class="scroll">You can use the overflow property when you want to have better control of the layout. The default value is visible.</div>
+
+    <!-图片布局->
+    <div style="width: 1000px;height: 130px">
+    <img class="thumbnail" src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="107" height="90">
+    <img class="thumbnail" src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="107" height="80">
+    <img class="thumbnail" src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="116" height="90">
+    <img class="thumbnail" src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="120" height="90">
+    <img class="thumbnail" src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="107" height="90">
+    <img class="thumbnail" src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="107" height="80">
+    <img class="thumbnail" src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="116" height="90"><br>
+    </div>
+    <!-float 创建一个网页页眉、页脚、左边的内容和主要内容。->
+    <ul class="topMenu">
+        <li><a href="#home" class="active">主页</a></li>
+        <li><a href="#news" >新闻</a></li>
+        <li><a href="#contect" >联系我们</a></li>
+        <li><a href="#about" >关于我们</a></li>
+    </ul>
+    <div class="clearfix">
+        <div class="column sidemenu">
+            <ul>
+                <li><a href="#flight">The Flight</a></li>
+                <li><a href="#city" class="active">The City</a></li>
+                <li><a href="#island">The Island</a></li>
+                <li><a href="#food">The Food</a></li>
+                <li><a href="#people">The People</a></li>
+                <li><a href="#history">The History</a></li>
+                <li><a href="#oceans">The Oceans</a></li>
+            </ul>
+        </div>
+        <div class="column content">
+            <div class="header">
+                <h1>The City</h1>
+            </div>
+            <h1>Chania</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+            <p>You will learn more about responsive web pages in a later chapter.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>底部文本</p>
+    </div>
+</body>
+</html>
