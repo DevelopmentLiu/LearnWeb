@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="study3.css">
+    <style type="text/css">
+        .mar_div{
+            margin: auto;
+            width: 20%;
+            border: 1px solid #2196F3;
+            padding: 10px;
+            text-align: center;
+        }
+        .mar_absolute{
+            position: absolute;
+            width: 20%;
+            right: 50px;
+            border: 1px solid #FF0000;
+            padding: 10px;
+            text-align: center;
+        }
+        .center{
+            height: 50px;
+            line-height: 30px;
+            border: 1px solid #4CAF50;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .center p{
+            line-height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .pos_center{
+            height: 30px;
+            border: 1px solid #008CBA;
+            position: relative;
+        }
+        .pos_center p{
+            margin: 0;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform:translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
+        .mar_center{
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            background-color: #008CBA;
+            text-align: center;
+        }
+        .pos_center~p{
+            background-color:#ffcc00;
+        }
+
+        .a_touch:link{  /* 未访问链接*/
+            color:#4CAF50;
+        }
+        .a_touch:visited{ /* 已访问链接 */
+            color: #ffcc00;
+        }
+        .a_touch:hover{ /* 鼠标移动到链接上 */
+            color: #2196F3;
+        }
+        .a_touch:active{
+            color: #66ff66; /* 鼠标点击时 */
+        }
+        .child p:first-child{ /*first-child 伪类来选择元素的第一个子元素*/
+            color: aqua;
+        }
+        .child_i p>i:first-child{ /*选择相匹配的所有<p>元素的第一个 <i> 元素：*/
+            color: #FF0000;
+        }
+        .child_one p:first-child i{ /*选择器匹配所有作为元素的第一个子元素的 <p> 元素中的所有 <i> 元素：*/
+            color: blue;
+        }
+        .first_P:first-line{
+            color: #008CBA;
+            font-variant: small-caps;
+        }
+        .first_font:first-letter{
+            color: orange;
+            font-size: xx-large;
+        }
+        .h3_class:before{
+            content: url("https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg");
+        }
+        .h4_after:after{
+            content: url("https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg");
+        }
+        .wx_list ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            text-align: center;
+            border: 1px solid #ffcc00;
+        }
+        .wx_list li{
+            border-bottom:1px solid #ffcc00;
+        }
+        .wx_list li:last-child{
+            border-bottom: none;
+        }
+        .wx_list ul li a{
+            text-decoration: none;
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+        }
+        .wx_list ul li a:hover{ /* 鼠标移动到选项上修改背景颜色 */
+            background-color: #555;
+            color: white;
+        }
+
+
+        .left_all{
+            width: 100%;
+            height: auto;
+            background-color: #777777;
+        }
+        .left_ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 20%;
+            height: 100%;
+            overflow: auto;
+            border: 1px solid #eeeeee;
+            text-align: center;
+            position:fixed;
+        }
+        .left_ul li{
+            border-bottom: 1px solid #eeeeee;
+        }
+        /*.left_ul li:last-child{*/
+            /*border-bottom: none;*/
+        /*}*/
+        .left_ul li a{
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        .left_ul li a.act_home{
+            background-color: #4CAF50;
+            color: white;
+        }
+        .left_ul li a:hover:not(.active){
+            background-color: #555;
+            color: white;
+        }
+        .right_div{
+            margin-left: 20%;
+            padding: 1px 16px;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--要水平居中对齐一个元素(如 div), 可以使用 margin: auto;。-->
+        <!--<div class="mar_div">-->
+            <!--这里面是居中的内容，运行测试-->
+        <!--</div>-->
+        <!--<div class="mar_absolute">-->
+            <!--这是一个关于绝对定位的内容，运行测试-->
+        <!--</div>-->
+    <!--&lt;!&ndash;line-height 属性值和 height 属性值相等来设置 div 元素居中&ndash;&gt;-->
+        <!--<div class="center">-->
+            <!--<p>这是运用行号和Div高度里面的文字内容</p>-->
+        <!--</div>-->
+    <!--&lt;!&ndash;垂直居中 - 使用 position 和 transform&ndash;&gt;-->
+        <!--<div class="pos_center">-->
+            <!--<p>我是用绝地和相对定位水平居中的</p>-->
+        <!--</div>-->
+    <!--&lt;!&ndash;使用 margin 让 div 居中对齐&ndash;&gt;-->
+        <!--<div class="mar_center">-->
+            <!--这个内容是运用margin居中得-->
+        <!--</div>-->
+    <!--&lt;!&ndash;后代选取器匹配所有值得元素的后代元素。&ndash;&gt;-->
+        <!--<div class="p_center">-->
+            <!--<p>这是段落1，在div中</p>-->
+        <!--</div>-->
+        <!--<p>这是段落3，没有在div中</p>-->
+
+    <!--&lt;!&ndash;anchor伪类&ndash;&gt;-->
+        <!--<div>-->
+            <!--<p><a class="a_touch" href="" target="_blank">这个一个链接</a></p>-->
+        <!--</div>-->
+
+        <!--<div class="child">-->
+            <!--<p>This is some text.</p>-->
+            <!--<p>This is some text.</p>-->
+        <!--</div>-->
+        <!--<div class="child_i">-->
+            <!--<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>-->
+        <!--</div>-->
+        <!--<div class="child_one">-->
+            <!--<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>-->
+        <!--</div>-->
+    <!--&lt;!&ndash;浏览器会根据 "first-line" 伪元素中的样式对 p 元素的第一行文本进行格式化：&ndash;&gt;-->
+        <!--<div>-->
+            <!--<p class="first_P">你可以使用 "first-line" 伪元素向文本的首行设置特殊样式。</p>-->
+        <!--</div>-->
+    <!--&lt;!&ndash;"first-letter" 伪元素用于向文本的首字母设置特殊样式：&ndash;&gt;-->
+        <!--<div>-->
+            <!--<p class="first_font">你可以使用 "first-letter" 伪元素向文本的首字母设置特殊样式：</p>-->
+        <!--</div>-->
+    <!--&lt;!&ndash;"before" 伪元素可以在元素的内容前面插入新内容。&ndash;&gt;-->
+        <!--<div>-->
+            <!--<h3 class="h3_class">This is a heading</h3>-->
+        <!--</div>-->
+    <!--&lt;!&ndash;"after" 伪元素可以在元素的内容之后插入新内容。&ndash;&gt;-->
+        <!--<div>-->
+            <!--<h3 class="h4_after">This is a heading</h3>-->
+        <!--</div>-->
+    <!--&lt;!&ndash;创建一个简单的垂直导航条实例，在鼠标移动到选项时，修改背景颜色：&ndash;&gt;-->
+        <!--<div class="wx_list">-->
+            <!--<ul>-->
+                <!--<li><a href="">首页</a></li>-->
+                <!--<li><a href="">新闻</a></li>-->
+                <!--<li><a href="">联系</a></li>-->
+                <!--<li><a href="">关于</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+   <!- ------------------------------------------------------------------------------------------------------- ->
+    <!--建一个左边是全屏高度的固定导航条，右边是可滚动的内容。-->
+    <!--<div class="left_all">-->
+        <!--<ul class="left_ul">-->
+            <!--<li><a class="act_home" href="#home">主页</a></li>-->
+            <!--<li><a href="#news">新闻</a></li>-->
+            <!--<li><a href="#contact">联系</a></li>-->
+            <!--<li><a href="#about">关于</a></li>-->
+        <!--</ul>-->
+        <!--<div class="right_div">-->
+            <!--<h2>Fixed Full-height Side Nav</h2>-->
+            <!--<h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>-->
+            <!--<p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+            <!--<p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
+
+        <!--</div>-->
+    <!--</div>-->
+    <!--CSS 响应式边栏导航实例-->
+        <ul class="sidenav">
+            <li><a class="active_home" href="#home">主页</a> </li>
+            <li><a href="#news">新闻</a> </li>
+            <li><a href="#contact">联系</a> </li>
+            <li class="right"><a href="about">关于</a> </li>
+        </ul>
+    <div class="div_content">
+        <h2>响应式边栏导航实例</h2>
+        <p>该实例在屏幕宽度小于 900px 时导航栏为顶部水平导航栏，如果大于 900px 导航栏会在左边，且是固定的。</p>
+        <p>如果屏幕宽度小于 400px 会变为垂直导航栏。</p>
+        <h3>重置浏览器窗口大小，查看效果。</h3>
+    </div>
+    <!--下拉内容菜单-->
+    <ul class="drop-ul">
+        <li><a class="act_ho" href="#home">主页</a></li>
+        <li><a href="#news">新闻</a> </li>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">下拉菜单</a>
+            <div class="dropdown-content">
+                <a href="#">链接1</a>
+                <a href="#">链接2</a>
+                <a href="#">链接3</a>
+            </div>
+        </div>
+    </ul>
+</body>
+</html>
