@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 18px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+
+        .dropdown-all{
+            position: relative;
+            float: right;
+            display: inline-block;
+
+        }
+        .dropdown-img{
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        .dropdown-all:hover .dropdown-img{
+            display: block;
+        }
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+
+            /*添加这两个值，即表示为提示内容右移*/
+            /*top: -5px;*/
+            /*left: 105%;*/
+
+            /*提示框在上面*/
+            /*bottom: 100%;*/
+            /*left: 50%;*/
+            /*margin-left: -60px; !* 使用一半宽度 (120/2 = 60) 来居中提示工具 *!*/
+
+            bottom: 150%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        /*设置提示框箭头*/
+        .tooltip .tooltiptext::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border: 5px solid ;
+            border-color: black transparent transparent transparent;
+
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+        .tooltip-effect{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+        .tooltip-effect .tooltip-text{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+            /*淡入  -1秒内 从 0% 到 100% 显示*/
+            opacity: 0;
+            transition: opacity 2s;
+        }
+        .tooltip-effect:hover .tooltip-text{
+            visibility: visible;
+            opacity: 1;
+        }
+/*----------------------------------------------------------------------------------------------------------------------*/
+        /*漂亮的提示框*/
+        .wrapper{
+            text-transform: uppercase;
+            background: #ececec;
+            color: #555;
+            cursor: help;
+            font-family: "Gill Sans", Impact, sans-serif;
+            font-size: 20px;
+            margin: 100px 75px 10px 75px;
+            padding: 15px 20px;
+            position: relative;
+            text-align: center;
+            width: 200px;
+            -webkit-transform: translateZ(0); /* webkit flicker fix */
+            -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+        }
+        .wrapper .tooltip-all{
+            background: #1496bb;
+            bottom: 100%;
+            color: #fff;
+            display: block;
+            left: -25px;
+            margin-bottom: 15px;
+            opacity: 0;
+            padding: 20px;
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            -webkit-transform: translateY(10px);
+            -moz-transform: translateY(10px);
+            -ms-transform: translateY(10px);
+            -o-transform: translateY(10px);
+            transform: translateY(10px);
+            -webkit-transition: all .25s ease-out;
+            -moz-transition: all .25s ease-out;
+            -ms-transition: all .25s ease-out;
+            -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+            -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+            -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+            -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+            -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+        }
+        /*这弥补了差距，因此您可以将鼠标移到工具提示中，而不会消失*/
+        .wrapper .tooltip-all:before{
+            bottom: -20px;
+            content: "";
+            display: block;
+            height: 20px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+        /*CSS三角形 - 请参阅Trevor的帖子*/
+        .wrapper .tooltip-all:after{
+            border-left: solid transparent 10px;
+            border-right: solid transparent 10px;
+            border-top: solid #1496bb 10px;
+            bottom: -10px;
+            content: " ";
+            height: 0;
+            left: 50%;
+            margin-left: -13px;
+            position: absolute;
+            width: 0;
+        }
+        .wrapper:hover.tooltip-all{
+            opacity: 1;
+            pointer-events: auto;
+            -webkit-transform: translateY(0px);
+            -moz-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+            -o-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+        /* IE可以显示/隐藏，无需转换*/
+        .lte8 .wrapper .tooltips{
+            display: none;
+        }
+        .lte8 .wrapper:hover .tooltips{
+            display: block;
+        }
+        div.img{
+            border: 1px solid #ccc;
+        }
+        div.img:hover{
+            border: 1px solid #777;
+        }
+        div.img img{
+            width: 100%;
+            height: auto;
+        }
+        div.desc{
+            padding: 15px;
+            text-align: center;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .responsive{
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        @media only screen and (max-width: 700px){
+            .responsive{
+                width: 49.999999%;
+                margin: 6px 0;
+            }
+        }
+        @media only screen and (max-width: 500px){
+            .responsive{
+                width: 100%;
+            }
+        }
+        .clearfix:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!--下拉菜单实例-->
+    <div class="dropdown">
+        <span>鼠标移动到我这里</span>
+        <div class="dropdown-content">
+            <p>下拉列表1</p>
+            <p>下拉列表2</p>
+        </div>
+    </div><br>
+    <!--图片下拉-->
+    <div class="dropdown-all">
+        <img src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="70px" height="70px">
+        <div class="dropdown-img">
+            <img src="https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg" width="70px" height="70px">
+        </div>
+    </div>
+    <!--基础提示框(Tooltip)-->
+    <div class="tooltip" >
+        鼠标移动到这里
+        <span class="tooltiptext">提示文本</span>
+    </div><br>
+    <!--提示工具淡入效果-->
+    <div class="tooltip-effect">
+        鼠标移动到我这里查看提示框渐变的速度
+        <span class="tooltip-text">显示得文本信息</span>
+    </div>
+
+    <!--漂亮的 CSS 提示框-->
+    <div class="wrapper">
+        I have a tooltip.
+        <div class="tooltip-all">I am a tooltip!</div>
+    </div>
+
+    /*-------------------------------------------------------------------------------------------------------------*/
+    <h2 style="text-align: center">响应式图片相册</h2>
+    <div class="responsive">
+        <div class="img">
+            <a target="_blank" href="img_fjords.jpg">
+                <img src="http://www.runoob.com/wp-content/uploads/2016/04/img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+            </a>
+            <div class="desc">这是一张图片</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img">
+            <a target="_blank" href="img_forest.jpg">
+                <img src="http://www.runoob.com/wp-content/uploads/2016/04/img_forest.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="img">
+            <a target="_blank" href="img_lights.jpg">
+                <img src="http://www.runoob.com/wp-content/uploads/2016/04/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="img">
+            <a target="_blank" href="img_mountains.jpg">
+                <img src="http://www.runoob.com/wp-content/uploads/2016/04/img_mountains.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+
+    <div class="clearfix"></div>
+
+    <div style="padding:6px;">
+
+        <h4>重置浏览器大小查看效果</h4>
+    </div>
+</body>
+</html>
