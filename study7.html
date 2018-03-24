@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*align-items 设置或检索弹性盒子元素在侧轴（纵轴）方向上的对齐方式。*/
+        /*stretch：如果指定侧轴大小的属性值为'auto'，则其值会使项目的边距盒的尺寸尽可能接近所在行的尺寸， 但同时会遵照'min/max-width/height'属性的限制。*/
+        /*flex-start：弹性盒子元素的侧轴（纵轴）起始位置的边界紧靠住该行的侧轴起始边界。*/
+        /*flex-end：弹性盒子元素的侧轴（纵轴）起始位置的边界紧靠住该行的侧轴结束边界。*/
+        /*center：弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）*/
+        /*baseline：如弹性盒子元素的行内轴与侧轴为同一条，则该值与'flex-start'等效。其它情况下，该值将参与基线对齐。*/
+
+        /*flex-wrap 属性用于指定弹性盒子的子元素换行方式。*/
+        /*nowrap - 默认， 弹性容器为单行。该情况下弹性子项可能会溢出容器。*/
+        /*wrap - 弹性容器为多行。该情况下弹性子项溢出的部分会被放置到新行，子项内部会发生断行*/
+        /*wrap-reverse -反转 wrap 排列。*/
+
+        /*align-content 属性用于修改 flex-wrap 属性的行为。类似于 align-items, 但它不是设置弹性子元素的对齐，而是设置各个行的对齐。*/
+        /*stretch - 默认。各行将会伸展以占用剩余的空间。*/
+        /*flex-start - 各行向弹性盒容器的起始位置堆叠。*/
+        /*flex-end - 各行向弹性盒容器的结束位置堆叠。*/
+
+        /*order 属性设置弹性容器内弹性子元素的属性:*/
+        /*设置垂直方向margin值为"auto"，可以使弹性子元素在弹性容器的两上轴方向都完全集中。*/
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;
+            width: 400px;
+            height: 250px;
+            background-color: lightgray;
+        }
+
+        .flex-item {
+            background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        /*.first{*/
+        /*-webkit-order:-1;*/
+        /*order: -1;*/
+        /*}*/
+        .flex-item:first-child {
+            margin-right: auto;
+        }
+
+        /*----------------------------------------------------------------*/
+        .flex-auto {
+            display: -webkit-flex;
+            display: flex;
+            width: 400px;
+            height: 250px;
+            background-color: #cccccc;
+        }
+
+        .flex-autoitem {
+            background-color: cornflowerblue;
+            width: 75px;
+            height: 75px;
+            margin: auto;
+        }
+        /*-----------------------------------------------------------------------*/
+        .flex-alignSelf{
+            display: -webkit-flex;
+            display: flex;
+            width: 400px;
+            height: 250px;
+            background-color: lightgray;
+        }
+        .flex-items{
+            background-color: cornflowerblue;
+            width: 60px;
+            min-height: 100px;
+            margin: 10px;
+        }
+        .item1{
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+        .item2{
+            -webkit-align-self: flex-end;
+            align-self: flex-end;
+        }
+        .item3{
+            -webkit-align-self: center;
+            align-self: center;
+        }
+        .item4{
+            -webkit-align-self: baseline;
+            align-self: baseline;
+        }
+        .item5{
+            -webkit-align-self: stretch;
+            align-self: stretch;
+        }
+/*----------------------------------------------------------------------------*/
+        .flex-three{
+            display: -webkit-flex;
+            display: flex;
+            width: 400px;
+            height: 250px;
+            background-color: #cccccc;
+        }
+        .flex-all{
+            background-color: cornflowerblue;
+            margin: 10px;
+        }
+        .flex-all item1{
+            -webkit-flex: 2;
+            flex: 2;
+        }
+        .flex-all item2{
+            -webkit-flex: 1;
+            flex: 1;
+        }
+        .flex-all item3{
+            -webkit-flex: 1;
+            flex: 1;
+        }
+/*----------------------------------------------------------------------------------*/
+        .flex-cont{
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        .flex-cont > *{
+            padding: 10px;
+            flex: 1 100%;
+        }
+        .main{
+            text-align: left;
+            background: cornflowerblue;
+        }
+        .header{background: coral;}
+        .footer{background: lightgreen;}
+        .aside1{background: moccasin;}
+        .aside2{background: violet;}
+
+        @media all and(min-width: 600px){
+            .aside{
+                flex: 1 auto;
+            }
+        }
+        @media all and (min-width: 800px){
+            .main{flex: 3 0px;}
+            .aside1{order: 2;}
+            .main{order: 1;}
+            .aside2{order: 3;}
+            .footer{order: 4;}
+        }
+    </style>
+</head>
+<body>
+<!--弹性盒子-->
+<div class="flex-container">
+    <div class="flex-item">flex item 1</div>
+    <div class="flex-item first">flex item 2</div>
+    <div class="flex-item">flex item 3</div>
+</div>
+
+<!--使用弹性盒子，居中变的很简单，只想要设置 margin: auto; 可以使得弹性子元素在两上轴方向上完全居中:-->
+<div class="flex-auto">
+    <div class="flex-autoitem">Perfect centering!</div>
+</div>
+
+<!--align-self 属性用于设置弹性元素自身在侧轴（纵轴）方向上的对齐方式。-->
+<div class="flex-alignSelf">
+    <div class="flex-items item1">flex-start</div>
+    <div class="flex-items item2">flex-end</div>
+    <div class="flex-items item3">center</div>
+    <div class="flex-items item4">baseline</div>
+    <div class="flex-items item5">stretch</div>
+</div>
+
+<!--flex 属性用于指定弹性子元素如何分配空间。-->
+<div class="flex-three">
+    <div class="flex-all item1">flex item 1</div>
+    <div class="flex-all item2">flex item 2</div>
+    <div class="flex-all item3">flex item 3</div>
+</div>
+<!--使用弹性盒子创建响应式页面-->
+<div class="flex-cont">
+    <header class="header">头部</header>
+    <article class="main">
+        <p>菜鸟教程-学得不仅是技术，更是梦想菜鸟教程(www.runoob.com)提供了最全的编程技术基础教程, 介绍了HTML、CSS、Javascript、Python，Java，Ruby，C，PHP , MySQL等各种编程语言的基础知识。 同时本站中也提供了大量的在线实例，通过实例，您可以更好的学习编程。</p>
+    </article>
+    <aside class="aside aside1">边栏1</aside>
+    <aside class="aside aside2">边栏2</aside>
+    <footer class="footer">底部</footer>
+</div>
+</body>
+</html>
