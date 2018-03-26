@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function clickCounter() {
+            if(typeof (Storage)!=="undefined"){
+
+                //localStorage - 没有时间限制的数据存储
+                // if (localStorage.clickcount)
+                // {
+                //     localStorage.clickcount=Number(localStorage.clickcount)+1;
+                // }
+                // else
+                // {
+                //     localStorage.clickcount=1;
+                // }
+                // document.getElementById("result").innerHTML=" 你已经点击了按钮 " + localStorage.clickcount + " 次 ";
+
+                // sessionStorage 方法针对一个 session 进行数据存储。当用户关闭浏览器窗口后，数据会被删除。
+                if (sessionStorage.clickcount)
+                {
+                    sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+                }
+                else
+                {
+                    sessionStorage.clickcount=1;
+                }
+                document.getElementById("result").innerHTML="在这个会话中你已经点击了该按钮 " + sessionStorage.clickcount + " 次 ";
+            }
+            else {
+                // document.getElementById("result").innerHTML = "对不起，您的浏览器不支持 web 存储。"
+                document.getElementById("result").innerHTML="抱歉，您的浏览器不支持 web 存储";
+            }
+        }
+        // ----------------------------------------------------------------
+
+
+    </script>
+</head>
+<body>
+        <!--<canvas> 标签通过脚本（通常是 JavaScript）来绘制图形（比如图表和其他图像）。-->
+        <canvas id="myCanvas">您的浏览器不支持HTML5 canvas 标签</canvas>
+        <script>
+            var c=document.getElementById('myCanvas');
+            var ctx = c.getContext('2d');
+            ctx.fillStyle = '#FF0000';
+            ctx.fillRect(0,0,80,100);
+        </script>
+
+        <!--<canvas>在画圆的时候，使用下面的方法  arc(x,y,r,start,stop)-->
+        <canvas id = 'myCanva' width="500" height="500" style="border:1px solid #d3d3d3">您的浏览器不支持HTML5 canvas 标签</canvas>
+        <script>
+            var b=document.getElementById('myCanva');
+            var ct = b.getContext("2d");
+            ct.beginPath();
+            ct.arc(250,250,250,0,2*Math.PI);
+            ct.stroke()
+        </script>
+
+        <!--localStorage - 没有时间限制的数据存储-->
+        <!--sessionStorage 方法针对一个 session 进行数据存储。当用户关闭浏览器窗口后，数据会被删除。-->
+        <p><button onclick="clickCounter()" type="button">点我！</button></p>
+        <div id="result"></div>
+        <p>点击该按钮查看计数器的增加。</p>
+        <p>关闭浏览器选项卡(或窗口),重新打开此页面,计数器将继续计数(不是重置)。</p>
+
+        <!--Web Storage 开发一个简单的网站列表程序-->
+        <div style="border: 2px dashed #ccc;width:320px;text-align:center;">
+            <label for="keyname">别名(key):</label>
+            <input type="text" id="keyname" name="keyname" class="text"/>
+            <br/>
+            <label for="sitename">网站名：</label>
+            <input type="text" id="sitename" name="sitename" class="text"/>
+            <br/>
+            <label for="siteurl">网 址：</label>
+            <input type="text" id="siteurl" name="siteurl"/>
+            <br/>
+            <input type="button" onclick="save()" value="新增记录"/>
+            <hr/>
+            <label for="search_phone">输入别名(key)：</label>
+            <input type="text" id="search_site" name="search_site"/>
+            <input type="button" onclick="find()" value="查找网站"/>
+            <p id="find_result"><br/></p>
+        </div>
+        <br/>
+        <div id="list">
+        </div>
+        <script>
+            //存储数据
+            function save() {
+                var site = new object;
+                site.keyname = document.getElementById("keyname").value;
+                site.sitename = document.getElementById("sitename").value;
+                site.siteurl = document.getElementById("siteurl").value;
+                var str = JSON.stringify(site);//将对象转换为字符串
+                localStorage.setItem(site.keyname,str);
+                alert("保存成功");
+            }
+            //查找数据
+            function find() {
+                var search_site = document.getElementById("search_site").value;
+                var str = localStorage.getItem(search_site);
+                var find_result = document.getElementById("find_result");
+                var site = JSON.parse(str);
+                find_result.innerHTML = search_site + "的网站名是:"+site.sitename+"网址是:"+site.siteurl;
+            }
+            function  loadAll() {
+                var list = document.getElementById("list");
+                if(localStorage.length>0){
+                    var result = "<table border='1'>";
+                    result += "<tr><td>别名</td><td>网站名</td><td>网址</td></tr>";
+                    for(var i=0;i<localStorage.length;i++){
+                        var keyname = localStorage.key(i);
+                        var str = localStorage.getItem(keyname);
+                        var site = JSON.parse(str);
+                        result += "<tr><td>"+site.keyname+"</td><td>"+site.sitename+"</td><td>"+site.siteurl+"</td></tr>";
+                    }
+                    result += "</table>";
+                    list.innerHTML = result;
+                }else{
+                    list.innerHTML = "数据为空...";
+                }
+            }
+        </script>
+
+</body>
+</html>

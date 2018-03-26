@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .more{
+            width: 100%;
+            height: 200px;
+            background-color: pink;
+        }
+
+        @media screen and (min-width: 480px){
+            .more{
+                background-color: lightgreen;
+            }
+        }
+        /*----------------------------------------------------------------------------------*/
+        .wrapper{overflow: auto;}
+        #main{
+            margin-left: 4px;
+        }
+        #leftsidebar{
+            float: none;
+            width: auto;
+        }
+        #menulist{
+            margin: 0;
+            padding: 0;
+        }
+        .menuitem{
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+            border: 1px solid #d4d4d4;
+            background: #CDF0F6;
+            border-radius: 4px;
+        }
+        @media screen and (min-width: 480px){
+            #leftsidebar{
+                width: 200px;
+                float: left;
+            }
+            #main{
+                margin-left: 216px;
+            }
+        }
+        /*----------------------------------------------------------------------------------*/
+        .email ul{
+            list-style-type: none;
+        }
+        .email ul li a{
+            color: green;
+            text-decoration: none;
+            padding: 3px;
+            display: block;
+        }
+        @media screen and (max-width: 699px) and (min-width: 520px){
+            .email ul li a{
+                padding-left: 30px;
+                background: url("https://www.qqtouxiang.com/d/file/wm/img/fzl/20180312/rwredl2caqxjrhb.jpg") left center no-repeat;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<!--多媒体查询简单实例-->
+<div class="more">
+    <p>如果媒体类型屏幕的可视窗口宽度小于 480 px ，背景颜色将改变。</p>
+</div>
+
+<!--在屏幕可视窗口尺寸大于 480 像素时将菜单浮动到页面左侧：-->
+<div class="wrapper">
+    <div id="leftsidebar">
+        <ul id="menulist">
+            <li class="menuitem">Menu-item 1</li>
+            <li class="menuitem">Menu-item 2</li>
+            <li class="menuitem">Menu-item 3</li>
+            <li class="menuitem">Menu-item 4</li>
+            <li class="menuitem">Menu-item 5</li>
+        </ul>
+    </div>
+    <div id="main">
+        <p>在屏幕可视窗口尺寸大于 480 像素时将菜单浮动到页面左侧。</p>
+    </div>
+</div>
+<!--当浏览器的宽度在 520 到 699px, 邮箱链接前添加邮件图标：-->
+<div class="email">
+    <ul>
+        <li><a date-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
+        <li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
+        <li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
+    </ul>
+</div>
+</body>
+</html>
