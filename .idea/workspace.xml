@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9441a8f-bb02-4ad6-a67c-67ab647cebf3" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/two/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/two/style/main.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/two/style/reset.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/edit2.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Examples/aobut.html" afterPath="$PROJECT_DIR$/Examples/one/aobut.html" />
-      <change beforePath="$PROJECT_DIR$/Examples/contact.html" afterPath="$PROJECT_DIR$/Examples/one/contact.html" />
-      <change beforePath="$PROJECT_DIR$/Examples/home.css" afterPath="$PROJECT_DIR$/Examples/one/home.css" />
-      <change beforePath="$PROJECT_DIR$/Examples/home.html" afterPath="$PROJECT_DIR$/Examples/one/home.html" />
-      <change beforePath="$PROJECT_DIR$/Examples/services.html" afterPath="$PROJECT_DIR$/Examples/one/services.html" />
-      <change beforePath="$PROJECT_DIR$/Examples/staff.html" afterPath="$PROJECT_DIR$/Examples/one/staff.html" />
+      <change beforePath="$PROJECT_DIR$/Examples/two/index.html" afterPath="$PROJECT_DIR$/Examples/two/index.html" />
+      <change beforePath="$PROJECT_DIR$/Examples/two/style/main.css" afterPath="$PROJECT_DIR$/Examples/two/style/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,21 +18,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Examples/two/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+            <state relative-caret-position="594">
+              <caret line="273" column="25" lean-forward="false" selection-start-line="273" selection-start-column="25" selection-end-line="273" selection-end-column="25" />
+              <folding>
+                <element signature="n#dl#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#dl#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#dl#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#dl#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#dl#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#dl#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Examples/two/style/reset.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Examples/two/style/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+            <state relative-caret-position="528">
+              <caret line="335" column="20" lean-forward="true" selection-start-line="335" selection-start-column="20" selection-end-line="335" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edit1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="19" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -59,9 +79,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>four</find>
-      <find>aboutDiv</find>
-      <find>pos_left</find>
       <find>topMenu</find>
       <find>content</find>
       <find>vertical-align</find>
@@ -89,6 +106,9 @@
       <find>nav-right</find>
       <find>nav-lists</find>
       <find>nav-right-img</find>
+      <find>shopClass</find>
+      <find>shopClass_show</find>
+      <find>banner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,8 +145,8 @@
         <option value="$USER_HOME$/Desktop/建程教育_files/common.min.css" />
         <option value="$USER_HOME$/Desktop/建程教育.html" />
         <option value="$PROJECT_DIR$/Examples/two/style/reset.css" />
-        <option value="$PROJECT_DIR$/Examples/two/index.html" />
         <option value="$PROJECT_DIR$/Examples/two/style/main.css" />
+        <option value="$PROJECT_DIR$/Examples/two/index.html" />
       </list>
     </option>
   </component>
@@ -136,9 +156,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="384" />
-    <option name="y" value="60" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="400" />
+    <option name="y" value="7" />
     <option name="width" value="1365" />
     <option name="height" value="936" />
   </component>
@@ -181,6 +201,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,7 +233,7 @@
               <item name="Examples" type="462c0819:PsiDirectoryNode" />
               <item name="two" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="icon" type="462c0819:PsiDirectoryNode" />
+              <item name="banner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LearnWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -225,7 +246,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,15 +315,16 @@
       <workItem from="1522290762961" duration="11274000" />
       <workItem from="1522311047257" duration="2861000" />
       <workItem from="1522547993615" duration="17627000" />
-      <workItem from="1522638602958" duration="18000" />
+      <workItem from="1522638602958" duration="14626000" />
+      <workItem from="1522723301444" duration="5009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188244000" />
+    <option name="totallyTimeSpent" value="207861000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="384" y="60" width="1365" height="936" extended-state="1" />
+    <frame x="400" y="7" width="1365" height="936" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2903715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -494,13 +515,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/edit2.js" />
-    <entry file="file://$PROJECT_DIR$/edit1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/study9.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -603,11 +617,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/1.png" />
     <entry file="file://$USER_HOME$/Desktop/建程教育.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -647,26 +657,43 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/edit1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="19" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Examples/two/style/reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/two/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Examples/two/style/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        <state relative-caret-position="528">
+          <caret line="335" column="20" lean-forward="true" selection-start-line="335" selection-start-column="20" selection-end-line="335" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/two/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="273" column="25" lean-forward="false" selection-start-line="273" selection-start-column="25" selection-end-line="273" selection-end-column="25" />
+          <folding>
+            <element signature="n#dl#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#dl#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#dl#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#dl#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#dl#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#dl#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
