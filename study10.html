@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var mystr="hello";
+        document.write(mystr+"I love JavaScript");//输出多项内容，内容之间用+号连接。
+
+        document.write(mystr+"<br>");//输出HTML标签，并起作用，标签使用""括起来。
+        function rec() {
+            var mychar="hello world";
+            alert(mychar);//弹出框
+        }
+        function but() {
+            var message = confirm("这个是个选择框!");//confirm 消息对话框通常用于允许用户做选择的动作，如：“你对吗？”等。弹出对话框(包括一个确定按钮和一个取消按钮)。
+            if (message==true){
+                document.write("Yes");
+            }else {
+                document.write("No");
+            }
+        }
+        function content() {
+            var score = prompt("请输入您的成绩:");//prompt弹出消息对话框,通常用于询问一些需要与用户交互的信息。弹出消息对话框（包含一个确定按钮、取消按钮与一个文本输入框）。
+            if (score>=90){
+                document.write("成绩优秀");
+            }
+            else if(score>=70) {
+                document.write("成绩良好");
+            }
+            else  if (score>=60){
+                document.write("成绩及格");
+            }
+            else {
+                document.write("成绩不及格！");
+            }
+        }
+        function opens() {//window.open([URL], [窗口名称], [参数字符串])
+            // 1.该名称由字母、数字和下划线字符组成。
+            // 2."_top"、"_blank"、"_self"具有特殊意义的名称。
+            // _blank：在新窗口显示目标网页
+            // _self：在当前窗口显示目标网页
+            // _top：框架网页中在上部窗口中显示目标网页
+            // 3.相同 name 的窗口只能创建一个，要想创建多个窗口则 name 不能相同。
+            // 4.name 不能包含有空格。
+            window.open('http://www.imooc.com','_blank','width=300,height=200,top=100,left=0,menubar=no,toolbar=no,status=no,scrollbars=yes')
+        }
+
+
+        /* window.close();   //关闭本窗口
+         <窗口对象>.close();   //关闭指定的窗口
+         */
+
+        function openWindow() {
+            var boxs = confirm("窗口是否打开?");
+                if (boxs=true){
+                    var  boxshow=prompt('"请输入网址：","www.baidu.com/"');
+                        window.open(boxshow,'_blank','width=300,height=100,top=50,left=10,menubar=no,toolbar=no');
+                }
+        }
+
+    </script>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100px;
+            margin: auto;
+        }
+        .main input{
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main">
+
+    <input name="button" type="button" onClick="rec()" value="弹出对话框" />
+
+    <input type="button" value="点击" onclick="but()"/>
+
+    <input type="button" value="内容选择框" onclick="content()">
+
+    <input type="button" value="打开新页面" onclick="opens()">
+
+    <!--新窗口打开时弹出确认框，是否打开-->
+    <!--通过输入对话框，确定打开的网址，默认为 http：//www.imooc.com/-->
+    <!--打开的窗口要求，宽400像素，高500像素，无菜单栏、无工具栏。-->
+    <input type="button" value="连续事件" onclick="openWindow()">
+
+    <h2 id="con">javascript</H2>
+</div>
+
+<script type="text/javascript">
+    var mychar=document.getElementById("con");
+    // innerHTML 属性用于获取或替换 HTML 元素的内容。
+    mychar.innerHTML="New start";
+    document.write(mychar.innerHTML);
+</script>
+</body>
+</html>
