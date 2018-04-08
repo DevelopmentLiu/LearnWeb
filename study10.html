@@ -71,6 +71,9 @@
             var p1 = document.getElementById("hide");
             p1.style.display = "block";
         }
+
+        function message(){
+            confirm("请输入密码后，再单击确定!"); }
     </script>
     <style type="text/css">
         body{
@@ -131,6 +134,11 @@
     <input type="button" value="添加样式" onclick="add()"/>
     <p id="p2" class="one">JavaScript使网页显示动态效果并实现与用户交互功能。</p>
     <input type="button" value="更改外观" onclick="modify()"/>
+
+    <form>
+        密码:<input name="password" type="password" >
+        <input name="确定" type="button" value="确定" onmouseover="message()"/>
+    </form>
 </div>
 
 <script type="text/javascript">
@@ -158,7 +166,81 @@
         var p2 = document.getElementById("p2");
         p2.className = "two";
     }
-    
+
+    // 创建二维数组(一维长度3，二维长度6)，值为一维数组和二维数组索引值的积，如myarr[2][5]=2*5。
+    var myarrs=new Array();
+    for(var i=0;i<3;i++){
+        myarrs[i]=new Array();
+        for(var j=0;j<6;j++){
+            myarrs[i][j]=i*j;
+        }
+    }
+    document.write(myarrs);
+
+    var mynum =new Array(70,80,66,90,50,100,89);//定义数组mynum并赋值
+    var i=0;
+    while(i<mynum.length)
+    {
+        if(mynum[i]<60)
+        {
+            document.write("成绩"+mynum[i]+"不及格，不用循环了"+"<br>");
+            break;
+        }
+
+        document.write("成绩:"+mynum[i]+"及格，继续循环"+"<br>");
+        i=i+1;
+
+    }
+
+    var mynum =new Array(70,80,66,90,50,100,89);//定义数组mynum并赋值
+    var i;
+    for(i=0;i<mynum.length;i++)
+    {
+        if(mynum[i]<60)
+        {
+            document.write("成绩不及格，不输出！"+"<br>");
+            continue;
+        }
+        document.write("成绩:"+mynum[i]+"及格，输出!"+"<br>");
+    }
+
+    //第一步把之前的数据写成一个数组的形式,定义变量为 infos
+    var infos=[
+        ["小A","女",21,"大一"],
+        ["小B","男",23,"大三"],
+        ["小C","男",24,"大四"],
+        ["小D","女",21,"大一"],
+        ["小E","女",22,"大四"],
+        ["小F","男",21,"大一"],
+        ["小G","女",22,"大二"],
+        ["小H","女",20,"大三"],
+        ["小I","女",20,"大一"],
+        ["小J","男",20,"大三"] ];
+
+    //第一次筛选，找出都是大一的信息
+    //第二次筛选，找出都是女生的信息
+    for(var i=0;i<infos.length;i++){
+        if(infos[i][3]=='大一'&&infos[i][1]=='女'){
+            document.write(infos[i][0]);
+        }
+    }
+
+    //定义函数
+    function number(a,b){
+        if(a>b){
+            return a;
+        }
+        else if(a=b){
+            return "一样大";
+        }
+        else{
+            return b;
+        }
+    }
+    //调用函数，实现下面两组数中，返回较大值。
+    document.write(" 5 和 4 的较大值是:"+number(5,4)+"<br>");
+    document.write(" 6 和 3 的较大值是:"+number(6,3));
+
 </script>
 </body>
 </html>
