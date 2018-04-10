@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // 鼠标移开事件（onmouseout）
+        function message(){
+            alert("不要移开，点击后进行慕课网!");
+        }
+
+        // 光标聚焦事件（onfocus）
+        function messages(){
+            alert("请在此输入姓名");
+        }
+
+        // 失焦事件（onblur）
+        function message1(){
+            alert("请确定已输入密码后，在移开!");
+        }
+
+        // 内容选中事件（onselect）
+        function message2() {
+            alert("您触发了选中事件！");
+        }
+
+        //文本框内容改变事件（onchange）
+        function message3() {
+            alert("您改变了文本内容！");
+        }
+
+        // 加载事件（onload）
+        function message4()() {
+            alert("加载中，请稍后...");
+        }
+
+        // //卸载事件（onunload）
+        // window.onunload = onunload_message;
+        // function onunload_message(){
+        //     alert("您确定离开该网页吗？");
+        // }
+
+    </script>
+</head>
+<body onload="message4()">
+    欢迎学习JS
+    <a href="http://www.imooc.com" onmouseout="message()">点击我</a>
+
+    <form>
+        <input type="text" value="请输入姓名" onfocus="messages()">
+    </form>
+
+    <form>
+        用户:<input name="username" type="text" value="请输入用户名！" ><br>
+        密码:<input name="password" type="text" value="请输入密码！" onblur="message1()">
+    </form>
+
+    <form>
+        个人简介:<br>
+        <textarea cols="60" rows="6" onselect="message2()">请写入个人简介，不少于100字</textarea>
+    </form>
+
+    <form>
+        个人简介:<br>
+        <textarea cols="60" rows="6" onchange="message3()">请写入个人简介，不少于100字</textarea>
+    </form>
+
+    <!--使用JS完成一个简单的计算器功能。实现2个输入框中输入整数后，点击第三个输入框能给出2个整数的加减乘除。-->
+    <input type='text' id='txt1' />
+    <select id='select'>
+        <option value='+'>+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type='text' id='txt2' />
+    <input type='button' value=' = ' onclick="count()"/> <!--通过 = 按钮来调用创建的函数，得到结果-->
+    <input type='text' id='fruit' /><br>
+
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <script type="text/javascript">
+        function count(){
+
+            //获取第一个输入框的值
+            var txt1=parseInt(document.getElementById("txt1").value)//注意转型，获取到的是字符串不是整数;
+            //获取第二个输入框的值
+            var txt2=parseInt(document.getElementById("txt2").value);
+            //获取选择框的值
+            var selectValue=document.getElementById("select").value;
+            var c;
+            //获取通过下拉框来选择的值来改变加减乘除的运算法则
+            switch(selectValue){
+                case '+':
+                    c = txt1+txt2;
+                    break;
+                case '-':
+                    c=txt1-txt2;
+                    break;
+                case '*':
+                    c=txt1*txt2;
+                    break;
+                case '/':
+                    c=txt1/txt2;
+                    break;
+            }
+            //设置结果输入框的值
+            document.getElementById("fruit").value=c;
+        }
+
+        // get/setFullYear() 返回/设置年份，用四位数表示。
+        var mydate=new Date();
+        var myyear=mydate.getFullYear();
+        document.write("年份"+myyear+"<br>");
+
+        // getDay() 返回星期
+        var mydate1=new Date();
+        var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+        document.write("今天是：" +weekday[mydate1.getDay()]+"<br>" );
+
+        // get/setTime() 返回/设置时间，单位毫秒数，计算从 1970 年 1 月 1 日零时到日期对象所指的日期的毫秒数。
+        var mydate2=new Date();
+        document.write("当前时间"+mydate2+"<br>");
+        mydate2.setTime(mydate2.getTime()+2*60*60*1000);
+        document.write("推迟两个小时后的时间:"+mydate2+"<br>");
+
+        // 使用 String 对象的 toUpperCase() 方法来将字符串小写字母转换为大写：
+        // 使用 String 对象的 toLowerCase()方法来将字符串大写字母转换为小写；
+        var mystr="Hello World!";
+        var mynum=mystr.toUpperCase();
+        document.write("转换后的大写字符串为："+mynum+"<br>");
+        var mystr1="HELLO WROLD!";
+        var mynum1=mystr1.toLowerCase();
+        document.write("转换后的小写字符串为:"+mynum1+"<br>");
+    </script>
+</body>
+</html>
