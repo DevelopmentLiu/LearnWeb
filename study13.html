@@ -17,6 +17,20 @@
 <input type="button" value="Start"  onclick="startCount()"/>
 <input type="button" value="Stop"   onclick="stopCount()"/>
 
+<form>
+    <input type="button"  value="返回前一个页面" onclick="GoBack()" />
+</form>
+<form>
+    <input type="button"  value="返回下一个页面" onclick="GoForward()" />
+</form>
+
+<form>
+    <input type="button" value="查看浏览器"  onclick="validB()" >
+</form>
+
+<h3>操作成功</h3>
+<a><span id='time'></span>秒后回到主页</a>
+<a href='javascript:history.go(-1);'>返回</a><br>
 <!-- ------------------------------------------------------------------------------------------------------------- -->
 <script type="text/javascript">
     // slice() 方法可从已有的数组中返回选定的元素。
@@ -88,7 +102,78 @@
     // history对象记录了用户曾经浏览过的页面(URL)，并可以实现浏览器前进与后退相似导航的功能。
     // 语法：window.history.[属性|方法]
     var hl=window.history.length;
-    document.write("当前窗口的浏览历史总长度:"+hl);
+    document.write("当前窗口的浏览历史总长度:"+hl+"<br>");
+
+    //back()方法，加载 history 列表中的前一个 URL。
+    // 语法：window.history.back();
+    function GoBack() {
+        window.history.back();
+    }
+
+    // forward()方法，加载 history 列表中的下一个 URL。
+    // 如果倒退之后，再想回到倒退之前浏览的页面，则可以使用forward()
+    // 方法,代码如下:window.history.forward();
+    function GoForward() {
+        window.history.forward();
+        //等价于  window.history.go(1);
+    }
+
+    // go()方法，根据当前所处的页面，加载 history 列表中的某个具体的页面。
+    // 语法：window.history.go(number);
+    function GoForward() {
+        window.history.go(1);
+    }
+
+    //location用于获取或设置窗体的URL，并且可以用于解析URL。
+    //语法:location.[属性|方法]
+    document.write("打印本页网址："+window.location.href+"<br>");
+
+    // Navigator 对象包含有关浏览器的信息，通常用于检测浏览器与操作系统的版本。
+    var browser=navigator.appName;
+    var b_version=navigator.appVersion;
+    document.write("浏览器名称："+browser+"<br>");
+    document.write("浏览器平台和版本信息："+b_version+"<br>");
+
+    // 返回用户代理头的字符串表示(就是包括浏览器版本信息等的字符串)
+    // 语法：navigator.userAgent
+    function validB() {
+        var u_name=navigator.userAgent;
+        var B_name="不是想用的主浏览器！";
+        if (u_name.indexOf("Firefox")>-1){
+            B_name="Firefox";
+        }
+        else if(u_name.indexOf("Chrome")>-1){
+            B_name="Chrome";
+        }
+        else if (u_name.indexOf("MSIE")>-1&&u_name.indexOf("Trident")>-1){
+            B_name="IE(8-10)";
+        }
+        document.write("浏览器:"+B_name+"<br>");
+        document.write("u_agent:"+u_name+"<br>");
+    }
+
+    // window.screen 对象包含有关用户屏幕的信息。
+    // 1. screen.height 返回屏幕分辨率的高
+    // 2. screen.width 返回屏幕分辨率的宽
+    document.write("屏幕的宽："+window.screen.width+"px");
+    document.write("屏幕的高："+window.screen.height+"px"+"<br>");
+
+    // 1. screen.availWidth 属性返回访问者屏幕的宽度，以像素计，减去界面特性，比如任务栏。
+    // 2. screen.availHeight 属性返回访问者屏幕的高度，以像素计，减去界面特性，比如任务栏。
+    document.write("屏幕可用高："+window.screen.availWidth+"px");
+    document.write("屏幕可用宽："+window.screen.availHeight+"px");
+
+    //获取显示秒数的元素，通过定时器来更改秒数。
+    var num=5;
+    function counttime(){
+        document.getElementById("time").innerHTML=num;
+        num--;
+        if(num==0){
+            location.assign('http://www.imooc.com');
+        }
+    }
+    //通过window的location和history对象来控制网页的跳转。
+    setInterval("counttime()",1000);
 
 </script>
 </body>
