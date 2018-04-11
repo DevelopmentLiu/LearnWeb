@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="clock" size="50"/><br>
+
+<!--clearInterval() 方法可取消由 setInterval() 设置的交互时间。-->
+<form>
+    <input type="text" id="clocks" size="50"/>
+    <input type="button" value="Stop" onclick="clearInterval(i)"/>
+</form>
+
+<input type="text" id="count" /><br>
+<input type="button" value="Start"  onclick="startCount()"/>
+<input type="button" value="Stop"   onclick="stopCount()"/>
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+<script type="text/javascript">
+    // slice() 方法可从已有的数组中返回选定的元素。
+    // 语法:arrayObject.slice(start,end)
+    var myarr1 = ["我", "爱", "你"];
+    document.write(myarr1.slice(1) + "<br>");
+
+    //sort()方法使数组中的元素按照一定的顺序排列。
+    // 语法:arrayObject.sort(方法函数)
+    function sortNum(a, b) {
+        return b - a;
+    }
+
+    var myarr = new Array("80", "16", "50", "6", "100", "1");
+    document.write(myarr.sort(sortNum) + "<br>");
+
+
+    //通过javascript的日期对象来得到当前的日期，并输出。
+    var day = new Date();
+    var weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+    document.write("今天的日期为：" + day.getFullYear() + '年' + (day.getMonth() + 1) + '月' + weekday[day.getDay()] + '日' + "<br>");
+
+    //成绩是一长窜的字符串不好处理，找规律后分割放到数组里更好操作哦
+    var scoreStr = "小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76";
+    var array = scoreStr.split(";");
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+        sum += parseInt(array[i].slice(array[i].indexOf(':') + 1));
+    }
+
+    //从数组中将成绩撮出来，然后求和取整，并输出。
+    document.write("平均成绩为：" + sum / array.length+"<br>");
+
+    // 在执行时,从载入页面后每隔指定的时间执行代码。
+    // 语法:setInterval(代码,交互时间);
+    var attime;
+
+    function clock() {
+        var time = new Date();
+        attime = time.toLocaleTimeString();
+        document.getElementById("clock").value = attime;
+    }
+
+    setInterval(clock, 100);
+
+    //clearInterval() 方法可取消由 setInterval() 设置的交互时间。
+    function clocks() {
+        var time = new Date();
+        document.getElementById("clocks").value = time;
+    }
+
+    var i = setInterval(clocks, 100);
+
+    // setTimeout()计时器，在载入后延迟指定时间后,去执行一次表达式,仅执行一次。
+    // 语法:setTimeout(代码,延迟时间);
+    // setTimeout()和clearTimeout()一起使用，停止计时器。
+    // 语法:clearTimeout(id_of_setTimeout)
+    var num=0;
+    var a;
+    function startCount() {
+        document.getElementById("count").value=num;
+        num=num+1;
+        a=setTimeout("startCount()",1000);
+    }
+    function stopCount() {
+        clearTimeout(a);
+    }
+
+    // history对象记录了用户曾经浏览过的页面(URL)，并可以实现浏览器前进与后退相似导航的功能。
+    // 语法：window.history.[属性|方法]
+    var hl=window.history.length;
+    document.write("当前窗口的浏览历史总长度:"+hl);
+
+</script>
+</body>
+</html>
