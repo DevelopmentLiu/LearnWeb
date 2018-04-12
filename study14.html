@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input name="myt" type="text" value="1">
+<input name="myt" type="text" value="2">
+<input name="myt" type="text" value="3">
+<input name="myt" type="text" value="4">
+<input name="myt" type="text" value="5">
+<input name="myt" type="text" value="6"><br>
+<input type="button" onclick="getnum()" value="看看有几项？"/><br>
+<from name="input">
+    <table align="center" width="500px" height="400px" border="1">
+        <tr>
+            <td align="center" width="100px">
+                学号
+            </td>
+            <td align="center" width="300px">
+                <input type="text" id="userid" name="user" onblur="validate()">
+                <div id=usermsg></div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" width="100px">
+                姓名:
+            </td>
+            <td align="center">
+                <input type="text" name="name">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" width="%45">
+                性别:
+            </td>
+            <td align="center">
+                <input type="radio" name="sex" value="男">
+                男
+                <input type="radio" name="sex" value="女">
+                女
+            </td>
+        </tr>
+        <tr>
+            <td align="center" width="30%">
+                年龄:
+            </td>
+            <td align="center" width="300px">
+                <input type="text" name="age">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" width="100px">
+                地址:
+            </td>
+            <td align="center" width="300px">
+                <input type="text" name="addr">
+            </td>
+        </tr>
+    </table>
+</from>
+<h3 id="myHead" onclick="getValue()">
+    点击我弹出框
+</h3>
+<input type="button" onclick="getElements()"
+       value="看看name为sex的节点有几个?" />
+<Br>
+<input type="button" onclick="getTagElements()"
+       value="看看标签名为input的节点有几个?" /><br>
+
+<form>
+    请选择你爱好:<br>
+    <input type="checkbox" name="hobby" id="hobby1" class="check">  音乐
+    <input type="checkbox" name="hobby" id="hobby2" class="check">  登山
+    <input type="checkbox" name="hobby" id="hobby3" class="check">  游泳
+    <input type="checkbox" name="hobby" id="hobby4" class="check">  阅读
+    <input type="checkbox" name="hobby" id="hobby5" class="check">  打球
+    <input type="checkbox" name="hobby" id="hobby6" class="check">  跑步 <br>
+    <input type="button" value = "全选" onclick = "checkall()">
+    <input type="button" value = "全不选" onclick = "clearall()">
+    <p>请输入您要选择爱好的序号，序号为1-6:</p>
+    <input id="wb" name="wb" type="text" >
+    <input name="ok" type="button" value="确定" onclick = "checkone()">
+</form>
+
+<p id="intro">课程列表</p>
+<ul>
+    <li title="第1个li">HTML</li>
+    <li>CSS</li>
+    <li title="第3个li">JavaScript</li>
+    <li title="第4个li">Jquery</li>
+    <li>Html5</li>
+</ul>
+<p>以下为获取的不为空的li标签title值:</p>
+<!-------------------------------------------------------------------------------------------------------------------->
+
+<script type="text/javascript">
+    // 返回带有指定名称的节点对象的集合。
+    // 语法：document.getElementsByName(name)
+    function getnum() {
+        var myt = document.getElementsByName("myt");
+        alert(myt.length);
+    }
+
+    function getValue()
+    {
+        var myH=document.getElementById("myHead");
+        alert(myH.innerHTML)
+    }
+    function getElements()
+    {
+        var myS=document.getElementsByName("sex");
+        alert(myS.length);
+    }
+
+    function getTagElements()
+    {
+        var myI=document.getElementsByTagName("input");
+        alert(myI.length);
+    }
+
+    //实现当点击"全选"按钮时，将选中所有的复选项。
+    function checkall(){
+        var hobby = document.getElementsByTagName("input");
+        for(var i=0;i<hobby.length-2;i++){
+            hobby[i].checked=true;
+        }
+    }
+    //实现当点击"全不选"按钮时，将取消所有选中的复选项。
+    function clearall(){
+        var hobby = document.getElementsByName("hobby");
+        for(var i=0;i<hobby.length;i++){
+            hobby[i].checked=false;
+        }
+
+    }
+    // 在文本框中输入输入1-6数值，当点击"确定"按钮时，根据输入的数值，通过id选中相应的复选项。
+    function checkone(){
+        var j=parseInt(document.getElementById("wb").value);
+        var hobbys=document.getElementsByClassName("check");
+        var i=j-1;
+        hobbys[i].checked=true;
+    }
+
+    // 通过元素节点的属性名称获取属性的值。
+    // 语法：elementNode.getAttribute(name)
+    var cons=document.getElementsByTagName("li");
+    for (var i=0;i<cons.length;i++){
+        var txt=cons[i].getAttribute("title");
+        if (txt!=null){
+            document.write("文本内容"+txt+"<br>");
+        }
+    }
+
+</script>
+</body>
+</html>
