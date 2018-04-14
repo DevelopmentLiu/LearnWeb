@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .message{
+            width:200px;
+            height:100px;
+            background-color:#CCC;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>javascript</li>
+    <li>HTML/CSS</li>
+    <li>jQuery</li>
+</ul>
+<div id="con">
+    javascript
+    <p>javascript</p>
+    <div>jQuery</div>
+    <h5>PHP</h5>
+</div>
+
+<ul id="cons">
+    <li id="lesson1">javascript
+        <ul>
+            <li id="tcon"> 基础语法</li>
+            <li>流程控制语句</li>
+            <li>函数</li>
+            <li>事件</li>
+            <li>DOM</li>
+        </ul>
+    </li>
+    <li id="lesson2">das</li>
+    <li id="lesson3">dadf</li>
+    <li id="lesson4">HTML/CSS
+        <ul>
+            <li>文字</li>
+            <li>段落</li>
+            <li>表单</li>
+            <li>表格</li>
+        </ul>
+    </li>
+</ul>
+
+<ul id="test">
+    <li>JavaScript</li>
+    <li>HTML</li>
+</ul>
+
+<div id="content">
+    <h1>html</h1>
+    <h1>php</h1>
+    <h1>javascript</h1>
+    <h1>jquery</h1>
+    <h1>java</h1>
+</div>
+<button onclick="clearText()">清除节点内容</button>
+
+<div><b id="oldnode">JavaScript</b>是一个很常用的技术，为网页添加动态效果。</div>
+<a href="javascript:replaceMessage()"> 将加粗改为斜体</a><br>
+
+<table border="1" width="50%" id="table">
+    <tr>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>操作</th>
+    </tr>
+
+    <tr>
+        <td>xh001</td>
+        <td>王小明</td>
+        <td><a href="javascript:void (0);" onclick="del(this)">删除</a></td>   <!--在删除按钮上添加点击事件  -->
+    </tr>
+
+    <tr>
+        <td>xh002</td>
+        <td>刘小芳</td>
+        <td><a href="javascript:void (0);" onclick="del(this)">删除</a></td>   <!--在删除按钮上添加点击事件  -->
+    </tr>
+
+</table>
+<input type="button" value="添加一行" onclick="cearteOne()" />   <!--在添加按钮上添加点击事件  -->
+
+
+<!-- -------------------------------------------------------------------------------------------------------------  -->
+<script type="text/javascript">
+    // 在文档对象模型 (DOM) 中，每个节点都是一个对象。DOM 节点有三个重要的属性 ：
+    // 1. nodeName : 节点的名称
+    // 2. nodeValue ：节点的值
+    // 3. nodeType ：节点的类型
+    var allcontent=document.getElementsByTagName("li");
+    for(var i=0;i<allcontent.length-1;i++){
+        document.write("节点名"+allcontent[i].nodeName);
+        document.write("节点值"+allcontent[i].nodeValue);
+        document.write("节点类型"+allcontent[i].nodeType );
+    }
+
+    // 访问选定元素节点下的所有子节点的列表，返回的值可以看作是一个数组，他具有length属性。
+    // 语法：elementNode.childNodes
+    var x=document.getElementsByTagName("div")[0].childNodes;
+    for(var i=0;i<x.length;i++)
+    {
+        document.write("第"+(i+1)+"个节点的值是："+x[i].nodeValue+"<br  />");
+        document.write("第"+(i+1)+"个节点的名称是："+x[i].nodeName+"<br  />");
+        document.write("第"+(i+1)+"个节点的属性是："+x[i].nodeType+"<br  />");
+        document.write("<br  />");
+    }
+
+    //一、firstChild 属性返回‘childNodes’数组的第一个子节点。如果选定的节点没有子节点，则该属性返回 NULL。
+    // 语法：node.firstChild
+    // 说明：与elementNode.childNodes[0]是同样的效果。
+    // 二、 lastChild 属性返回‘childNodes’数组的最后一个子节点。如果选定的节点没有子节点，则该属性返回 NULL。
+    // 语法：node.lastChild
+    var x=document.getElementById("con");
+    document.write("指定元素的第一个子节点"+x.firstChild.nodeName+" "+x.firstChild.nodeValue+" "+x.firstChild.nodeType+"<br/>");
+    document.write("指定元素的最后一个子节点"+x.lastChild.nodeName+" "+x.firstChild.nodeValue+" "+x.firstChild.nodeType+"<br/>");
+
+    //获取指定节点的父节点
+    // 语法：elementNode.parentNode
+    // var mylist=document.getElementById("cons");
+    // var b= mylist.parentNode.parentNode.parentNode.lastChild;
+    // document.write(b.innerHTML);
+
+    // 插入节点appendChild()
+    // 在指定节点的最后一个子节点列表之后添加一个新的子节点。
+    // 语法:appendChild(newnode)
+    var otest = document.getElementById("test");
+    var newone = document.createElement("li");
+    newone.innerHTML="PHP";
+    otest.appendChild(newone);
+    document.write(otest.innerText+"<br/>");
+
+    //insertBefore() 方法可在已有的子节点前插入一个新的子节点。
+    // 语法:insertBefore(newnode,node);
+    // 参数:newnode: 要插入的新节点。node: 指定此节点前插入节点。
+    var otests = document.getElementById("test");
+    var newnodes=document.createElement("li");
+    newnodes.innerHTML="php";
+    otests.insertBefore(newnodes,otests.lastChild);
+    document.write(otests.innerText+"<br/>");
+
+    // removeChild() 方法从子节点列表中删除某个节点。如删除成功，此方法可返回被删除的节点，如失败，则返回 NULL。
+    // 语法:nodeObject.removeChild(node)
+    function clearText() {
+        var content=document.getElementById("content");
+        var i=0;
+        while (i<content.childNodes.length){
+            content.removeChild(content.childNodes[0]);
+        }
+    }
+
+    // replaceChild 实现子节点(对象)的替换。返回被替换对象的引用。
+    // 语法：node.replaceChild (newnode,oldnew )
+    // 参数：newnode : 必需，用于替换 oldnew 的对象。oldnew : 必需，被 newnode 替换的对象。
+    function replaceMessage() {
+        var oldNode=document.getElementById("oldnode");
+        var oldHTML=oldNode.innerHTML;
+        var newNode=document.createElement("i");
+        newNode.innerText=oldHTML;
+        oldNode.parentNode.replaceChild(newNode,oldNode);
+        document.write("打印替换后得元素"+newNode.innerText+"<br>");
+    }
+
+    // createElement()方法可创建元素节点。此方法可返回一个 Element 对象。
+    // 语法：document.createElement(tagName)
+    var main = document.body;
+    function createa(url,text) {
+        var a=document.createElement("a");
+        a.href=url;
+        a.innerText=text;
+        a.style.color="red";
+        main.appendChild(a);
+    }
+    createa("http://www.imooc.com/\",\"慕课网");
+
+    // createTextNode() 方法创建新的文本节点，返回新创建的 Text 节点。
+    // 语法：
+    // document.createTextNode(data)
+    var newelement=document.createElement("div");
+    newelement.className="message";
+    var newtext=document.createTextNode("Hello World!");
+    newelement.appendChild(newtext);
+    document.body.appendChild(newelement);
+
+    // Document对象的body属性对应HTML文档的<body>标签
+    // document.body.clientHeight   document.body.clientWidth
+    var w= document.documentElement.clientWidth
+        || document.body.clientWidth;
+    var h= document.documentElement.clientHeight
+        || document.body.clientHeight;
+    document.write("打印宽度："+w);
+    document.write("打印高度："+h);
+
+    // 网页尺寸scrollHeight
+    // scrollHeight和scrollWidth，获取网页内容高度和宽度。
+    var w1=document.documentElement.scrollWidth
+        || document.body.scrollWidth;
+    var h1=document.documentElement.scrollHeight
+        || document.body.scrollHeight;
+    document.write("打印宽度："+w1);
+    document.write("打印高度："+h1);
+
+    // offsetHeight和offsetWidth，获取网页内容高度和宽度(包括滚动条等边线，会随窗口的显示大小改变)。
+    var w2= document.documentElement.offsetWidth
+        || document.body.offsetWidth;
+    var h2= document.documentElement.offsetHeight
+        || document.body.offsetHeight;
+    document.write("打印宽度："+w2);
+    document.write("打印高度："+h2);
+
+    window.onload = function(){
+
+        // 鼠标移动改变背景,可以通过给每行绑定鼠标移上事件和鼠标移除事件来改变所在行背景色。
+        var tr=document.getElementsByTagName("tr");
+        for(var i=0;i<tr.length;i++){
+            bgColor(tr[i]);
+        }
+    }
+    function bgColor(trColor){
+        trColor.onmouseover=function (){
+            trColor.style.backgroundColor='#f2f2f2';
+        }
+        trColor.onmouseout=function () {
+            trColor.style.backgroundColor='#fff';
+        }
+    }
+
+    // 编写一个函数，供添加按钮调用，动态在表格的最后一行添加子节点；
+    var num=2;
+    function cearteOne(){
+        num++;
+        var tab=document.getElementById("table");
+        var oneTr=document.createElement("tr");
+        var oneTd=document.createElement("td");
+        var twoTd=document.createElement("td");
+        oneTd.innerText="xh00"+num;
+        twoTd.innerText="第"+num+"学生";
+        var del=document.createElement("td");
+        del.innerHTML="<a href='javascript:'; onclick='del(this);'>删除</a>";
+        oneTr.appendChild(oneTd);
+        oneTr.appendChild(twoTd);
+        oneTr.appendChild(del);
+        tab.appendChild(oneTr);
+        var tr=document.getElementsByTagName("tr");
+        for (var i=0;i<tr.length;i++){
+            bgColor(tr[i]);
+        }
+
+        // document.write("打印添加后的子节点:"+tab.innerHTML);
+    }
+    // 创建删除函数
+    function del(obj){ //通过this传递到obj，obj指的就是a标签本身
+        var parent=obj.parentNode.parentNode.parentNode;  //指table
+        var del=obj.parentNode.parentNode;       //指a标签父级的父级tr
+        parent.removeChild(del);
+        console.log(obj);
+    }
+</script>
+</body>
+</html>
