@@ -104,7 +104,15 @@
             position: relative;
             color: #888;
         }
-
+        .content .first{
+            margin-top: -20px;
+        }
+        .content_item_left{
+            float: left;
+        }
+        .content_item_right{
+            float: right;
+        }
         /*三角框*/
         .content_item_icon_arrow {
             position: absolute;
@@ -125,6 +133,11 @@
             left: -43px;
             top: 25px;
         }
+        /*在右列得点需要重新设置偏移*/
+        .content_item_right .content_item_icon_dot{
+            left: -443px;
+        }
+
 
         .content_item_icon_dot_child {
             width: 7px;
@@ -167,12 +180,14 @@
             line-height: 22px;
             padding: 0px 15px;
             margin-bottom: 10px;
+            width: 300px;
         }
 
         .content_item_media {
             height: 277px;
             overflow: hidden;
             padding-bottom: 10px;
+
         }
 
         .content_item_footer {
@@ -236,73 +251,29 @@
 
         .quote_after {
             background-position: -986px -102px;
-        }
+        }content_date_
     </style>
 </head>
 <body>
 <div class="hide">
     <div id="tpl_scrubber_year">
-        <a href="javascript:;" class="scrubber_year current">{year}</a>
+        <a href="javascript:;" class="scrubber_year current" id="scrubber_year_{year}" onclick="show_year({year})">{year}</a>
         {list}
     </div>
     <div id="tpl_scrubber_month">
-        <a href="javascript:;" class="scrubber_month">{month}月</a>
+        <a href="javascript:;" class="scrubber_month scrubber_month_in_{year}" id="scrubber_month_{year}_{month}" onclick="show_month({year},{month})">{month}月</a>
     </div>
     <div id="tpl_content_year">
-        <div class="content_year">{year}</div>
+        <div class="content_year" id="content_year_{year}">{year}</div>
         {list}
     </div>
     <div id="tpl_content_month">
-        <div class="content_month">{month}月</div>
+        <div class="content_month" id="content_month_{year}_{month}">{month}月</div>
         {list}
     </div>
 
     <div id="tpl_content_item">
-        <div class="content_item_icon_arrow"></div>
-        <div class="content_item_icon_dot">
-            <div class="content_item_icon_dot_child"></div>
-        </div>
-        <div class="content_item_head">
-            <div class="content_item_head_title">
-                <div class="content_item_head_title_lunar">
-                    {lunar}
-                </div>
-                {date}
-            </div>
-            <div class="content_item_head_intro">
-                <i class="ui_icon quote_before"></i>
-                {intro}
-                <i class="ui_icon quote_after"></i>
-            </div>
-        </div>
-        <div class="content_item_media">
-            {media}
-        </div>
-        <div class="content_item_footer">
-            <div class="content_item_footer_info">
-                <a href="javascript:;" title="赞"><i class="icon_zan"></i>({like})</a>
-                <a href="javascript:;" title="评论"><i class="icon_pin"></i>({comment})</a>
-            </div>
-            <div class="content_item_footer_like">
-                {like_format}人觉得很赞
-            </div>
-        </div>
-    </div>
-
-</div>
-<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-<div class="top"></div>
-<div class="header"></div>
-<div class="container">
-    <div class="scrubber" id="scrubber">
-        <a href="javascript:;" class="scrubber_year current">2018</a>
-        <a href="javascript:;" class="scrubber_month ">4月</a>
-        <a href="javascript:;" class="scrubber_month ">3月</a>
-    </div>
-    <div class="content" id="content">
-        <div class="content_year"></div>
-        <div class="content_month"></div>
-        <div class="content_item">
+        <div class="content_item content_item_{position}{isFirst}">
             <div class="content_item_icon_arrow"></div>
             <div class="content_item_icon_dot">
                 <div class="content_item_icon_dot_child"></div>
@@ -310,42 +281,95 @@
             <div class="content_item_head">
                 <div class="content_item_head_title">
                     <div class="content_item_head_title_lunar">
+                        {lunar}
                     </div>
-                    2018-4-16
+                    {date}
                 </div>
                 <div class="content_item_head_intro">
                     <i class="ui_icon quote_before"></i>
-                    咱们QZON有福利！即日起，在QQ空间预约《逆战》最新资料片，就能100%获得丰厚游戏大礼包
-                    还有ipad mini、雷蛇键盘套装等实物大奖等你来拿！还等神，马上预约吧。
+                    {intro}
                     <i class="ui_icon quote_after"></i>
                 </div>
             </div>
             <div class="content_item_media">
-                <img src="fourimages/psb.jpeg" width="370">
+                {media}
             </div>
             <div class="content_item_footer">
                 <div class="content_item_footer_info">
-                    <a href="javascript:;" title="赞"><i class="icon_zan"></i>(199)</a>
-                    <a href="javascript:;" title="评论"><i class="icon_pin"></i>(2199)</a>
+                    <a href="javascript:;" title="赞"><i class="icon_zan"></i>({like})</a>
+                    <a href="javascript:;" title="评论"><i class="icon_pin"></i>({comment})</a>
                 </div>
                 <div class="content_item_footer_like">
-                    2.5万人觉得很赞
+                    {like_format}人觉得很赞
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<div class="top"></div>
+<div class="header"></div>
+<div class="container">
+    <div class="scrubber" id="scrubber">
+        <!--<a href="javascript:;" class="scrubber_year current">2018</a>-->
+        <!--<a href="javascript:;" class="scrubber_month ">4月</a>-->
+        <!--<a href="javascript:;" class="scrubber_month ">3月</a>-->
+    </div>
+    <div class="content" id="content">
+            <!--<div class="content_year"></div>-->
+            <!--<div class="content_month"></div>-->
+        <!--<div class="content_item">-->
+            <!--<div class="content_item_icon_arrow"></div>-->
+            <!--<div class="content_item_icon_dot">-->
+                <!--<div class="content_item_icon_dot_child"></div>-->
+            <!--</div>-->
+            <!--<div class="content_item_head">-->
+                <!--<div class="content_item_head_title">-->
+                    <!--<div class="content_item_head_title_lunar">-->
+                    <!--</div>-->
+                    <!--2018-4-16-->
+                <!--</div>-->
+                <!--<div class="content_item_head_intro">-->
+                    <!--<i class="ui_icon quote_before"></i>-->
+                    <!--<i class="ui_icon quote_after"></i>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="content_item_media">-->
+                <!--<img src="fourimages/psb.jpeg" width="370">-->
+            <!--</div>-->
+            <!--<div class="content_item_footer">-->
+                <!--<div class="content_item_footer_info">-->
+                    <!--<a href="javascript:;" title="赞"><i class="icon_zan"></i>(199)</a>-->
+                    <!--<a href="javascript:;" title="评论"><i class="icon_pin"></i>(2199)</a>-->
+                <!--</div>-->
+                <!--<div class="content_item_footer_like">-->
+                    <!--2.5万人觉得很赞-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
 
 <script type="text/javascript" src="fourjs/data.js"></script>
 <script type="text/javascript" src="fourjs/GetLunarDay.js"></script>
+<script type="text/javascript" src="fourjs/fx.js"></script>
 <script type="text/javascript">
     //通用函数
     var g = function (id) {
         return document.getElementById(id);
     }
-
+    var g_class=function (className) {
+        return document.getElementsByClassName(className);
+    }
     var g_tpl = function (id) {
         return g('tpl_' + id).innerHTML;
+    }
+    //获取页面宽高度
+    var get_body_w=function () {
+        return document.body.offsetWidth;
+    }
+    var get_body_h=function () {
+        return document.body.offsetHeight;
     }
 
     //格式化数据
@@ -369,7 +393,7 @@
         item.lunar = lunar[0] + '<br>&nbsp;&nbsp;&nbsp;' + lunar[1];
         item.year = year;
         item.month = month;
-        item.like_format = item.like < 10000 ? item.like : (item.like / 10000).toFixed(1) + '万';
+        item.like_format = item.like < 10000 ? item.like : ( item.like / 10000 ).toFixed(1) + '万';
         list[year][month].push(item);
     }
     ;
@@ -382,12 +406,12 @@
         var html_year = tpl_year.replace(/\{year\}/g, y);
         var html_month = [];
         for (var n in list[y]) {
-            html_month.unshift(tpl_month.replace(/\{month\}/g, n));
+            html_month.unshift(tpl_month.replace(/\{month\}/g, n).replace(/\{year\}/g, y));
         }
         html_year = html_year.replace(/\{list\}/g, html_month.join(''));
         html_scrubber_list.push(html_year);
     }
-    g('scrubber').innerHTML = html_scrubber_list.join('');
+    g('scrubber').innerHTML = '<a href="javascript:;" onclick="scroll_top(0)">现在</a>'+html_scrubber_list.join('')+'<a href="javascript:;" onclick="scroll_top(get_body_h())">出生</a>';
 
     //日志列表得HTML生成
     var html_content_list = [];
@@ -398,6 +422,7 @@
     for (var y in list) {
         var html_year = tpl_year.replace(/\{year\}/g, y);
         var html_month = [];
+        var isFirst_at_month = true;
         for (var n in list[y]) {
             var html_item = [];
             for (var i in  list[y][n]) {
@@ -408,17 +433,121 @@
                     .replace(/\{intro\}/g, item_data.intro)
                     .replace(/\{media\}/g, item_data.media)
                     .replace(/\{like\}/g, item_data.like)
+                    .replace(/\{like_format\}/g, item_data.like_format)
+                    .replace(/\{position\}/,i%2?'right':'left')
+                    .replace(/\{isFirst\}/,isFirst_at_month?'first':'')
                     .replace(/\{comment\}/g, item_data.comment);
                 html_item.push(item_html);
+                isFirst_at_month = false;
             }
 
-            html_month.unshift(tpl_month.replace(/\{month\}/g, n).replace(/\{list\}/g, html_item.join('')));
+            html_month.unshift(tpl_month.replace(/\{year\}/g, y).replace(/\{month\}/g, n).replace(/\{list\}/g, html_item.join('')));
         }
         html_year = html_year.replace(/\{list\}/g, html_month.join(''));
         html_content_list.push(html_year);
     }
-    g('content').innerHTML = html_content_list.join('');
+    g('content').innerHTML = html_content_list.join('')+'<div class="content_year" id="content_month_0_0">出生</div>';
 
+    //获得元素得高度
+    var get_top=function (el) {
+        return el.offsetTop+170;
+    }
+    //滚动页面到,调用js动画效果    var scroll_top=function (to) {
+    var scroll_top=function (to) {
+        var start= document.body.scrollTop;
+        fx(function (now) {
+            window.scroll(0,now);
+        },start,to)
+    }
+
+
+
+
+    //年份、月份点击处理
+    var show_year=function(year){
+        console.log(year);
+        var c_year=g('content_year_'+year);
+        var top=get_top(c_year);
+        scroll_top(top);
+        expand_year(year,g('scrubber_year_'+year));
+    }
+
+    var show_month=function(year,month) {
+        console.log(year,month);
+        var c_month=g('content_month_'+year+'_'+month);
+        var top=get_top(c_month);
+        scroll_top(top);
+        highlight_month(g('scrubber_month_'+year+'_'+month));
+    }
+    //高亮处理-月份
+    var highlight_month=function (element) {
+        var months=g_class('scrubber_month');
+        for (var i=months.length-1;i>=0;i--){
+            months[i].className=months[i].className.replace(/current/g,'');
+        }
+        element.className=element.className+'current';
+    }
+    //年份点击展开
+    var expand_year=function (year,element) {
+        var months=g_class('scrubber_month');
+        var show_month=g_class('scrubber_month_in_'+year);
+        var years=g_class('scrubber_year');
+        for (var i=months.length-1;i>=0;i--){
+            months[i].style.display='none';
+        }
+        for (var i=show_month.length-1;i>=0;i--){
+            show_month[i].style.display='block';
+        }
+        for (var i=years.length-1;i>=0;i--) {
+            years[i].className = years[i].className.replace(/current/g, '');
+        }
+        element.className=element.className+'current';
+    }
+    //自动展开年份和月份
+    var update_scrubber_year=function (top) {
+        var c_years=g('content').getElementsByClassName('content_year');
+        var tops=[];
+        for (var i=0;i<c_years.length;i++){
+            tops.push(c_years[i].offsetTop);
+        }
+        for (var i=1;i<tops.length;i++){
+            if (tops>tops[i-1]&&top<tops[i]){
+                var year=c_years[i-1].innerHTML;
+                var s_year=g('scrubber_year_'+year);
+                expand_year(year,s_year);
+            }
+        }
+    }
+    var update_scrubber_month=function (top) {
+        //日志列表中所有得月份标签
+        var months=g('content').getElementsByClassName('content_month');
+        var tops=[];
+        for (var i=0;i<months.length;i++){
+            tops.push(months[i].offsetTop);
+        }
+        //定位top在窗口得那个月份区间
+        for (var i=1;i<tops.length;i++){
+            if (tops>tops[i-1]&&top<tops[i]){
+                var id=months[i-1].id;
+                highlight_month(g(id.replace('content','scrubber')));
+            }
+        }
+    }
+    //页面滚动处理，固定时序菜单位置，和展开时序菜单
+    window.onscroll=function () {
+        var top=document.body.scrollTop;
+        if (top>200){
+            scrubber.style.position='fixed';
+            scrubber.style.top='60px';
+            scrubber.style.left=(get_body_w()-960)/2+'px';
+        }else {
+            scrubber.style.position='';
+            scrubber.style.top='';
+            scrubber.style.left='';
+        }
+        update_scrubber_year(top);
+        update_scrubber_month(top)
+    }
 </script>
 </body>
 </html>
