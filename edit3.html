@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #669966;
+            height: 2000px;
+        }
+        .out_div{
+            margin: 0 auto;
+            width: 200px;
+            height: 100px;
+        }
+        .out_div div{
+            margin: 10px;
+            float: left;
+        }
+        .left_triangle{
+            border-color: transparent #7ebad0 transparent transparent;
+            border-width: 10px 10px 10px 0px;
+            border-style: dashed solid dashed dashed;
+        }
+        .right_triangle{
+            border-color: transparent transparent transparent #7ebad0;
+            border-width: 10px 10px 10px 10px;
+            border-style: dashed dashed dashed solid;
+        }
+        .top_triangle{
+            border-color: transparent transparent #7ebad0 transparent;
+            border-width: 10px 10px 10px 10px;
+            border-style: dashed dashed solid dashed;
+        }
+        .bottom_triangle{
+            border-color: #7ebad0 transparent transparent transparent;
+            border-width: 10px 10px 10px 10px;
+            border-style: solid dashed dashed dashed;
+        }
+        #back_to{
+            background-color: yellow;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            margin: 0 auto;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="out_div">
+    <div class="left_triangle"></div>
+    <div class="right_triangle"></div>
+    <div class="top_triangle"></div>
+    <div class="bottom_triangle"></div>
+</div>
+<div id="back_to" onclick="scroll_begin();"></div>
+
+
+<script type="text/javascript">
+    var g=function (id) {
+        return document.getElementById(id);
+    }
+    window.onscroll=function () {scrollFunction();}
+    function scrollFunction() {
+        var top=document.body.scrollTop;
+        var element_top=document.documentElement.scrollTop;
+        var icon=g("back_to");
+        if (top>500||element_top>500){
+            icon.style.display='block';
+        }else {
+            icon.style.display='none';
+        }
+    }
+    var scroll_begin=function () {
+        document.body.scrollTop=0;
+        document.documentElement.scrollTop=0;
+    }
+</script>
+</body>
+</html>
