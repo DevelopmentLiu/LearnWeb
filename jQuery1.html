@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div {
+            padding: 8px 0px;
+            font-size: 12px;
+            text-align: center;
+            border: solid 1px #888;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+
+<p id="imooc1"></p>
+<p id="imooc2"></p>
+
+<div>元素一</div>
+<div>元素二</div>
+<div>元素三</div>
+
+<div id="aaron" class="arron1">
+    <p>id="aaron"</p>
+    <p>选中</p>
+</div>
+<div id="imooc3">
+    <p>id="imooc"</p>
+    <p>jQuery选中</p>
+</div>
+<div id="imooc4">
+    <p>id="imooc"</p>
+    <p>jQuery未选中</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    // $(document).ready(function () {
+    //     $("div").html("您好，这是一个Jquery的响应事件");
+    // });
+
+    //js原生方法
+    window.onload=function () {
+        var p = document.getElementById("imooc1");
+        p.innerHTML="这是通过原生js调用";
+        p.style.color='red';
+    }
+    //jquery方法
+    $(document).ready(function () {
+       var $p=$('#imooc2');
+       $p.html('这是用Jquery改变的样式').css('color','blue');
+    });
+
+    // 通过jQuery自带的get()方法
+    // jQuery对象自身提供一个.get() 方法允许我们直接访问jQuery对象中相关的DOM节点，get方法中提供一个元素的索引：
+    var $div=$('div');
+    var div = $div.get(2);
+    div.style.color='red';
+
+    //相比较jQuery转化成DOM，开发中更多的情况是把一个dom对象加工成jQuery对象。$(参数)是一个多功能的方法，通过传递不同的参数而产生不同的作用。
+    var div = document.getElementsByTagName('div'); //dom对象
+    var $div = $(div); //jQuery对象
+    var $first = $div.first(); //找到第一个div元素
+    $first.css('color', 'red'); //给第一个元素设置颜色
+
+    //id选择器：一个用来查找的ID，即元素的id属性
+    // $( "#id" )
+    $("#imooc3").css('color','blue');
+
+    // 类选择器，顾名思义，通过class样式类名来获取节点
+    // 描述：$( ".class" )
+    $(".arron1").css("border","5px solid black");
+
+</script>
+
+
+</body>
+</html>
