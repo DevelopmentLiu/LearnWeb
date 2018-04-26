@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        input {
+            display: block;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<!--<h2>子选择器与后代选择器</h2>-->
+<!--<div class="left">-->
+    <!--<div class="aaron">-->
+        <!--<p>div下的第一个p元素</p>-->
+    <!--</div>-->
+    <!--<div class="aaron">-->
+        <!--<p>div下的第一个p元素</p>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="right">-->
+    <!--<div class="imooc">-->
+        <!--<article>-->
+            <!--<p>div下的article下的p元素</p>-->
+        <!--</article>-->
+    <!--</div>-->
+    <!--<div class="imooc">-->
+        <!--<article>-->
+            <!--<p>div下的article下的p元素</p>-->
+        <!--</article>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--<script type="text/javascript">-->
+    <!--//子选择器-->
+    <!--//$('div > p') 选择所有div元素里面的子元素P-->
+    <!--$('div'>'p').css("border", "1px groove red");-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+    <!--//后代选择器-->
+    <!--//$('div  p') 选择所有div元素里面的p元素-->
+    <!--$('div p').css("border", "1px groove red");-->
+<!--</script>-->
+
+<!--<h2>相邻兄弟选择器与一般兄弟选择器</h2>-->
+<!--<div class="bottom">-->
+    <!--<div>兄弟节点div, +~选择器不能向前选择</div>-->
+    <!--<span class="prev">选择器span元素</span>-->
+    <!--<div>span后第一个兄弟节点div</div>-->
+    <!--<div>兄弟节点div-->
+        <!--<div class="small">子元素div</div>-->
+    <!--</div>-->
+    <!--<span>兄弟节点span,不可选</span>-->
+    <!--<div>兄弟节点div</div>-->
+<!--</div>-->
+
+<!--<script type="text/javascript">-->
+    <!--//相邻兄弟选择器-->
+    <!--//选取prev后面的第一个的div兄弟节点-->
+    <!--$(".prev + div").css("border", "3px groove blue");-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+    <!--//一般相邻选择器-->
+    <!--//选取prev后面的所有的div兄弟节点-->
+    <!--$(".prev ~ div").css("border", "3px groove blue");-->
+<!--</script>-->
+
+<h2>基本筛选器</h2>
+<h3>:first/:last/:even/:odd</h3>
+<div class="left">
+    <div class="div">
+        <p>div:first</p>
+        <p>:even</p>
+    </div>
+    <div class="div">
+        <p>:odd</p>
+    </div>
+    <div class="div">
+        <p>:even</p>
+    </div>
+    <div class="div">
+        <p>:odd</p>
+    </div>
+    <div class="div">
+        <p>:even</p>
+    </div>
+    <div class="div">
+        <p>div:last</p>
+        <p>:odd</p>
+    </div>
+</div>
+<script type="text/javascript">
+    //找到第一个div
+    $(".div:first").css("border", "3px solid #CD00CD");
+    //找到最后一个div
+    $(".div:last").css("border", "3px solid green");
+    // //:even 选择所引值为偶数的元素，从 0 开始计数
+    // $(".div:even").css("border", "3px groove red");
+    // //:odd 选择所引值为奇数的元素，从 0 开始计数
+    // $(".div:odd").css("border", "3px groove blue");
+</script>
+
+<h3>:eq/:gt/:lt</h3>
+<div class="left">
+    <div class="aaron">
+        <p>:lt(3)</p>
+    </div>
+    <div class="aaron">
+        <p>:lt(3)</p>
+    </div>
+    <div class="aaron">
+        <p>:eq(2)</p>
+    </div>
+    <div class="aaron">
+    </div>
+    <div class="aaron">
+        <p>:gt(3)</p>
+    </div>
+    <div class="aaron">
+        <p>:gt(3)</p>
+    </div>
+</div>
+<script type="text/javascript">
+    //:eq 选择单个
+    $(".aaron:eq(2)").css("background-color", "#d3d3d3");
+    //:gt 选择匹配集合中所有索引值大于给定index参数的元素
+    $(".arron:eq(3)").css("background-color", "#d3d3d3");
+    //:lt 选择匹配集合中所有索引值小于给定index参数的元素  与:gt相反
+    $(".arron:lt(2)").css("color", "#CD00CD");
+</script>
+
+<h3>:not</h3>
+<div class="left">
+    <div>
+        <input type="checkbox" name="a" />
+        <p>Aaron</p>
+    </div>
+    <div>
+        <input type="checkbox" name="b" />
+        <p>慕课</p>
+    </div>
+    <div>
+        <input type="checkbox" name="c" checked="checked" />
+        <p>其他</p>
+    </div>
+</div>
+<script type="text/javascript">
+    //:not 选择所有元素去除不匹配给定的选择器的元素
+    //选中所有紧接着没有checked属性的input元素后的p元素，赋予颜色
+    $("input:not(:checked)+p").css("background-color", "#d3d3d3");
+</script>
+
+<h2>内容筛选器</h2>
+<h3>:contains/:has</h3>
+<div class="left">
+    <div class="div">
+        <p>:contains</p>
+    </div>
+    <div class="div">
+        <p>:contains</p>
+    </div>
+    <div class="div">
+        <p>
+            <span>:has</span>
+        </p>
+    </div>
+    <div class="div">
+        <p>:contains</p>
+    </div>
+</div>
+<script type="text/javascript">
+    //查找所有class='div'中DOM元素中包含"contains"的元素节点
+    //并且设置颜色
+    $(".div:contains(':contains')").css("color", "#CD00CD");
+
+    //查找所有class='div'中DOM元素中包含"span"的元素节点
+    //并且设置颜色
+    $(".div:has(span)").css("color", "#565656");
+
+    //选择所有包含子元素或者文本的a元素
+    //增加一个蓝色的边框
+    $("a:parent").css("border","3px solid blue");
+
+    //找到a元素下面的所有空节点(没有子元素)
+    //增加一段文本与边框
+    $("a:empty").text(":empty").css("border", "3px solid red");
+</script>
+
+<h2>子元素筛选选择器</h2>
+<h3>enabled、disabled</h3>
+<form>
+    <input type="text" value="未设置disabled" />
+    <input type="text" value="设置disabled" disabled="disabled" />
+    <input type="text" value="未设置disabled" />
+</form>
+<script type="text/javascript">
+    //查找所有input所有可用的（未被禁用的元素）input元素
+    $('input:enabled').css("border", "2px groove blue");
+    // //查找所有input所有不可用的（被禁用的元素）input元素。
+    $('input:disabled').css("border", "2px groove red");
+</script>
+</body>
+</html>
