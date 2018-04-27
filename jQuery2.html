@@ -39,17 +39,17 @@
     <!--</div>-->
 <!--</div>-->
 
-<!--<script type="text/javascript">-->
-    <!--//子选择器-->
-    <!--//$('div > p') 选择所有div元素里面的子元素P-->
-    <!--$('div'>'p').css("border", "1px groove red");-->
-<!--</script>-->
+<script type="text/javascript">
+    //子选择器
+    //$('div > p') 选择所有div元素里面的子元素P
+    $('div'>'p').css("border", "1px groove red");
+</script>
 
-<!--<script type="text/javascript">-->
-    <!--//后代选择器-->
-    <!--//$('div  p') 选择所有div元素里面的p元素-->
-    <!--$('div p').css("border", "1px groove red");-->
-<!--</script>-->
+<script type="text/javascript">
+    //后代选择器
+    //$('div  p') 选择所有div元素里面的p元素
+    $('div p').css("border", "1px groove red");
+</script>
 
 <!--<h2>相邻兄弟选择器与一般兄弟选择器</h2>-->
 <!--<div class="bottom">-->
@@ -63,17 +63,17 @@
     <!--<div>兄弟节点div</div>-->
 <!--</div>-->
 
-<!--<script type="text/javascript">-->
-    <!--//相邻兄弟选择器-->
-    <!--//选取prev后面的第一个的div兄弟节点-->
-    <!--$(".prev + div").css("border", "3px groove blue");-->
-<!--</script>-->
+<script type="text/javascript">
+    //相邻兄弟选择器
+    //选取prev后面的第一个的div兄弟节点
+    $(".prev + div").css("border", "3px groove blue");
+</script>
 
-<!--<script type="text/javascript">-->
-    <!--//一般相邻选择器-->
-    <!--//选取prev后面的所有的div兄弟节点-->
-    <!--$(".prev ~ div").css("border", "3px groove blue");-->
-<!--</script>-->
+<script type="text/javascript">
+    //一般相邻选择器
+    //选取prev后面的所有的div兄弟节点
+    $(".prev ~ div").css("border", "3px groove blue");
+</script>
 
 <h2>基本筛选器</h2>
 <h3>:first/:last/:even/:odd</h3>
@@ -181,6 +181,8 @@
 <script type="text/javascript">
     //查找所有class='div'中DOM元素中包含"contains"的元素节点
     //并且设置颜色
+    // 选择所有包含指定文本的元素
+    //     :contains()选择器中括号内的文字，可为纯文本，或用引号包围
     $(".div:contains(':contains')").css("color", "#CD00CD");
 
     //查找所有class='div'中DOM元素中包含"span"的元素节点
@@ -208,6 +210,22 @@
     $('input:enabled').css("border", "2px groove blue");
     // //查找所有input所有不可用的（被禁用的元素）input元素。
     $('input:disabled').css("border", "2px groove red");
+    // //查找所有input所有勾选的元素(单选框,复选框)
+    //移除input的checked属性
+    $('input:checked').removeAttr('checked');
+    //查找所有option元素中,有selected属性被选中的选项
+    //移除option的selected属性
+    $('option:selected').removeAttr('selected');
+</script>
+
+
+<h2>特殊选择器this</h2>
+<p id="test2">点击测试：通过原生jQuery处理</p>
+<script type="text/javascript">
+    $('#test2').click(function () {
+        //通过包装成jQuery对象改变颜色
+        $(this).css("border","1px solid red");
+    });
 </script>
 </body>
 </html>
