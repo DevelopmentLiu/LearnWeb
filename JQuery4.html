@@ -265,5 +265,98 @@
     });
 
 </script>
+<!--------------------------------------------------------------------------------------------------------->
+<!--创建元素节点：-->
+<!--与创建元素节点类似，可以直接把文本内容一并描述-->
+<!--$("<div>我是文本节点</div>")-->
+<h2>动态创建元素节点</h2>
+<button>点击通过jQuery动态创建元素节点</button>
+<script type="text/javascript">
+    var $body=$('body');
+    $body.on('click',function () {
+        var div=$("<div class='right'><div class='aaron'>动态创建div元素节点</div></div>");
+        $body.append(div);
+    });
+</script>
+<!--------------------------------------------------------------------------------------------------------->
+<h2>通过append与appendTo添加元素</h2>
+<button id="bt1">点击通过jQuery的append添加元素</button>
+<button id="bt2">点击通过jQuery的appendTo添加元素</button>
+<div class="content"></div>
+
+<script type="text/javascript">
+    //.append(), 内容在方法的后面，
+    $("#bt1").on('click',function () {
+        $(".content").append('<div class="append">追加的内容</div>')
+    });
+    //.appendTo()刚好相反，内容在方法前面，
+    $("#bt2").on('click',function () {
+       $('<div class="appendTo">通过appendTo方法添加元素</div>').appendTo($(".content"));
+    });
+</script>
+<!--------------------------------------------------------------------------------------------------------->
+<h2>通过before与after添加元素</h2>
+<button id="bt3">点击通过jQuery的before添加元素</button>
+<button id="bt4">点击通过jQuery的after添加元素</button>
+<div class="aaron">
+    <p class="test1">测试before</p>
+</div>
+<div class="aaron">
+    <p class="test2">测试after</p>
+</div>
+<script type="text/javascript">
+    $('#bt3').on('click',function () {
+        //在匹配test1元素集合中的每个元素前面插入p元素
+        $(".test1").before('<p style="color:red">before在匹配元素之前添加</p>','<p style="color:blue">多参数</p>');
+    });
+    $('#bt4').on('click',function () {
+        //在匹配test1元素集合中的每个元素后面插入p元素
+        $(".test2").after('<p style="color:red">before在匹配元素之前添加</p>','<p style="color:blue">多参数</p>');
+    });
+</script>
+<!--------------------------------------------------------------------------------------------------------->
+<!--append()向每个匹配的元素内部追加内容-->
+<!--prepend()向每个匹配的元素内部前置内容-->
+<!--appendTo()把所有匹配的元素追加到另一个指定元素的集合中-->
+<!--prependTo()把所有匹配的元素前置到另一个指定的元素集合中-->
+<h2>通过prepend与prependTo添加元素</h2>
+<button id="bt5">点击通过jQuery的prepend添加元素</button>
+<button id="bt6">点击通过jQuery的prependTo添加元素</button>
+<div class="aaron1">
+    <p>测试prepend</p>
+</div>
+<div class="aaron2">
+    <p>测试prependTo</p>
+</div>
+<script type="text/javascript">
+    $('#bt5').on('click',function () {
+        //通过prepend在内部的首位置添加一个新的p节点
+        $('.arron1').prepend('<p>增加的P元素</p>');
+    });
+    $('#bt6').on('click',function () {
+        // 通过prependTo内部的首位置添加一个新的p节点
+        $('.aaron2').prependTo('<p>增加的后元素</p>');
+    });
+</script>
+<!--------------------------------------------------------------------------------------------------------->
+<h2>通过insertBefore与insertAfter添加元素</h2>
+<button id="bt7">点击通过jQuery的insertBefore添加元素</button>
+<button id="bt8">点击通过jQuery的insertAfter添加元素</button>
+<div class="aaron">
+    <p class="test1">测试insertBefore,不支持多参数</p>
+</div>
+<div class="aaron">
+    <p class="test2">测试insertAfter,不支持多参数</p>
+</div>
+<script type="text/javascript">
+    //在test1元素前后插入集合中每个匹配的元素
+    $('#bt7').on('click',function () {
+        $('<p style="color:red">测试insertBefore方法增加</p>').insertBefore($(".test1"));
+    });
+    //在test2元素前后插入集合中每个匹配的元素
+    $('#bt8').on('click',function () {
+        $('<p>style="color:red">测试insertAfter方法增加</p>').insertAfter($(".test2"));
+    });
+</script>
 </body>
 </html>

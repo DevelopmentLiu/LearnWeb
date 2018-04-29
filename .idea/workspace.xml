@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9441a8f-bb02-4ad6-a67c-67ab647cebf3" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/JQuery4.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jQuery5.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/jQuery6.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/jQuery3.html" afterPath="$PROJECT_DIR$/jQuery3.html" />
+      <change beforePath="$PROJECT_DIR$/JQuery4.html" afterPath="$PROJECT_DIR$/JQuery4.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +34,18 @@
       <file leaf-file-name="jQuery1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
+            <state relative-caret-position="-462">
               <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jQuery2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jQuery2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="134" column="57" lean-forward="true" selection-start-line="134" selection-start-column="57" selection-end-line="134" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -60,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jQuery5.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jQuery5.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-968">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="114" column="8" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="108" />
               <folding />
             </state>
           </provider>
@@ -73,9 +82,28 @@
       <file leaf-file-name="JQuery4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JQuery4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="108" />
-              <folding />
+            <state relative-caret-position="490">
+              <caret line="356" column="38" lean-forward="true" selection-start-line="356" selection-start-column="38" selection-end-line="356" selection-end-column="38" />
+              <folding>
+                <marker date="1525013933436" expanded="true" signature="8935:8944" ph="..." />
+                <marker date="1525013933436" expanded="true" signature="8978:8988" ph="..." />
+                <marker date="1525013933436" expanded="true" signature="9121:9130" ph="..." />
+                <marker date="1525013933436" expanded="true" signature="9164:9174" ph="..." />
+                <marker date="1525013933436" expanded="true" signature="10519:10528" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jQuery6.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jQuery6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3412">
+              <caret line="212" column="9" lean-forward="true" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
+              <folding>
+                <marker date="1525018060161" expanded="true" signature="3733:3742" ph="..." />
+                <marker date="1525018060161" expanded="true" signature="3884:3893" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,13 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getEl(&quot;demo&quot;)</find>
-      <find>tpl_scrubber_year</find>
-      <find>GetLu</find>
-      <find>tpl_</find>
-      <find>scrubber_year</find>
-      <find>tpl_year</find>
-      <find>intro</find>
       <find>images</find>
       <find>content_item</find>
       <find>content_item_media</find>
@@ -123,6 +144,13 @@
       <find>position</find>
       <find>rightPic</find>
       <find>newClass</find>
+      <find>aaron</find>
+      <find>test1</find>
+      <find>bt1</find>
+      <find>left</find>
+      <find>arron2</find>
+      <find>aaron2</find>
+      <find>aaron1</find>
     </findStrings>
     <replaceStrings>
       <replace>getEl</replace>
@@ -181,9 +209,10 @@
         <option value="$PROJECT_DIR$/Examples/six/shoppingCart.html" />
         <option value="$PROJECT_DIR$/jQuery1.html" />
         <option value="$PROJECT_DIR$/jQuery2.html" />
-        <option value="$PROJECT_DIR$/JQuery4.html" />
         <option value="$PROJECT_DIR$/jQuery3.html" />
         <option value="$PROJECT_DIR$/jQuery5.html" />
+        <option value="$PROJECT_DIR$/JQuery4.html" />
+        <option value="$PROJECT_DIR$/jQuery6.html" />
       </list>
     </option>
   </component>
@@ -194,8 +223,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="536" />
-    <option name="y" value="-19" />
+    <option name="x" value="7" />
+    <option name="y" value="47" />
     <option name="width" value="1485" />
     <option name="height" value="999" />
   </component>
@@ -355,12 +384,12 @@
       <workItem from="1524706244210" duration="6517000" />
       <workItem from="1524793265382" duration="4434000" />
       <workItem from="1524879290470" duration="8274000" />
-      <workItem from="1524967839975" duration="5281000" />
+      <workItem from="1524967839975" duration="15829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="382596000" />
+    <option name="totallyTimeSpent" value="393144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -419,11 +448,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Examples/two/images/banner/banner_sm_01.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Examples/two/images/shopImg4.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -703,21 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2486">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jQuery3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3630">
@@ -734,19 +743,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="134" column="57" lean-forward="true" selection-start-line="134" selection-start-column="57" selection-end-line="134" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JQuery4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="108" />
-          <folding />
+        <state relative-caret-position="490">
+          <caret line="356" column="38" lean-forward="true" selection-start-line="356" selection-start-column="38" selection-end-line="356" selection-end-column="38" />
+          <folding>
+            <marker date="1525013933436" expanded="true" signature="8935:8944" ph="..." />
+            <marker date="1525013933436" expanded="true" signature="8978:8988" ph="..." />
+            <marker date="1525013933436" expanded="true" signature="9121:9130" ph="..." />
+            <marker date="1525013933436" expanded="true" signature="9164:9174" ph="..." />
+            <marker date="1525013933436" expanded="true" signature="10519:10528" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-968">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="114" column="8" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="108" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3412">
+          <caret line="212" column="9" lean-forward="true" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
+          <folding>
+            <marker date="1525018060161" expanded="true" signature="3733:3742" ph="..." />
+            <marker date="1525018060161" expanded="true" signature="3884:3893" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
