@@ -116,6 +116,175 @@
     //找到女装下第一类衣服，把a元素中包含文字"更多"的节点，改变颜色
     $(".tag:first a:contains('更多')").css('color','#C71585');
 </script>
+<!-------------------------------------------------------------------------------------------------->
+<!--attr()有4个表达式-->
+<!--attr(传入属性名)：获取属性的值-->
+<!--attr(属性名, 属性值)：设置属性的值-->
+<!--attr(属性名,函数值)：设置属性的函数值-->
+<!--attr(attributes)：给指定元素设置多个属性值，即：{属性名一: “属性值一” , 属性名二: “属性值二” , … … }-->
+<h2>.attr()与.removeAttr()</h2>
+<h3>.attr</h3>
+<form>
+    <input type="text" value="设置value" />
+    <input type="text" value="获取value"/>
+    <input type="text" value="回调拼接value" />
+    <input type="text" value="删除value" />
+</form>
+<script type="text/javascript">
+    //找到第一个input，通过attr设置属性value的值
+    $("input:first").attr('value','.attr(attributeName,value)');
+    //找到第二个input，通过attr获取属性value的值
+    $("input:eq(1)").attr('value');
+    //找到第三个input，通过使用一个函数来设置属性
+    $("input:eq(2)").attr('value',function (i,val) {
+        return '通过function设置'+val;
+    });
+    //找到第四个input，通过使用removeAttr删除属性
+    $("input:eq(3)").removeAttr('value');
+</script>
+<!-------------------------------------------------------------------------------------------------->
+<h2>可见性筛选选择器</h2>
+<h3>:visible/:hidden</h3>
+<div class="left">
+    <div class="div">
+        <a>display</a>
+        <p id="div1" style="display:none;">display</p>
+    </div>
+    <div class="div">
+        <a>width</a>
+        <a>height</a>
+        <p id="div2" style="width:0;height:0">width/height</p>
+    </div>
+    <div class="div">
+        <a>visibility</a>
+        <a>opacity</a>
+        <p id="div3" style="visibility:hidden;opacity:0">visibility</p>
+    </div>
+</div>
+<p id="show"></p>
+<script type="text/javascript">
+    function show(ele) {
+        if (ele instanceof jQuery){
+            $("#show").html('元素的长度的='+ele.length);
+        }else {
+            alert(ele+'不是Jquery对象');
+        }
+    }
 
+    //查找id = div1的DOM元素,是否可见
+    show($('#div1:visible'));
+    //查找id = div2的DOM元素,是否可见
+    show($('#div2:visible'));
+    //查找id = div1的DOM元素,是否隐藏
+    show($('#div3:hidden'));
+</script>
+<!-------------------------------------------------------------------------------------------------->
+<h2>属性筛选选择器</h2>
+<h3>[att=val]、[att]、[att|=val]、[att~=val]</h3>
+<div class="left" testattr="true" >
+    <div class="div" testattr="true" name='p1'>
+        <a>[att=val]</a>
+    </div>
+    <div class="div" testattr="true" p2>
+        <a>[att]</a>
+    </div>
+    <div class="div" testattr="true" name="-">
+        <a>[att|=val]</a>
+    </div>
+    <div class="div" testattr="true" name="a b">
+        <a>[att~=val]</a>
+    </div>
+</div>
+<script type="text/javascript">
+    //查找所有div中，属性name=p1的div元素
+    $('div[name=p1]').css("border","3px solid black");
+    //查找所有div中，有属性p2的div元素
+    $('div[p2]').css("border", "3px groove blue");
+    //查找所有div中，有属性name中的值只包含一个连字符“-”的div元素
+    $('div[name |="-"]').css("border", "3px groove #00FF00");
+    //查找所有div中，有属性name中的值包含一个连字符“空”和“a”的div元素
+    $('div[name~="a"]').css("border", "3px groove #668B8B");
+</script>
+<!-------------------------------------------------------------------------------------------------->
+<h3>[att^=val]、[att*=val]、[att$=val]、[att!=val]</h3>
+<div class="left" testattr="true" >
+    <div class="div" testattr="true"  name='imooc-aaorn'>
+        <a>[att^=val]</a>
+    </div>
+    <div class="div" testattr="true"  name='aaorn-imooc'>
+        <a>[att$=val]</a>
+    </div>
+    <div class="div" testattr="true"  name="attr-test-selector">
+        <a>[att*=val]</a>
+    </div>
+    <div class="div" name="a b">
+        <a>[att!=val]</a>
+    </div>
+</div>
+<script type="text/javascript">
+    //查找所有div中，属性name的值是用imooc开头的
+    $('div[name^=imooc]').css("border", "3px groove red");
+    //查找所有div中，属性name的值是用imooc结尾
+    $('div[name$=imooc]').css("border", "3px groove blue" );
+    //查找所有div中，有属性name中的值包含一个test字符串的div元素
+    $('div[name*="test"]').css("border", "3px groove #00FF00");
+    //查找所有div中，有属性testattr中的值没有包含"true"的div
+    $('div[testattr!="true"]').css("border", "3px groove #668B8B");
+</script>
+<!-------------------------------------------------------------------------------------------------->
+<h2>子元素筛选选择器</h2>
+<h3>:first-child、:last-child、:only-child</h3>
+<div class="left first-div">
+    <div class="div">
+        <a>:first-child</a>
+        <a>第二个元素</a>
+        <a>:last-child</a>
+    </div>
+    <div class="div">
+        <a>:first-child</a>
+    </div>
+    <div class="div">
+        <a>:first-child</a>
+        <a>第二个元素</a>
+        <a>:last-child</a>
+    </div>
+</div>
+<script type="text/javascript">
+    //查找class="first-div"下的第一个a元素
+    //针对所有父级下的第一个
+    $(".first-div a:first-child").css("color", "#CD00CD");
+    //查找class="first-div"下的最后一个a元素
+    //针对所有父级下的最后一个
+    //如果只有一个元素的话，last也是第一个元素
+    $(".first-div a:last-child").css("color", "red");
+    //查找class="first-div"下的只有一个子元素的a元素
+    $(".first-div a:only-child").css("color", "blue");
+</script>
+<!-------------------------------------------------------------------------------------------------->
+<h3>:nth-child、:nth-last-child</h3>
+<div class="left last-div">
+    <div class="div">
+        <a>:first-child</a>
+        <a>第二个元素</a>
+        <a>第三个元素</a>
+        <a>:last-child</a>
+    </div>
+    <div class="div">
+        <a>:first-child</a>
+        <a>第二个元素</a>
+    </div>
+    <div class="div">
+        <a>:first-child</a>
+        <a>第二个元素</a>
+        <a>第三个元素</a>
+        <a>:last-child</a>
+    </div>
+</div>
+<script type="text/javascript">
+    //查找class="last-div"下的第二个a元素
+    $(".last-div a:nth-child(2)").css("color", "#CD00CD");
+    //查找class="last-div"下的倒数第二个a元素
+    $(".last-div a:nth-last-child(2)").css("color", "red");
+</script>
 </body>
 </html>

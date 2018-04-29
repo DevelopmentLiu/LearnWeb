@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        input{
+            display: block;
+            margin: 10px;
+            padding:10px;
+        }
+        .left,
+        .right {
+            width: 300px;
+            height: 120px;
+        }
+
+        .left div,
+        .right div {
+            width: 100px;
+            height: 90px;
+            padding: 5px;
+            margin: 5px;
+            float: left;
+        }
+        .left div {
+            background: #bbffaa;
+        }
+
+        .right div {
+            background: yellow;
+        }
+
+        a{
+            font-size: 14px;
+            display:block;
+        }
+        .newClass{
+            background: #bbffaa;
+        }
+
+        .imoocClass{
+            background: red;
+        }
+        .addBorder{
+            border: 1px solid red;
+        }
+
+    </style>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+</head>
+<body>
+<!--<h2>子元素筛选选择器</h2>-->
+<!--<h3>input、text、password、radio、checkbox</h3>-->
+<!--<h3>submit、image、reset、button、file</h3>-->
+<!--<div class="left first-div">-->
+    <!--<form>-->
+        <!--<input type="text" value="text类型"/>-->
+        <!--<input type="password" value="password"/>-->
+        <!--<input type="radio"/>-->
+        <!--<input type="checkbox"/>-->
+        <!--<input type="submit" />-->
+        <!--<input type="image" />-->
+        <!--<input type="reset" />-->
+        <!--<input type="button" value="Button" />-->
+        <!--<input type="file" />-->
+    <!--</form>-->
+<!--</div>-->
+<!--<script type="text/javascript">-->
+    <!--//:input 选择器基本上选择所有表单控件-->
+    <!--$(":input").css("border", "1px groove red");-->
+    <!--//匹配所有input元素中类型为text的input元素-->
+    <!--$('input:text').css("background", "#A2CD5A");-->
+    <!--//匹配所有input元素中类型为password的input元素-->
+    <!--$('input:password').css("background", "yellow");-->
+    <!--//匹配所有input元素中的单选按钮,并选中-->
+    <!--$('input:radio').attr('checked','true');-->
+    <!--//匹配所有input元素中的复选按钮,并选中-->
+    <!--$('input:checkbox').attr('checked','true');-->
+    <!--//匹配所有input元素中的提交的按钮,修改背景颜色-->
+    <!--$('input:submit').css("background", "#C6E2FF");-->
+    <!--//匹配所有input元素中的图像类型的元素,修改背景颜色-->
+    <!--$('input:image').css("background", "#F4A460");-->
+    <!--//匹配所有input元素中类型为按钮的元素-->
+    <!--$('input:button').css("background", "red");-->
+    <!--//匹配所有input元素中类型为file的元素-->
+    <!--$('input:file').css("background", "#CD1076");-->
+<!--</script>-->
+<!--&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--<h2>.addClss()与.css()方法区别</h2>-->
+<!--<div class="left">-->
+    <!--<div class="aaron">-->
+        <!--<a>css优先级高于addClass</a>-->
+        <!--<a>1：第一次addClss背景色</a>-->
+        <!--<a>2：第二次css修改背景色</a>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="right">-->
+    <!--<div class="aa bb imooc">-->
+        <!--<article>-->
+            <!--<a>imoocClass</a>-->
+        <!--</article>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<script type="text/javascript">-->
+    <!--//给所有的div统一增加边框-->
+    <!--$('div').addClass('addBorder');-->
+    <!--//class=left下div元素增加一个新的样式，增加背景颜色-->
+    <!--$('.aaron').addClass('newClass');-->
+    <!--//通过css覆盖addClass方式设置背景色-->
+    <!--$('.arron').css({-->
+       <!--'background':'yellow'-->
+    <!--});-->
+<!--</script>-->
+<!--------------------------------------------------------------------------------------------------------->
+<h2>jQuery.data()静态方法</h2>
+<div class="left">
+    <div class="aaron">
+        <p>点击看结果</p>
+        <p>jQuery.data</p>
+    </div>
+    <div><span></span></div>
+</div>
+<h2>.data()实例方法</h2>
+<div class="right">
+    <div class="aaron">
+        <p>点击看结果</p>
+        <p>.data</p>
+    </div>
+    <div><span></span></div>
+</div>
+<script type="text/javascript">
+    // jQuery提供的存储接口
+    // jQuery.data( element, key, value )   //静态接口,存数据
+    // jQuery.data( element, key )  //静态接口,取数据
+    // .data( key, value ) //实例接口,存数据
+    // .data( key ) //实例接口,存数据
+
+    // 同样的也提供2个对应的删除接口，使用上与data方法其实是一致的，只不过是一个是增加一个是删除罢了
+    // jQuery.removeData( element [, name ] )
+    // .removeData( [name ] )
+    $('.left').click(function () {
+        var ele=$(this);
+        //通过$.data方式设置数据
+        $.data(ele,"a","test");
+        $.data(ele,"b",{
+           name:"幕课网"
+        });
+        //通过$.data方式取出数据
+        var rest=$.data(ele,"a")+"</br>"+$.data(ele,"b").name;
+        ele.find('span').append(rest);
+    });
+
+    $('.right').click(function () {
+        var ele=$(this);
+        //通过.data方式设置数据
+        ele.data("a","data test");
+        ele.data("b",{
+            name:"幕课网2"
+        });
+        //通过.data方式取出数据
+        var rest=ele.data("a")+"</br>"+ele.data("b").name;
+        ele.find('span').append(rest);
+    })
+</script>
+</body>
+</html>
