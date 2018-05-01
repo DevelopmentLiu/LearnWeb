@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .left {
+            width: auto;
+            height: 120px;
+        }
+
+        .left div {
+            width: 150px;
+            height: 70px;
+            padding: 5px;
+            margin: 5px;
+            float: left;
+            background: #bbffaa;
+            border: 1px solid #ccc;
+        }
+        .div ul {
+            list-style-type: none;
+        }
+    </style>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+</head>
+</head>
+<body>
+<div class="left first-div">
+    <div class="div">
+        <ul class="level-1">
+            <li class="item-1">1</li>
+            <li class="item-2">2</li>
+            <li class="item-3">3</li>
+        </ul>
+    </div>
+    <div class="div">
+        <ul class="level-2">
+            <li class="item-1">1</li>
+            <li class="item-2">2</li>
+            <li class="item-3">3</li>
+        </ul>
+    </div>
+    <div class="div">
+        <ul class="level-3">
+            <li class="item-1">1</li>
+            <li class="item-2">2</li>
+            <li class="item-3">3</li>
+        </ul>
+    </div>
+</div>
+<button id="bt1">点击：children无参数</button>
+<button id="bt2">点击：children传递表达式</button>
+<br/>
+<button class="find1">点击：find传递表达式</button>
+<br/>
+<button id="bt3">点击：each方法遍历元素</button>
+<button id="bt4">点击：each方法回调判断</button>
+<h3>find表达式</h3>
+<div style="border:1px solid red;">
+    <p>
+        <span>测试1</span>
+        <a>测试2</a>
+    </p>
+    <p>
+        <span>慕课网1</span>
+        <a>慕课网2</a>
+    </p>
+    <div>
+        <span>Aaron1</span>
+        <a>Aaron2</a>
+    </div>
+</div>
+<br>
+<button class="find2">点击：find传递$对象</button>
+<script type="text/javascript">
+    // .children()方法选择性地接受同一类型选择器表达式
+    // $("div").children(".selected")
+    $('#bt1').click(function () {
+        $('.div').children().css('border','3px solid red');
+    });
+    //找到所有class=div的元素
+    //找到其对应的子元素ul，然后筛选出最后一个，给边宽加上颜色
+    $('.div').children(':last').css('border', '3px solid blue');
+
+    // .find()和.children()方法是相似的
+    // 1.children只查找第一级的子节点
+    // 2.find查找范围包括子节点的所有后代节点
+    $('.find1').click(function () {
+       $('.left').find('li:last').css('border','1px solid red');
+    });
+
+    $('.find2').click(function () {
+        //找到所有p元素，然后筛选出子元素是span标签的节点
+        //改变其字体颜色
+        var $span=$('span');
+        $("p").find($span).css('color','red');
+    });
+
+    // each是一个for循环的包装迭代器
+    // each通过回调的方式处理，并且会有2个固定的实参，索引与元素
+    // each回调方法中的this指向当前迭代的dom元素
+    $('#bt3').click(function () {
+        //遍历所有的li
+        //修改每个li内的字体颜色
+        $("li").each(function (index,element) {
+            $(this).css('color','red')
+        });
+    });
+    
+    $('#bt4').click(function () {
+        //遍历所有的li
+        //修改偶数li内的字体颜色
+        $("li").each(function (index,element) {
+            if (index%2){
+                $(this).css('color','blue')
+            }
+        });
+    });
+</script>
+<!--------------------------------------------------------------------------------------------------------->
+<h2>parent方法()</h2>
+<div class="left first-div">
+
+    <div class="div">
+        <ul class="level-2">
+            <!-- A -->
+            <li class="item-a">A</li>
+            <!-- B -->
+            <li class="item-b">B
+                <ul class="level-3">
+                    <li class="item-1">1</li>
+                    <li class="item-2">2</li>
+                    <li class="item-3">3</li>
+                </ul>
+            </li>
+            <!-- C -->
+            <li class="item-c">C</li>
+
+        </ul>
+    </div>
+
+    <div class="div">
+        <ul class="level-2">
+            <!-- A -->
+            <li class="item-a">A</li>
+            <!-- B -->
+            <li class="item-b">B
+                <ul class="level-3">
+                    <li class="item-1">1</li>
+                    <li class="item-2">2</li>
+                    <li class="item-3">3</li>
+                </ul>
+            </li>
+            <!-- C -->
+            <li class="item-c">C</li>
+        </ul>
+    </div>
+</div>
+<button class="parent1">点击：parent无参数</button>
+<button class="parent2">点击：paren传递选择器</button>
+<button class="closest1">点击：closest传递选择器 </button>
+<button class="closest2">点击：closest传递一个元素对象</button>
+<script type="text/javascript">
+    // 找到所有class=level-3的ul
+    // 找到它的父元素li,并且加上一个红色的边框
+    $('.parent1').click(function () {
+       $('.level-3').parent().css('border','1px solid red');
+    });
+    //找到所有class=item-a的父元素
+    //然后给每个ul,然后筛选出最后一个，加上蓝色的边
+    $('.parent2').click(function () {
+       $('.item-a').parent(':last').css('border', '1px solid blue');
+    });
+
+    //closest()方法接受一个匹配元素的选择器字符串
+    //从元素本身开始，在DOM 树上逐级向上级元素匹配，并返回最先匹配的祖先元素
+    $('.closest1').click(function () {
+       $('.item-1').closest('.level-2').css('border','1px solid red');
+    });
+    //有参数
+    $('.closest2').click(function () {
+        var itemB = $('.item-b')
+       $('.item-1').closest(itemB).css('border', '1px solid blue');
+    });
+
+    //next()方法选择性地接受同一类型选择器表达式
+    //同样的也是因为jQuery是合集对象，可能需要对这个合集对象进行一定的筛选，找出目标元素，所以允许传一个选择器的表达式
+    $("button:first").click(function() {
+        $('.item-2').next().css('border','1px solid red');
+    })
+    //有参数
+    $("button:last").click(function() {
+        //找到所有class=item-3的li
+        //然后筛选出第一个li，加上蓝色的边
+        $('.item-2').next(':first').css('border', '1px solid blue')
+    })
+
+    //prev()无参数 取得一个包含匹配的元素集合中每一个元素紧邻的前一个同辈元素的元素集合
+    $("button:first").click(function() {
+        $('.item-2').prev().css('border', '1px solid blue');
+    })
+    //有参数
+    $("button:last").click(function() {
+        //找到所有class=item-2的li
+        //然后筛选出最后一个，加上蓝色的边
+        $('.item-3').prev(':last').css('border', '1px solid blue')
+    })
+
+    //siblings()无参数 取得一个包含匹配的元素集合中每一个元素的同辈元素的元素集合
+    $("button:first").click(function() {
+        $('.item-2').siblings().css('border', '2px solid red')
+    })
+    //有参数
+    $("button:last").click(function() {
+        //找到class=item-2的所有兄弟节点
+        //然后筛选出最后一个，加上蓝色的边
+        $('.item-2').siblings(':last').css('border', '2px solid blue')
+    })
+</script>
+<!--------------------------------------------------------------------------------------------------------->
+<h2>add方法()</h2>
+<div class="left first-div">
+    <div class="div">
+        <ul>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+        </ul>
+        <p>新的p元素</p>
+    </div>
+</div>
+<div class="right"></div>
+<br/>
+<button class="add1">点击：add传递元素标签</button>
+<button class="add2">点击：add传递html结构</button>
+<script type="text/javascript">
+    $('.add1').click(function () {
+        //把p元素添加到li的合集中
+        $('li').add('p').css('background','red');
+    });
+
+    $('.add2').click(function () {
+        //把html结构'<p>新的p元素</p>'
+        //加入到li的合集中，为了能够在页面上显示
+        //需要再重新appendTo到指定的节点处
+        //值得注意：整个结构位置都改变了
+        $('li').add('<p>新的p元素</p>').appendTo($('.right'));
+    });
+</script>
+</body>
+</html>

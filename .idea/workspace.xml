@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9441a8f-bb02-4ad6-a67c-67ab647cebf3" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/jQuery6.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/jQuery7.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/JQuery4.html" afterPath="$PROJECT_DIR$/JQuery4.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +20,7 @@
       <file leaf-file-name="JDNavigationBar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Examples/five/JDNavigationBar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3630">
+            <state relative-caret-position="0">
               <caret line="165" column="25" lean-forward="false" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
               <folding>
                 <element signature="n#dl#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -34,72 +33,30 @@
       <file leaf-file-name="jQuery1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-462">
+            <state relative-caret-position="858">
               <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jQuery2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery2.html">
+      <file leaf-file-name="jQuery7.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jQuery7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="134" column="57" lean-forward="true" selection-start-line="134" selection-start-column="57" selection-end-line="134" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jQuery3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3630">
-              <caret line="286" column="59" lean-forward="false" selection-start-line="286" selection-start-column="59" selection-end-line="286" selection-end-column="59" />
+            <state relative-caret-position="440">
+              <caret line="102" column="10" lean-forward="false" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jQuery5.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery5.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="114" column="8" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JQuery4.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JQuery4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="356" column="38" lean-forward="true" selection-start-line="356" selection-start-column="38" selection-end-line="356" selection-end-column="38" />
-              <folding>
-                <marker date="1525013933436" expanded="true" signature="8935:8944" ph="..." />
-                <marker date="1525013933436" expanded="true" signature="8978:8988" ph="..." />
-                <marker date="1525013933436" expanded="true" signature="9121:9130" ph="..." />
-                <marker date="1525013933436" expanded="true" signature="9164:9174" ph="..." />
-                <marker date="1525013933436" expanded="true" signature="10519:10528" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jQuery6.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jQuery6.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery6.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3412">
-              <caret line="212" column="9" lean-forward="true" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
+            <state relative-caret-position="178">
+              <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="108" />
               <folding>
                 <marker date="1525018060161" expanded="true" signature="3733:3742" ph="..." />
                 <marker date="1525018060161" expanded="true" signature="3884:3893" ph="..." />
@@ -121,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>images</find>
       <find>content_item</find>
       <find>content_item_media</find>
       <find>content_item_head</find>
@@ -151,6 +107,7 @@
       <find>arron2</find>
       <find>aaron2</find>
       <find>aaron1</find>
+      <find>btn3</find>
     </findStrings>
     <replaceStrings>
       <replace>getEl</replace>
@@ -213,6 +170,7 @@
         <option value="$PROJECT_DIR$/jQuery5.html" />
         <option value="$PROJECT_DIR$/JQuery4.html" />
         <option value="$PROJECT_DIR$/jQuery6.html" />
+        <option value="$PROJECT_DIR$/jQuery7.html" />
       </list>
     </option>
   </component>
@@ -266,7 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -284,6 +241,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,12 +342,13 @@
       <workItem from="1524706244210" duration="6517000" />
       <workItem from="1524793265382" duration="4434000" />
       <workItem from="1524879290470" duration="8274000" />
-      <workItem from="1524967839975" duration="15829000" />
+      <workItem from="1524967839975" duration="16084000" />
+      <workItem from="1525160670315" duration="5130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="393144000" />
+    <option name="totallyTimeSpent" value="398529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -448,12 +407,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Examples/two/images/shopImg4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/53a3fa110001643c00000000/ToolTip浮动提示框效果（源代码）/demo1.html" />
     <entry file="file://$PROJECT_DIR$/study1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -582,7 +535,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Examples/five/JDNavigationBar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3630">
+        <state relative-caret-position="0">
           <caret line="165" column="25" lean-forward="false" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
           <folding>
             <element signature="n#dl#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -729,7 +682,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3630">
+        <state relative-caret-position="6292">
           <caret line="286" column="59" lean-forward="false" selection-start-line="286" selection-start-column="59" selection-end-line="286" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -745,7 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
+        <state relative-caret-position="858">
           <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="52" />
           <folding />
         </state>
@@ -753,16 +706,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="134" column="57" lean-forward="true" selection-start-line="134" selection-start-column="57" selection-end-line="134" selection-end-column="57" />
+        <state relative-caret-position="2948">
+          <caret line="134" column="57" lean-forward="false" selection-start-line="134" selection-start-column="57" selection-end-line="134" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JQuery4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="356" column="38" lean-forward="true" selection-start-line="356" selection-start-column="38" selection-end-line="356" selection-end-column="38" />
+        <state relative-caret-position="7832">
+          <caret line="356" column="38" lean-forward="false" selection-start-line="356" selection-start-column="38" selection-end-line="356" selection-end-column="38" />
           <folding>
             <marker date="1525013933436" expanded="true" signature="8935:8944" ph="..." />
             <marker date="1525013933436" expanded="true" signature="8978:8988" ph="..." />
@@ -775,19 +728,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="114" column="8" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="108" />
+        <state relative-caret-position="2508">
+          <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3300">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery6.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3412">
-          <caret line="212" column="9" lean-forward="true" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
+        <state relative-caret-position="178">
+          <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="108" />
           <folding>
             <marker date="1525018060161" expanded="true" signature="3733:3742" ph="..." />
             <marker date="1525018060161" expanded="true" signature="3884:3893" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="102" column="10" lean-forward="false" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
