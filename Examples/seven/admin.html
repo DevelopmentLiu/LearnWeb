@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+<div class="nav">
+    <h2>WALLPAPER</h2>
+</div>
+<div class="list">
+    <ul>
+        <li href="picList.html" class="backgroud"><a id="pic-list" href="javascript:void(0);"><span></span>壁纸列表</a></li>
+        <li href="picList.html"><a id="class-list" href="javascript:void(0);"><span></span>分类列表</a></li>
+    </ul>
+</div>
+<div class="content">
+    <iframe src="picList.html" width="100%" height="100%" frameborder="0"></iframe>
+</div>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        $('li').click(function () {
+         var herf=$(this).attr("href");
+           $("iframe").prop("src",herf);
+           $('.backgroud').removeClass('backgroud');
+           $(this).addClass('backgroud');
+        });
+    })
+
+
+</script>
+</body>
+</html>
