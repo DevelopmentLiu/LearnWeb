@@ -14,13 +14,14 @@
     <input  class="content-bar-search" type="search">
     <input  class="content-bar-search-button" type="button" value="搜索">
     <a class="addpic-a" href="addpicList.html">添加壁纸</a>
+    <a class="addpic-a" href="#">删 除</a>
 </div>
 <table id="cartTable">
     <thead>
     <tr>
         <th>
             <label>
-               全选 <input class="check-all check" type="checkbox">&nbsp;
+               全选 <input name="check-all"  type="checkbox">&nbsp;
             </label>
         </th>
         <th>ID</th>
@@ -33,149 +34,153 @@
         <th>操作</th>
     </tr>
     </thead>
-    <tbody>
+    <tbody id="g-all">
     <tr>
         <td class="checkbox">
-            <input class="check-one check" type="checkbox">
+            <input  name="check-one" onclick="userCheck(this)" type="checkbox">
         </td>
         <td class="pic-id">1</td>
         <td class="pic-name">经典的老爷车个性壁纸</td>
-        <td class="pic-img">
-            <img src="images/1.jpg">
+        <td class="pic-id">
+            <img src="images/3.jpg">
         </td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="subtotal">2018-05-01 11:35:11</td>
-        <td class="operation">
-            <span class="delete">删除</span>
-        </td>
+        <td class="pic-id">编辑</td>
     </tr>
     <tr>
         <td class="checkbox">
-            <input class="check-one check" type="checkbox">
+            <input  name="check-one" onclick="userCheck(this)" type="checkbox">
         </td>
         <td class="pic-id">1</td>
         <td class="pic-name">经典的老爷车个性壁纸</td>
-        <td class="pic-img">
-            <img src="images/1.jpg">
+        <td class="pic-id">
+            <img src="images/2.jpg">
         </td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="subtotal">2018-05-01 11:35:11</td>
-        <td class="operation">
-            <span class="delete">删除</span>
-        </td>
+        <td class="pic-id">编辑</td>
     </tr>
     <tr>
         <td class="checkbox">
-            <input class="check-one check" type="checkbox">
+            <input  name="check-one" onclick="userCheck(this)" type="checkbox">
         </td>
         <td class="pic-id">1</td>
         <td class="pic-name">经典的老爷车个性壁纸</td>
-        <td class="pic-img">
+        <td class="pic-id">
             <img src="images/1.jpg">
         </td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="subtotal">2018-05-01 11:35:11</td>
-        <td class="operation">
-            <span class="delete">删除</span>
-        </td>
+        <td class="pic-id">编辑</td>
     </tr>
     <tr>
         <td class="checkbox">
-            <input class="check-one check" type="checkbox">
+            <input  name="check-one" onclick="userCheck(this)" type="checkbox">
         </td>
         <td class="pic-id">1</td>
         <td class="pic-name">经典的老爷车个性壁纸</td>
-        <td class="pic-img">
-            <img src="images/1.jpg">
+        <td class="pic-id">
+            <img src="images/2.jpg">
         </td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="subtotal">2018-05-01 11:35:11</td>
-        <td class="operation">
-            <span class="delete">删除</span>
-        </td>
+        <td class="pic-id">编辑</td>
     </tr>
     <tr>
         <td class="checkbox">
-            <input class="check-one check" type="checkbox">
+            <input  name="check-one" onclick="userCheck(this)" type="checkbox">
         </td>
         <td class="pic-id">1</td>
         <td class="pic-name">经典的老爷车个性壁纸</td>
-        <td class="pic-img">
-            <img src="images/1.jpg">
+        <td class="pic-id">
+            <img src="images/3.jpg">
         </td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="subtotal">2018-05-01 11:35:11</td>
-        <td class="operation">
-            <span class="delete">删除</span>
-        </td>
+        <td class="pic-id">编辑</td>
     </tr>
     <tr>
         <td class="checkbox">
-            <input class="check-one check" type="checkbox">
+            <input  name="check-one"  onclick="userCheck(this)" type="checkbox">
         </td>
         <td class="pic-id">1</td>
         <td class="pic-name">经典的老爷车个性壁纸</td>
-        <td class="pic-img">
+        <td class="pic-id">
             <img src="images/1.jpg">
         </td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="subtotal">2018-05-01 11:35:11</td>
-        <td class="operation">
-            <span class="delete">删除</span>
-        </td>
+        <td class="pic-id">编辑</td>
     </tr>
     <tr>
         <td class="checkbox">
-            <input class="check-one check" type="checkbox">
+            <input  name="check-one"  onclick="userCheck(this)" type="checkbox">
         </td>
         <td class="pic-id">1</td>
         <td class="pic-name">经典的老爷车个性壁纸</td>
-        <td class="pic-img">
-            <img src="images/1.jpg">
+        <td class="pic-id">
+            <img src="images/2.jpg">
         </td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="subtotal">2018-05-01 11:35:11</td>
-        <td class="operation">
-            <span class="delete">删除</span>
-        </td>
+        <td class="pic-id">编辑</td>
     </tr>
     <tr>
         <td class="checkbox">
-            <input class="check-one check" type="checkbox">
+            <input  name="check-one" onclick="userCheck(this)" type="checkbox">
         </td>
         <td class="pic-id">1</td>
         <td class="pic-name">经典的老爷车个性壁纸</td>
-        <td class="pic-img">
-            <img src="images/1.jpg">
+        <td class="pic-id">
+            <img src="images/3.jpg">
         </td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="price">经典的老爷车手机壁纸</td>
         <td class="subtotal">2018-05-01 11:35:11</td>
-        <td class="operation">
-            <span class="delete">删除</span>
-        </td>
+        <td class="pic-id">编辑</td>
     </tr>
     </tbody>
 </table>
 
 <script type="text/javascript">
-    $('.content-bar-search-add').click(function () {
+    // 全选事件
+    $(function () {
+        $("input[name=check-all]").click(function () {
+            if (this.checked){
+                $("#g-all:checkbox").prop("checked",true);
+            }else {
+                $("#g-all:checkbox").prop("checked",false);
+            }
+        });
     });
+
+   //单选
+    function userCheck(ths) {
+        if (ths.checked==false){
+            $("input[name=check-all]:checkbox").prop('checked',false);
+        }else {
+            var count=$("input[name=check-one]:checkbox:checked").length;
+            if (count== $("input[name=check-one]:checkbox").length){
+                $("input[name=check-all]:checkbox").prop("checked",true);
+            }
+        }
+    }
 </script>
 </body>
 </html>

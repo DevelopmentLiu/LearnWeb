@@ -58,7 +58,7 @@ body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,form{margin: 0; paddi
     padding: 0;
     border-collapse: collapse;
     border-spacing: 0;
-    text-align: left;
+    text-align: center;
     font-size: 13px;
 }
 #cartTable th{
@@ -72,21 +72,14 @@ body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,form{margin: 0; paddi
     border: 1px solid #d3d3d3;
     font-size: 12px;
     width: 180px;
-
 }
 #cartTable td:first-child{
-    width: 40px;
-}
-#cartTable td:last-child{
     width: 40px;
 }
 #cartTable .pic-id{
     width: 40px;
 }
-#cartTable .pic-img{
-    width: 40px;
-}
-#cartTable .pic-img img{
+#cartTable .pic-id img{
     width: 40px;
     height: auto;
 }
