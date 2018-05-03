@@ -163,9 +163,9 @@
     $(function () {
         $("input[name=check-all]").click(function () {
             if (this.checked){
-                $("#g-all:checkbox").prop("checked",true);
+                $("input:checkbox").prop("checked",true);
             }else {
-                $("#g-all:checkbox").prop("checked",false);
+                $("input:checkbox").prop("checked",false);
             }
         });
     });
