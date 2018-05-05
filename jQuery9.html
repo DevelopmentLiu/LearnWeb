@@ -3,8 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <style type="text/css">
+        .left div,
+        .right div {
+            width: 100%;
+            height: 50px;
+            padding: 5px;
+            margin: 5px;
+            float: left;
+            border: 1px solid #ccc;
+        }
+
+        .left div {
+            background: #bbffaa;
+        }
+
+        .right div {
+            background: yellow;
+        }
+    </style>
 </head>
 <body>
+<h2>on绑定多事件</h2>
+<h4>测试一</h4>
+<div class="left">
+    点击触发：on('click',fn)
+    <div id="test1"></div>
+</div>
+<script type="text/javascript">
+    $("#test1").on('click',function (e) {
+        $(this).text('触发事件:'+e.type)
+    });
+</script>
 
+<h4>测试二</h4>
+<div class="left">
+    点击触发：on('mousedown mouseup')
+    <div id="test2"></div>
+</div>
+<script type="text/javascript">
+    $("#test2").on('mousedown mouseup',function (e) {
+       $(this).text('触发事件'+e.type)
+    });
+</script>
+
+<h4>测试三</h4>
+<div class="right">
+    点击触发：on(mousedown:fn1,mouseup:fn2)
+    <div id="test3"></div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#test3").on({
+            mousedown: function(e) {
+                $(this).text('触发事件：' + e.type);
+            },
+            mouseup: function(e) {
+                $(this).text('触发事件：' + e.type)
+            }
+        });
+    });
+
+</script>
+<!------------------------------------------------------------------------------------------>
+<h2>on事件委托</h2>
+<div class="left">
+    <div class="aaron">
+        <a>点击这里</a>
+    </div>
+</div>
+<script type="text/javascript">
+    //给body绑定一个click事件
+    //没有直接a元素绑定点击事件
+    //通过委托机制，点击a元素的时候，事件触发
+    $('body').on('click','a',function (e) {
+       alert(e.target.textContent)
+    });
+</script>
+<!------------------------------------------------------------------------------------------>
+<h2>删除事件</h2>
+<h4>测试一</h4>
+<div class="left">
+    on('mousedown mouseup')
+    <div class="delete1">点击触发</div>
+</div>
+<button class="but">点击删除mousedown事件</button>
+<script type="text/javascript">
+    // 通过.on()绑定的事件处理程序
+    // 通过off() 方法移除该绑定
+    var n=0;
+    //绑定事件
+    $(".delete1:first").on('mousedown mouseup',function (e) {
+       $(this).text('触发类型：'+(e.type)+"次数"+ ++n)
+        ++n;
+    });
+    //删除事件
+    $(".but").click(function () {
+       $(".delete1").off('mousedown');
+    });
+    //删除全部事件
+    $(".but").click(function () {
+       $(".delete1").off();
+    });
+</script>
+<!------------------------------------------------------------------------------------------>
+<h2>自定义事件trigger</h2>
+<div class="left">
+    <div><span></span><span>0</span>点击次数</div>
+    <button class="button11">直接点击</button>
+    <button class="button22">通过自定义点击</button>
+</div>
+<script type="text/javascript">
+    $(".button11").click(function (event,bottonName) {
+        bottonName = bottonName|| 'first';
+        update($("span:first"),$("span:last")),bottonName;
+    })
+    //通过自定义事件调用，更新次数
+    $(".button22").click(function () {
+       $("button:first").trigger('click','last');
+    });
+    function update(first,last,bottnName) {
+        first.text(bottnName);
+        var n=parseInt(last.text(),10);
+        last.text(n+1);
+    }
+</script>
 </body>
 </html>

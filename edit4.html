@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,form{margin: 0; padding: 0;}
+        #menu{
+            background-color: #eee;
+            width: 600px;
+            height: 40px;
+            margin: auto;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul li{
+            float: left;
+            line-height: 40px;
+            text-align: center;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            display: block;
+            width: 90px;
+        }
+        a:hover{
+            color: #fff;
+            background-color: #666;
+        }
+        ul li ul li{
+            border-left: none;
+            margin-top: 2px;
+            background-color: #eee;
+            float: none;
+        }
+        ul li ul{
+            width: 90px;
+            position: absolute;
+            left: 0px;
+            top: 40px;
+            display: none;
+        }
+    </style>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li onmouseout="hidesubmenu(this)" onmouseover="showsubmenu(this)" class="navmenu"><a href="#">课程大厅</a>
+                <ul>
+                    <li><a href="#">javasrcipt</a></li>
+                    <li><a href="#">jQuery</a></li>
+                </ul>
+            </li>
+            <li><a href="#">学习中心</a>
+                <ul>
+                    <li><a href="#">视频学习</a></li>
+                    <li><a href="#">交流平台</a></li>
+                    <li><a href="#">平台学习</a></li>
+                </ul>
+            </li>
+            <li><a href="#">经典案例</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+</body>
+
+<script type="text/javascript">
+    //原生JS
+    function showsubmenu(li) {
+        var submenu =li.getElementsByTagName("ul")[0];
+        submenu.style.display="block";
+    }
+    function hidesubmenu(li) {
+        var submenu=li.getElementsByTagName("ul")[0];
+        submenu.style.display="none"
+    }
+    //jQuery
+    $(function () {
+        $(".navmenu").mouseover(function () {
+           $(this).children("ul").show();
+        });
+        $(".navmenu").mouseout(function () {
+            $(this).children("ul").hide();
+        });
+    });
+
+</script>
+</html>
