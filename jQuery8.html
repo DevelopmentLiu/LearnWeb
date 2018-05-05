@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 13px;
+     }
+        .test2 {
+            background: #bbffaa;
+        }
+
+        .test3 {
+            background: yellow;
+        }
+
+        .test2,
+        .test3 {
+            border: 1px solid red;
+        }
+        .left div,
+        .right div {
+            width: 300px;
+            height: 80px;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .left div {
+            background: #bbffaa;
+        }
+
+        .right div {
+            background: yellow;
+        }
+
+    </style>
+</head>
+<script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+<body>
+
+<h2>.mousedown()方法</h2>
+<h4>测试一</h4>
+<button>弹出回调中的鼠标键</button>
+<script type="text/javascript">
+$("button:eq(0)").mousedown(function (e) {
+   alert('e.which:'+e.which);
+});
+</script>
+
+<h4>测试二</h4>
+<div class="test2">
+    <p>$('button:first').mousedown(function(e) {alert(this)})</p>
+</div>
+<button>指定触发事件</button>
+<script type="text/javascript">
+    $('p').mousedown(function (e) {
+       alert(e.target.textContent)
+    });
+    //this指向button元素
+    $("button:eq(1)").mousedown(function () {
+        $('p').mousedown();//指定触发绑定得事件
+    })
+</script>
+
+<h4>测试三</h4>
+<div class="test3">
+    <p>$('.right').mousedown(1111, set)</p>
+</div>
+<button>不同函数传递数据</button>
+<script type="text/javascript">
+    //不同函数传递数据
+    function data(e) {
+        alert(e.data);
+    }
+    function a() {
+        $("button:eq(2)").mousedown(1111,data);
+    }
+    a();
+</script>
+
+<!------------------------------------------------------------------------------------------>
+<h4>测试二</h4>
+<div class="left">
+    <div class="aaron1">
+        <p>鼠标在绿色区域移动触发mousemove</p>
+        <p>移动的X位置：</p>
+    </div>
+</div>
+<script type="text/javascript">
+    //绑定一个mousemove事件
+    //触发后修改内容
+    $(".aaron1").mousemove(function(e) {
+        $(this).find('p:last').html('移动的X位置：' + e.pageX);
+    });
+</script>
+</body>
+
+<h4>测试三</h4>
+<div class="right">
+    <div class="aaron3">
+        <p>鼠标移动：不同函数传递数据</p>
+        <p>数据：</p>
+    </div>
+</div>
+<script type="text/javascript">
+    function data(e) {
+        $(this).find('p:last').html('数据'+e.data);
+    }
+    function a() {
+        $(".right").mousemove(1111,data)
+    }
+    a();
+</script>
+<!------------------------------------------------------------------------------------------>
+<h4>测试二</h4>
+<div class="left">
+    <div class="aaron4">
+        <p style="border: 1px solid red">鼠标移进此区域触发mouseover事件</p>
+        <a>进入元素内部,mouseover事件触发次数：</a>
+    </div>
+</div>
+<script type="text/javascript">
+    var n=0;
+    //绑定一个mousover事件
+    $(".aaron4 p:first").mouseover(function (e) {
+       $(".aaron4 a").html('进入元素内部，mouseover事件触发次数:'+(++n));
+    });
+</script>
+
+<h4>测试三</h4>
+<div class="right">
+    <div class="aaron2">
+        <p>鼠标移动：不同函数传递数据</p>
+        <a>进入元素内部,mouseover事件触发次数：</a>
+    </div>
+</div>
+<br/>
+<script type="text/javascript">
+    var n=0;
+    //不同函数传递数据
+    function data(e) {
+        $(".right a").html('mouseover事件触发次数:'+(++n)+'<br/>传入数据为:'+e.data);
+    }
+    function a() {
+        $(".right p:first").mouseover('data=慕课网',data);
+    }
+    a();
+</script>
+
+<h2>.mouseenter()方法</h2>
+<div class="right">
+    <div class="aaron5">
+        <p>鼠标进入此区域触发mouseenter事件</p>
+        <a>mouseenter事件触发次数：</a><br/>
+        <a>mouseenter冒泡事件触发次数：</a>
+    </div>
+</div>
+<script type="text/javascript">
+    $(".aaron5 p").onmouseenter()
+</script>
+<!------------------------------------------------------------------------------------------>
+<h2>.hover()方法</h2>
+<div class="left">
+    <div class="aaron1">
+        <p class="hover">触发hover事件</p>
+    </div>
+</div>
+<script type="text/javascript">
+    // hover()方法是同时绑定 mouseenter和 mouseleave事件
+    // 我们可以用它来简单地应用在 鼠标在元素上行为
+    $(".hover").hover(
+        function () {
+          $(this).css("background","red");
+        },
+        function () {
+           $(this).css("background","yellow");
+        }
+    );
+</script>
+<!------------------------------------------------------------------------------------------>
+<h2>.focusin()方法</h2>
+<div class="left">
+    <div class="aaron">
+        点击聚焦：<input type="text" />
+    </div>
+</div>
+<div class="right">
+    <div class="aaron1">
+        点击聚焦并传递参数：<input type="text" />
+    </div>
+</div>
+<script type="text/javascript">
+    // 当一个元素，或者其内部任何一个元素获得焦点的时候，
+    // 例如：input元素，用户在点击聚焦的时候，如果开发者需要捕获这个动作的时候，jQuery提供了一个focusin事件
+    //input聚焦  给input元素增加一个边框
+    $("input:first").focusin(function () {
+       $(this).css("border","2px solid red");
+    });
+
+    //不同函数传递数据
+    function fn(e) {
+        $(this).val(e.data);
+    }
+    function a() {
+        $("input:last").focusin('传递的参数',fn);
+    }
+    a();
+
+    // 当一个元素，或者其内部任何一个元素失去焦点的时候，
+    // 比如input元素，用户在点击失去焦的时候，如果开发者需要捕获这个动作，jQuery提供了一个focusout事件
+    //input失去焦点 给input元素增加一个边框
+    $("input:first").focusout(function () {
+       $(this).css('border','2px solid red');
+    });
+    //不同函数传递数据
+    function fn(e) {
+        $(this).val(e.data);
+    }
+    function a() {
+        $("input:last").focusout('幕课网',fn);
+    }
+</script>
+<!------------------------------------------------------------------------------------------>
+<h2>input、textarea与select</h2>
+<div class="left">
+    <div class="change">input：
+        <input class="target1" type="text" />
+    </div>
+    <div class="change1">select：
+        <select class="target2">
+            <option value="option1" selected="selected">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+    </div>
+    <div class="change2">textarea：
+        <textarea class="target2" rows="3" cols="20"></textarea>
+    </div>
+</div>
+输出结果：
+<div id="result"></div>
+<script type="text/javascript">
+    //监听input值的改变
+    $('.target1').change(function (e) {
+       $("#result").html(e.target.value)
+    });
+    //监听select:
+    $('.target2').change(function (e) {
+        $("#result").html(e.target.value)
+    });
+    //监听textarea：
+    $('.target2').change(function (e) {
+        $("#result").html(e.target.value)
+    })
+</script>
+<!------------------------------------------------------------------------------------------>
+<h2>input与textarea</h2>
+<div class="left">
+    <h4>测试一</h4>
+    <div class="aaron">
+        选中文字：input
+        <input type="text" value="慕课网" />
+    </div>
+    <button id="bt1">触发input元素的select事件</button>
+
+    <h4>测试二</h4>
+    <div class="aaron">
+        textarea：
+        <textarea rows="3" cols="20">用鼠标选中文字</textarea>
+    </div>
+</div>
+<script type="text/javascript">
+    // select事件只能用于<input>元素与<textarea>元素
+    $("input").select(function (e) {
+       alert(e.target.value);
+    });
+    $("#bt1").click(function () {
+       $("input").select();
+    });
+    //监听textarea元素中value的选中
+    $('textarea').select(function (e) {
+       alert(e.target.value);
+    });
+</script>
+<!------------------------------------------------------------------------------------------>
+<div class="left">
+    <div class="aaron">
+        <form id="submit1" action="test.html">
+            回车键或者点击提交表单：
+            <input type="text" value="输入新的值" />
+            <input type="submit" value="Go" />
+        </form>
+    </div>
+    <div class="aaron">
+        <form id="submit2" action="destination.html">
+            回车键或者点击提交表单,禁止浏览器默认跳转：
+            <input type="text" value="输入新的值" />
+            <input type="submit" value="Go" />
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    //回车键或者点击提交表单
+    $("#submit1").submit(function (e) {
+       alert('捕获提交表达动作，不阻止页面跳转');
+    });
+    //回车键或者点击提交表单,禁止浏览器默认跳转：
+    $("#submit2").submit(function () {
+       alert('捕获提交表达动作,阻止页面跳转');
+       return false;
+    });
+</script>
+<!------------------------------------------------------------------------------------------>
+<h2>keydown()与keyup()事件</h2>
+<div class="left">
+    <h4>测试一</h4>
+    <div class="aaron">监听keydown输入:
+        <input class="key1" type="text" value="" /><br />
+        按下显示输入的值:<em></em>
+    </div>
+    <h4>测试二</h4>
+    <div class="aaron">监听keyup输入:
+        <input class="key2" type="text" value="" /><br />
+        松手显示输入的值:<em></em>
+    </div>
+</div>
+<script type="text/javascript">
+    //监听键盘按键 获取输入的值
+    $('.key1').keydown(function (e) {
+       $("em:first").text(e.target.value);
+    });
+    //监听键盘按键  获取输入的值
+    $('.key2').keyup(function (e) {
+       $("em:last").text(e.target.value);
+    });
+</script>
+<!------------------------------------------------------------------------------------------>
+<h2>keypress()事件</h2>
+<div class="left">
+    <div class="aaron">监听keypress输入:
+        <input class="key3" type="text" value="" /><br />
+        输入中文测试，无法显示:<em></em>
+    </div>
+</div>
+<script type="text/javascript">
+//     keypress事件与keydown和keyup的主要区别
+//     只能捕获单个字符，不能捕获组合键
+//     无法响应系统功能键（如delete，backspace）
+// 不区分小键盘和主键盘的数字字符
+    $('.key3').keypress(function (e) {
+       $('em').text(e.target.value);
+    });
+</script>
+<br/>
+</html>
