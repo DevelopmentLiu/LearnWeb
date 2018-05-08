@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 500px;
+            height: 50px;
+            padding: 5px;
+            margin: 5px;
+            float: left;
+            border: 1px solid #ccc;
+        }
+
+        .left {
+            background: #bbffaa;
+        }
+
+        .right {
+            background: yellow;
+            display: none;
+        }
+    </style>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+</head>
+<body>
+<h2>通过toggle切换显示与隐藏</h2>
+<div class="left" id="a1">显示到隐藏</div>
+<div class="right" id="a2">隐藏到显示</div>
+<button class="show-hide">直接show-hide动画</button>
+<button class="hide-show">直接hide-show动画</button><br>
+<button class="slideDown"> 点击slideDown显示动画</button>
+<button class="slideDown-other">点击slideDown执行回调</button><br>
+<button class="slideUp">点击slideUp隐藏动画</button>
+<button class="slideUp-other">点击slideUp执行回调</button>
+<button class="slideToggle">点击slideToggle上下卷滚切换</button>
+<script type="text/javascript">
+    // 基本的操作：toggle();
+    // 这是最基本的操作，处理元素显示或者隐藏，因为不带参数，所以没有动画。
+    // 通过改变CSS的display属性，匹配的元素将被立即显示或隐藏，没有动画。
+    // 如果元素是最初显示，它会被隐藏  如果隐藏的，它会显示出来
+    $(function () {
+        $(".show-hide").click(function () {
+            $(".left").toggle(3000)
+        });
+        $(".hide-show").click(function () {
+           $(".right").toggle(3000)
+        });
+
+        //点击button
+        //执行3秒隐藏
+        //执行3秒显示
+        $(".slideDown").click(function() {
+            $("#a1").slideDown(3000);
+        });
+        $(".slideDown-other").click(function () {
+            $("#a2").slideDown(3000,function(){
+                alert('动画执行结束')
+            });
+        });
+
+        //执行3秒显示
+        $(".slideDown").click(function() {
+            $("#a1").slideUp(3000);
+        });
+        $(".slideDown-other").click(function () {
+            $("#a2").slideUp(3000,function(){
+                alert('动画执行结束')
+            });
+        });
+
+        $("button").click(function() {
+            $("#a1").slideToggle(3000)
+        });
+    });
+
+</script>
+</body>
+</html>
