@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--设置浏览器的兼容模式版本。表示如果在IE浏览器下则使用最新的标准，渲染当前文档。-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口的作用：在移动浏览器中，当页面宽度超出设备，浏览器内部虚拟的一个页面容器，将页面容器缩放到设备这么大，然后展示。-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+    <!--<div class="row">-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-8">.col-md-8</div>-->
+        <!--<div class="col-md-4">.col-md-4</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-4">.col-md-4</div>-->
+        <!--<div class="col-md-4">.col-md-4</div>-->
+        <!--<div class="col-md-4">.col-md-4</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-6">.col-md-6</div>-->
+        <!--<div class="col-md-6">.col-md-6</div>-->
+    <!--</div>-->
+    <div class="row">
+        <div class="col-sm-9">
+            新的一行
+            <div class="row">
+                <div class="col-xs-8 col-sm-6">
+                    第二行
+                </div>
+                <div class="col-xs-4 col-sm-6">
+                    内嵌第二行
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <abbr title="attribute">attr</abbr>
+    <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+    <!--地址-->
+    <address>
+        <strong>Twitter, Inc.</strong><br>
+        1355 Market Street, Suite 900<br>
+        San Francisco, CA 94103<br>
+        <abbr title="Phone">P:</abbr>(123) 456-7890
+    </address>
+    <address>
+        <strong>Full Name</strong>
+        <a href="#">first.last@example.com</a>
+    </address>
+
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    </blockquote>
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+    <blockquote class="blockquote-reverse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">File input<</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <textarea class="form-control" rows="3"></textarea>
+    <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on 左侧
+    </button>
+
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on 顶部
+    </button>
+
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on 底部
+    </button>
+
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on 右侧
+    </button>
+</div>
+</body>
+</html>

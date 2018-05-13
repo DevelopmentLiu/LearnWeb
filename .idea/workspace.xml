@@ -2,15 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9441a8f-bb02-4ad6-a67c-67ab647cebf3" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/night/Scroll picture.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/night/css/scroll.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/night/images/1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/night/images/2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/night/images/3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/night/images/4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/night/images/5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/night/js/scroll.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/Bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/js/npm.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/JQuery4.html" afterPath="$PROJECT_DIR$/jQuery/JQuery4.html" />
+      <change beforePath="$PROJECT_DIR$/edit1.html" afterPath="$PROJECT_DIR$/baidu.html" />
+      <change beforePath="$PROJECT_DIR$/edit2.html" afterPath="$PROJECT_DIR$/Adaptive.html" />
+      <change beforePath="$PROJECT_DIR$/edit3.html" afterPath="$PROJECT_DIR$/arrow.html" />
+      <change beforePath="$PROJECT_DIR$/edit4.html" afterPath="$PROJECT_DIR$/drop-down list.html" />
+      <change beforePath="$PROJECT_DIR$/jQuery1.html" afterPath="$PROJECT_DIR$/jQuery/jQuery1.html" />
+      <change beforePath="$PROJECT_DIR$/jQuery10.html" afterPath="$PROJECT_DIR$/jQuery/jQuery10.html" />
+      <change beforePath="$PROJECT_DIR$/jQuery2.html" afterPath="$PROJECT_DIR$/jQuery/jQuery2.html" />
+      <change beforePath="$PROJECT_DIR$/jQuery3.html" afterPath="$PROJECT_DIR$/jQuery/jQuery3.html" />
+      <change beforePath="$PROJECT_DIR$/jQuery5.html" afterPath="$PROJECT_DIR$/jQuery/jQuery5.html" />
+      <change beforePath="$PROJECT_DIR$/jQuery6.html" afterPath="$PROJECT_DIR$/jQuery/jQuery6.html" />
+      <change beforePath="$PROJECT_DIR$/jQuery7.html" afterPath="$PROJECT_DIR$/jQuery/jQuery7.html" />
+      <change beforePath="$PROJECT_DIR$/jQuery8.html" afterPath="$PROJECT_DIR$/jQuery/jQuery8.html" />
+      <change beforePath="$PROJECT_DIR$/jQuery9.html" afterPath="$PROJECT_DIR$/jQuery/jQuery9.html" />
+      <change beforePath="$PROJECT_DIR$/javascript1.html" afterPath="$PROJECT_DIR$/javascript/javascript1.html" />
+      <change beforePath="$PROJECT_DIR$/javascript2.html" afterPath="$PROJECT_DIR$/javascript/javascript2.html" />
+      <change beforePath="$PROJECT_DIR$/javascript3.html" afterPath="$PROJECT_DIR$/javascript/javascript3.html" />
+      <change beforePath="$PROJECT_DIR$/javascript4.html" afterPath="$PROJECT_DIR$/javascript/javascript4.html" />
+      <change beforePath="$PROJECT_DIR$/javascript5.html" afterPath="$PROJECT_DIR$/javascript/javascript5.html" />
+      <change beforePath="$PROJECT_DIR$/javascript6.html" afterPath="$PROJECT_DIR$/javascript/javascript6.html" />
+      <change beforePath="$PROJECT_DIR$/javascript7.html" afterPath="$PROJECT_DIR$/javascript/javascript7.html" />
+      <change beforePath="$PROJECT_DIR$/study1.html" afterPath="$PROJECT_DIR$/html+css/study1.html" />
+      <change beforePath="$PROJECT_DIR$/study2.html" afterPath="$PROJECT_DIR$/html+css/study2.html" />
+      <change beforePath="$PROJECT_DIR$/study3.css" afterPath="$PROJECT_DIR$/html+css/study3.css" />
+      <change beforePath="$PROJECT_DIR$/study3.html" afterPath="$PROJECT_DIR$/html+css/study3.html" />
+      <change beforePath="$PROJECT_DIR$/study4.html" afterPath="$PROJECT_DIR$/html+css/study4.html" />
+      <change beforePath="$PROJECT_DIR$/study5.html" afterPath="$PROJECT_DIR$/html+css/study5.html" />
+      <change beforePath="$PROJECT_DIR$/study6.html" afterPath="$PROJECT_DIR$/html+css/study6.html" />
+      <change beforePath="$PROJECT_DIR$/study7.html" afterPath="$PROJECT_DIR$/html+css/study7.html" />
+      <change beforePath="$PROJECT_DIR$/study8.html" afterPath="$PROJECT_DIR$/html+css/study8.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,98 +66,68 @@
       <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Examples/seven/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="638">
+              <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jQuery8.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery8.html">
+      <file leaf-file-name="Bootstrap.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Bootstrap/Bootstrap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1870">
-              <caret line="85" column="3" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="93" />
+            <state relative-caret-position="148">
+              <caret line="102" column="53" lean-forward="false" selection-start-line="102" selection-start-column="53" selection-end-line="102" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-theme.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="jQuery9.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery9.html">
+        <entry file="file://$PROJECT_DIR$/jQuery/jQuery9.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="84" column="13" lean-forward="true" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+            <state relative-caret-position="1848">
+              <caret line="84" column="13" lean-forward="false" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scroll picture.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Examples/night/Scroll picture.html">
+      <file leaf-file-name="jQuery1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jQuery/jQuery1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+            <state relative-caret-position="330">
+              <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scroll.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/night/css/scroll.css">
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bootstrap/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scroll.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/night/js/scroll.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="107" column="36" lean-forward="true" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit4.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/edit4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1760">
-              <caret line="80" column="5" lean-forward="false" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+            <state relative-caret-position="-2574">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="jQuery10.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery10.html">
+        <entry file="file://$PROJECT_DIR$/jQuery/jQuery10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jQuery7.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jQuery7.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="90" column="7" lean-forward="false" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/seven/css/all.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="87" />
+            <state relative-caret-position="203">
+              <caret line="24" column="72" lean-forward="true" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -129,9 +138,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -183,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Examples/home.html" />
         <option value="$PROJECT_DIR$/Examples/contact.html" />
         <option value="$PROJECT_DIR$/Examples/home.css" />
         <option value="$PROJECT_DIR$/Examples/edit2.html" />
@@ -218,7 +226,6 @@
         <option value="$PROJECT_DIR$/Examples/six/shoppingCart.html" />
         <option value="$PROJECT_DIR$/Examples/seven/js/all.js" />
         <option value="$PROJECT_DIR$/Examples/seven/addpicList.html" />
-        <option value="$PROJECT_DIR$/Examples/seven/admin.html" />
         <option value="$PROJECT_DIR$/Examples/seven/css/all.css" />
         <option value="$PROJECT_DIR$/Examples/seven/classList.html" />
         <option value="$PROJECT_DIR$/Examples/seven/addclassList.html" />
@@ -234,6 +241,8 @@
         <option value="$PROJECT_DIR$/Examples/night/js/scroll.js" />
         <option value="$PROJECT_DIR$/Examples/night/css/scroll.css" />
         <option value="$PROJECT_DIR$/Examples/night/Scroll picture.html" />
+        <option value="$PROJECT_DIR$/Examples/seven/admin.html" />
+        <option value="$PROJECT_DIR$/Bootstrap/Bootstrap.html" />
       </list>
     </option>
   </component>
@@ -243,11 +252,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="170" />
-    <option name="y" value="51" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="282" />
+    <option name="y" value="42" />
     <option name="width" value="1485" />
-    <option name="height" value="999" />
+    <option name="height" value="994" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -287,6 +296,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,47 +307,24 @@
             <path>
               <item name="LearnWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearnWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Examples" type="462c0819:PsiDirectoryNode" />
+              <item name="Bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LearnWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearnWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Examples" type="462c0819:PsiDirectoryNode" />
-              <item name="night" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearnWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearnWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Examples" type="462c0819:PsiDirectoryNode" />
-              <item name="night" type="462c0819:PsiDirectoryNode" />
+              <item name="Bootstrap" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LearnWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearnWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Examples" type="462c0819:PsiDirectoryNode" />
-              <item name="night" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearnWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearnWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Examples" type="462c0819:PsiDirectoryNode" />
-              <item name="seven" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearnWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearnWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Examples" type="462c0819:PsiDirectoryNode" />
-              <item name="seven" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="jQuery" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,12 +339,15 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LearnWeb\Bootstrap" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\LearnWeb\html+css" />
+      <recent name="D:\LearnWeb\javascript" />
+      <recent name="D:\LearnWeb\jQuery" />
       <recent name="D:\LearnWeb\Examples\night\js" />
       <recent name="D:\LearnWeb\Examples\night\images" />
-      <recent name="D:\LearnWeb\Examples\seven\images" />
-      <recent name="D:\LearnWeb\Examples\three\images" />
-      <recent name="D:\LearnWeb\Examples\three" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -373,7 +363,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="study2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnWeb/study2.html" />
+    <configuration name="study2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnWeb/html+css/study2.html" />
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.study2.html" />
@@ -448,15 +438,17 @@
       <workItem from="1525587341812" duration="696000" />
       <workItem from="1525742209092" duration="959000" />
       <workItem from="1525785918110" duration="2471000" />
-      <workItem from="1525831691373" duration="5306000" />
+      <workItem from="1525831691373" duration="7829000" />
+      <workItem from="1525918516935" duration="621000" />
+      <workItem from="1526174432502" duration="6957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="464147000" />
+    <option name="totallyTimeSpent" value="474248000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="170" y="51" width="1485" height="999" extended-state="0" />
+    <frame x="282" y="42" width="1485" height="994" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22029187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -512,49 +504,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javascript5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="97" column="26" lean-forward="false" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="204" column="16" lean-forward="false" selection-start-line="204" selection-start-column="11" selection-end-line="204" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="51" column="11" lean-forward="false" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2948">
-          <caret line="134" column="57" lean-forward="false" selection-start-line="134" selection-start-column="57" selection-end-line="134" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery6.html">
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1430">
           <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="108" />
@@ -596,7 +546,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study3.css">
+    <entry file="file://$PROJECT_DIR$/html+css/study3.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1063">
           <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
@@ -607,13 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -631,14 +574,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery5.html">
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery3.html">
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3102">
           <caret line="286" column="59" lean-forward="false" selection-start-line="286" selection-start-column="59" selection-end-line="286" selection-end-column="59" />
@@ -664,7 +607,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JQuery4.html">
+    <entry file="file://$PROJECT_DIR$/jQuery/JQuery4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="331" column="20" lean-forward="false" selection-start-line="331" selection-start-column="18" selection-end-line="331" selection-end-column="23" />
@@ -678,28 +621,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study8.html">
+    <entry file="file://$PROJECT_DIR$/html+css/study8.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1452">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study7.html">
+    <entry file="file://$PROJECT_DIR$/html+css/study7.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3758">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study6.html">
+    <entry file="file://$PROJECT_DIR$/html+css/study6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4818">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study5.html">
+    <entry file="file://$PROJECT_DIR$/html+css/study5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1466">
           <caret line="282" column="20" lean-forward="false" selection-start-line="282" selection-start-column="15" selection-end-line="282" selection-end-column="20" />
@@ -721,21 +664,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study1.html">
+    <entry file="file://$PROJECT_DIR$/html+css/study1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study4.html">
+    <entry file="file://$PROJECT_DIR$/html+css/study4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="236" column="28" lean-forward="true" selection-start-line="236" selection-start-column="28" selection-end-line="236" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study2.html">
+    <entry file="file://$PROJECT_DIR$/html+css/study2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="244" column="13" lean-forward="true" selection-start-line="244" selection-start-column="13" selection-end-line="244" selection-end-column="13" />
@@ -753,7 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3322">
           <caret line="151" column="18" lean-forward="false" selection-start-line="151" selection-start-column="18" selection-end-line="151" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,19 +703,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2684">
           <caret line="122" column="34" lean-forward="false" selection-start-line="122" selection-start-column="34" selection-end-line="122" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study3.html">
+    <entry file="file://$PROJECT_DIR$/html+css/study3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5698">
           <caret line="259" column="24" lean-forward="false" selection-start-line="259" selection-start-column="24" selection-end-line="259" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery7.html">
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery7.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
           <caret line="90" column="7" lean-forward="false" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
@@ -781,15 +721,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/seven/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery8.html">
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery8.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
           <caret line="85" column="3" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="93" />
@@ -797,47 +729,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edit4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1760">
-          <caret line="80" column="5" lean-forward="false" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Examples/jQuery10.html" />
-    <entry file="file://$PROJECT_DIR$/jQuery10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/edit5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="84" column="13" lean-forward="true" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/edit5.html" />
+    <entry file="file://$PROJECT_DIR$/edit5.html" />
     <entry file="file://$PROJECT_DIR$/Examples/seven/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -848,24 +742,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Examples/night/js/scroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="107" column="36" lean-forward="true" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+        <state relative-caret-position="2354">
+          <caret line="107" column="36" lean-forward="false" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Examples/night/css/scroll.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+        <state relative-caret-position="1562">
+          <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drop-down list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="57" column="17" lean-forward="true" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Examples/night/Scroll picture.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        <state relative-caret-position="22">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arrow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adaptive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baidu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/seven/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="24" column="72" lean-forward="true" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1848">
+          <caret line="84" column="13" lean-forward="false" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2574">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bootstrap/Bootstrap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="102" column="53" lean-forward="false" selection-start-line="102" selection-start-column="53" selection-end-line="102" selection-end-column="53" />
           <folding />
         </state>
       </provider>
