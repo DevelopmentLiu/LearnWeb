@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9441a8f-bb02-4ad6-a67c-67ab647cebf3" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AJAX/ajax1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AJAX/template-web.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/jQuery/commitFrom.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/jQuery/layer.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,16 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/seven/admin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Bootstrap.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bootstrap/Bootstrap.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ajax1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AJAX/ajax1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="341">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -75,8 +64,38 @@
       <file leaf-file-name="jQuery9.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery/jQuery9.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1848">
+            <state relative-caret-position="418">
               <caret line="84" column="13" lean-forward="false" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jQuery8.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jQuery/jQuery8.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-83">
+              <caret line="85" column="3" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commitFrom.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jQuery/commitFrom.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jQuery/layer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="42" column="55" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="520" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -86,17 +105,7 @@
         <entry file="file://$PROJECT_DIR$/jQuery/jQuery1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Bootstrap/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="39" column="3" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -105,7 +114,7 @@
       <file leaf-file-name="jQuery10.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery/jQuery10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
+            <state relative-caret-position="-550">
               <caret line="24" column="72" lean-forward="false" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
               <folding />
             </state>
@@ -171,8 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Examples/edit2.html" />
-        <option value="$PROJECT_DIR$/edit2.html" />
         <option value="$PROJECT_DIR$/Examples/header.html" />
         <option value="$PROJECT_DIR$/header.css" />
         <option value="$PROJECT_DIR$/header.html" />
@@ -222,6 +229,8 @@
         <option value="$PROJECT_DIR$/Bootstrap/Bootstrap.html" />
         <option value="$PROJECT_DIR$/AJAX/template-web.js" />
         <option value="$PROJECT_DIR$/AJAX/ajax1.html" />
+        <option value="$PROJECT_DIR$/jQuery/layer.js" />
+        <option value="$PROJECT_DIR$/jQuery/commitFrom.html" />
       </list>
     </option>
   </component>
@@ -231,9 +240,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="383" />
-    <option name="y" value="28" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="217" />
+    <option name="y" value="-16" />
     <option name="width" value="1485" />
     <option name="height" value="1022" />
   </component>
@@ -313,13 +322,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\LearnWeb\jQuery" />
       <recent name="D:\LearnWeb\AJAX" />
       <recent name="D:\LearnWeb\html+css" />
       <recent name="D:\LearnWeb\javascript" />
-      <recent name="D:\LearnWeb\jQuery" />
       <recent name="D:\LearnWeb\Examples\night\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LearnWeb\jQuery" />
       <recent name="D:\LearnWeb\Bootstrap" />
     </key>
   </component>
@@ -416,18 +426,18 @@
       <workItem from="1526174432502" duration="6957000" />
       <workItem from="1526268435933" duration="3420000" />
       <workItem from="1526352624083" duration="3807000" />
-      <workItem from="1526479775963" duration="946000" />
+      <workItem from="1526479775963" duration="3853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="482421000" />
+    <option name="totallyTimeSpent" value="485328000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="383" y="28" width="1485" height="1022" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22029187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16754757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4025" sideWeight="0.5029191" order="7" side_tool="true" content_ui="tabs" />
@@ -481,20 +491,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Examples/two/style/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/two/Shopping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="185" column="50" lean-forward="false" selection-start-line="185" selection-start-column="36" selection-end-line="185" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Examples/two/style/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -676,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/jQuery8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="85" column="3" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Examples/jQuery10.html" />
     <entry file="file://$PROJECT_DIR$/Examples/edit5.html" />
     <entry file="file://$PROJECT_DIR$/edit5.html" />
@@ -750,22 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/jQuery10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="72" lean-forward="false" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/jQuery9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
-          <caret line="84" column="13" lean-forward="false" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -801,18 +774,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery/jQuery1.html">
+    <entry file="file://$PROJECT_DIR$/AJAX/ajax1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="63" />
+        <state relative-caret-position="341">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AJAX/ajax1.html">
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="-550">
+          <caret line="24" column="72" lean-forward="false" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="84" column="13" lean-forward="false" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="85" column="3" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/jQuery1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="39" column="3" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="42" column="55" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="520" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery/commitFrom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding />
         </state>
       </provider>

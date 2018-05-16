@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="layer.js"></script>
+    <link rel="stylesheet" href="theme/default/layer.css">
+    <style>
+        .file{
+            display: none;
+        }
+    </style>
+    <script src="layer.js"></script>
+
+</head>
+<body>
+    <form>
+        <input type="button" value="上传文件" id="button">
+        <input type="file" class="file" >
+    </form>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $("#button").click(function () {
+            $(".file").click();
+        });
+    });
+
+    layer.load(1, {
+        shade: [0.1,'#fff'] //0.1透明度的白色背景
+    });
+    setTimeout(function(){
+        layer.closeAll('loading');
+    }, 2000);
+
+
+</script>
+</html>
