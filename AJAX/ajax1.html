@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="template-web.js"></script>
+    <script id="tpl" type="text/html">
+        <h3><%= className %></h3>
+        <ul>
+            <% for(var i = 0; i< students.length;i++) { %>
+            <li><%= i+1 %>. <%= students[i] %></li>
+            <% } %>
+        </ul>
+
+    </script>
+    <script>
+        var data = {
+            className:"前端1期",
+            students:["张飞","刘备","诸葛亮","甄姬","小乔","汪汪"]
+        };
+
+        $(function (){
+            var html = template("tpl",data);
+            $("#demo").html(html);
+        })
+    </script>
+</head>
+<body>
+
+<!--<script>-->
+    <!--//创建一个 XMLHttpRequest类型的对象-->
+    <!--var xhr=new XMLHttpRequest();-->
+    <!--//打开与一个网址之间的连接-->
+    <!--xhr.open('GET','https://www.baidu.com');-->
+    <!--//通过连接发送一次请求-->
+    <!--xhr.send();-->
+
+    <!--xhr.onreadystatechange=function () {-->
+     <!--if (this.readyState === 4){-->
+         <!--//通过xhr的responseText获取到响应的响应体-->
+         <!--console.log(this.status);-->
+         <!--//获取响应状态描述-->
+         <!--console.log(this.statusText);-->
+         <!--//获取响应头信息-->
+         <!--console.log(this.getResponseHeader('Content-Type'))//指定响应头-->
+         <!--console.log(this.getAllResponseHeaders())//全部响应头-->
+         <!--//获取响应体-->
+         <!--console.log(this.responseText)//文本形式-->
+         <!--console.log(this.responseXML);//XML形式-->
+     <!--}-->
+    <!--}-->
+    <!--//onload是HTML5中提供的 2.0提供-->
+    <!--xhr.onload=function () {-->
+        <!--console.log(this.readyState);-->
+        <!--console.log(this.responseText);-->
+    <!--}-->
+<!--</script>-->
+<div id="demo">
+
+</div>
+
+</body>
+</html>
