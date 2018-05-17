@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+        .img{
+            width: 500px;
+            height: 200px;
+        }
+        .img img{
+            width: 100%;
+        }
+        .img li{
+            list-style-type: none;
+        }
+        .hide{
+            display: none;
+        }
+        .nav{
+            width: 500px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <ul>
+            <li><img src="images/j1.jpg"></li>
+            <li class="hide"><img src="images/j2.jpg"></li>
+            <li class="hide"><img src="images/j3.jpg"></li>
+        </ul>
+        <div class="nav">
+        </div>
+    </div>
+<script>
+    $(function () {
+       $("li").each(function (k,V) {
+         var num=k+1;
+         $('.nav').append("<button class='n' value='"+num+"'>"+num+"</button>");
+       });
+       $('.n').click(function () {
+          var v =$(this).attr("value");
+          var num=v-1;
+          $("li").each(function (k,v) {
+                if (k == num){
+                    $("li").addClass("hide");
+                    $("li").eq(num).removeClass("hide");
+                }
+          });
+       });
+       var page=0;
+       setInterval(function () {
+           if (page>=$("li").length-1){
+               page=0;
+           }else {
+               page=page+1;
+           }
+           console.log(page);
+           $("li").addClass("hide");
+           $("li").eq(page).removeClass("hide");
+
+       },2000);
+    });
+</script>
+</body>
+</html>

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="aca7dee3-e5d0-4dfb-9340-27a9f560e404" name="apache" url="http://localhost:80">
-        <fileTransfer port="0" mountedRoot="" accessType="MOUNT" />
+      <webServer id="aca7dee3-e5d0-4dfb-9340-27a9f560e404" name="apache" url="">
+        <fileTransfer host="" port="21">
+          <option name="port" value="21" />
+        </fileTransfer>
       </webServer>
     </option>
   </component>

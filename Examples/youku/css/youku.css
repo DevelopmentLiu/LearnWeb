@@ -1,0 +1,121 @@
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,form{margin: 0; padding: 0;}
+body{font:14px/1.5 "宋体";}
+img{border:none;}
+ul,ol{list-style:none;}
+input,select,textarea{outline:none;border:none;background: none;}
+textarea{resize:none;}
+a{text-decoration:none;color: #656565;}
+
+/*清浮动*/
+.clearfix:after{content: ""; display: block;clear: both;}
+.clearfix{zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
+
+.title{
+    width: 100%;
+    height: 420px;
+}
+.background{
+    width: 100%;
+}
+.background li{
+    list-style-type: none;
+}
+.hide{
+    display: none;
+}
+.nav-box{
+    width: 1202px;
+    height: 70px;
+    margin:auto;
+    position: relative;
+    top: -520px;
+}
+.box-log{
+    float: left;
+    width: 120px;
+    height: 24px;
+    margin: 23px 20px 23px 0
+}
+.box-log img{
+    width: 100%;
+    height: auto;
+}
+.box-ul{
+    height: 38px;
+    float: left;
+    margin: 16px 5px 0 0;
+    display: none;
+}
+.box-ul ul li{
+    float: left;
+    padding: 10px;
+}
+.box-ul a{
+    font-family: "Microsoft YaHei ", "微软雅黑";
+}
+.images{
+    width: 20px;
+    height: 20px;
+}
+.box-search{
+    width: 370px;
+    height: 38px;
+    border: 1px solid #4593FD;
+    float: left;
+    border-radius: 20px;
+    margin:16px;
+    position: absolute;
+    left: 360px;
+}
+.text{
+    width:260px;
+    height: 38px;
+    margin-left: 15px;
+    float: left;
+}
+
+.input-iamges{
+    width: 18px;
+    height: 30px;
+    margin:4px 4px 2px 3px;
+}
+.input-button{
+    float: right;
+    height: 38px;
+    background-color: #4593FD;
+    width: 70px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+    color: white;
+}
+.right-ul{
+    float: right;
+    width: 310px;
+    height: 70px;
+
+    background-color: #999999;
+}
+.right-ul img{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 15px;
+    background-size: 26px 26px;
+}
+.vip{margin-left: -4px;}
+.clients{margin-left: 5px;}
+.right-ul li{
+    float: left;
+    font-family: "Microsoft YaHei ", "微软雅黑";
+    padding: 40px 12px;
+    font-size: 12px;
+}
+.right-ul a{
+    color: white;
+}
+.user{
+    width: 100px;
+    height: 100px;
+}
