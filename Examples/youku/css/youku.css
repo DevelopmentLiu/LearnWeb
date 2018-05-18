@@ -13,15 +13,13 @@ a{text-decoration:none;color: #656565;}
 .fr{float: right;}
 
 .title{
-    width: 100%;
+    width: 1520px;
     height: 420px;
 }
-.background{
+.background img{
     width: 100%;
 }
-.background li{
-    list-style-type: none;
-}
+
 .hide{
     display: none;
 }
@@ -30,13 +28,13 @@ a{text-decoration:none;color: #656565;}
     height: 70px;
     margin:auto;
     position: relative;
-    top: -520px;
+    top: -480px;
 }
 .box-log{
     float: left;
     width: 120px;
     height: 24px;
-    margin: 23px 20px 23px 0
+    margin: 15px 20px 20px 0
 }
 .box-log img{
     width: 100%;
@@ -74,6 +72,7 @@ a{text-decoration:none;color: #656565;}
     height: 38px;
     margin-left: 15px;
     float: left;
+    caret-color: white;
 }
 
 .input-iamges{
@@ -94,10 +93,8 @@ a{text-decoration:none;color: #656565;}
     float: right;
     width: 310px;
     height: 70px;
-
-    background-color: #999999;
 }
-.right-ul img{
+.right-ul ul img{
     width: 26px;
     height: 26px;
     position: absolute;
@@ -115,7 +112,154 @@ a{text-decoration:none;color: #656565;}
 .right-ul a{
     color: white;
 }
-.user{
+
+.recording-div{
+    width: 300px;
+    height:160px;
+    background: white;
+    position: relative;
+    left: 850px;
+    top: 65px;
+    display: none;
+}
+.triangle{
+    width:0;
+    height:0;
+    border:8px solid;
+    border-style:dotted dotted solid dotted;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -16px;
+    left: 150px;
+}
+.read-div-top{
+    height: 50px;
+    width: 260px;
+    margin: auto;
+    border-bottom: 1px solid #d3d3d3;
+}
+.read-div-top button{
+    width: 65px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
+    background-color: #4593FD;
+    font-size: 13px;
+    border: none;
+    float: left;
+    position: relative;
+    left: -60px;
+    top: 10px;
+}
+.read-div-top p{
+    float: left;
+    position: relative;
+    left: 15px;
+    top: -15px;
+    font-size: 13px;
+    font-family: "Microsoft YaHei ", "微软雅黑";
+}
+.upload-div{
+    width: 320px;
+    height:240px;
+    background-color: white;
+    position: relative;
+    left: 850px;
+    top: 65px;
+    display: none;
+}
+.upload-div-triangle{
+    width:0;
+    height:0;
+    border:8px solid;
+    border-style:dotted dotted solid dotted;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -16px;
+    left: 197px;
+}
+.upload-div-top{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    top: -59px;
+}
+.upload-div-top-div{
+    float: left;
+    background-color: #4593FD;
+    width: 55px;
+    height: 55px;
+    margin: 25px 10px;
+    text-align: center;
+}
+
+.upload-div-top span{
+    font-size: 13px;
+    font-family: "Microsoft YaHei ", "微软雅黑";
+    position: relative;
+    top: 65px;
+}
+.upload-div-center{
+    width: 320px;
+    height: 60px;
+    position: relative;
+    top: -60px;
+    background: url("../images/4.jpg");
+    background-size: 320px 60px;
+}
+.upload-div-footer{
+    height: 60px;
+    background-color: #90EE90;
+    position: relative;
+    top: -59px;
+}
+upload-div-footer p{
+    float: left;
+    width: 150px;
+}
+upload-div-footer a{
+    float: right;
     width: 100px;
-    height: 100px;
+}
+
+
+.user{
+    width: 38px;
+    height: 38px;
+    padding: 15px 12px;
+}
+.append-search-div{
+    width: 343px;
+    height: 328px;
+    position: absolute;
+    background: white;
+    opacity: 0.9;
+    left: 390px;
+    top: 56px;
+    font-family: "Microsoft YaHei ", "微软雅黑";
+    font-size: 14px;
+    display: none;
+    overflow: hidden;
+}
+.show{
+    display: block;
+}
+.search-div li{
+    padding: 6px 10px;
+}
+.search-div li:hover{
+    background-color: #d9edf7;
+}
+.search-div a{
+    color: black;
+}
+.search-div span{
+    color: #999999;
+    padding-right: 5px;
+}
+.search-div .search-div-number{
+    color: red;
 }
