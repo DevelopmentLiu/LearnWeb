@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9441a8f-bb02-4ad6-a67c-67ab647cebf3" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/youku/images/4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/youku/images/TV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/youku/images/small.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/youku/images/timg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/youku/images/youku1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Examples/youku/images/youku2.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Examples/youku/css/youku.css" afterPath="$PROJECT_DIR$/Examples/youku/css/youku.css" />
       <change beforePath="$PROJECT_DIR$/Examples/youku/index.html" afterPath="$PROJECT_DIR$/Examples/youku/index.html" />
@@ -20,12 +24,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Examples/youku/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="62" column="41" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="484">
+              <caret line="97" column="39" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#li#2;n#ul#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#li#4;n#ul#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#li#4;n#ul#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#li#4;n#ul#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,72 +42,20 @@
       <file leaf-file-name="youku.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Examples/youku/js/youku.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+            <state relative-caret-position="597">
+              <caret line="74" column="60" lean-forward="false" selection-start-line="74" selection-start-column="60" selection-end-line="74" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/youku/images/upload1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/youku/images/user.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VIP.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/youku/images/VIP.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="youku.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="youku.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Examples/youku/css/youku.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="220" column="17" lean-forward="true" selection-start-line="220" selection-start-column="17" selection-end-line="220" selection-end-column="17" />
+            <state relative-caret-position="376">
+              <caret line="298" column="19" lean-forward="true" selection-start-line="298" selection-start-column="19" selection-end-line="298" selection-end-column="19" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comupter2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/youku/images/comupter2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="youku.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/youku/images/youku.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrow.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/arrow.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="34" column="30" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="34" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shaoicon.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/youku/images/shaoicon.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -115,17 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>clearfix</find>
-      <find>这是预选下拉菜单</find>
-      <find>list-a</find>
-      <find>content-bar-search-add</find>
-      <find>content-bar</find>
-      <find>operation</find>
-      <find>delete</find>
-      <find>last</find>
-      <find>price</find>
-      <find>check-one</find>
-      <find>class=&quot;check-one check&quot;</find>
       <find>check-all</find>
       <find>aaron4</find>
       <find>input</find>
@@ -141,10 +87,21 @@
       <find>show</find>
       <find>hide</find>
       <find>top_triangle</find>
-      <find>right-ul</find>
       <find>triangle</find>
       <find>append-search-div</find>
+      <find>background-right-div</find>
+      <find>read-div</find>
+      <find>recording-div</find>
       <find>upload-div</find>
+      <find>upload-div-center</find>
+      <find>upload-div-footer</find>
+      <find>read-div-</find>
+      <find>read-div-content img</find>
+      <find>right-ul</find>
+      <find>clients-div-content</find>
+      <find>clients</find>
+      <find>port-div-content</find>
+      <find>upload-div-top</find>
     </findStrings>
     <replaceStrings>
       <replace>getEl</replace>
@@ -222,8 +179,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="165" />
-    <option name="y" value="22" />
+    <option name="x" value="326" />
+    <option name="y" value="35" />
     <option name="width" value="1485" />
     <option name="height" value="941" />
   </component>
@@ -265,7 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -299,15 +255,11 @@
               <item name="youku" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LearnWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearnWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="html+css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,17 +274,17 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LearnWeb\html+css\images" />
+      <recent name="D:\LearnWeb\jQuery" />
+      <recent name="D:\LearnWeb\Bootstrap" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\LearnWeb\Examples\youku\images" />
       <recent name="D:\LearnWeb\jQuery" />
       <recent name="D:\LearnWeb\AJAX" />
       <recent name="D:\LearnWeb\html+css" />
       <recent name="D:\LearnWeb\javascript" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\LearnWeb\html+css\images" />
-      <recent name="D:\LearnWeb\jQuery" />
-      <recent name="D:\LearnWeb\Bootstrap" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -347,11 +299,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnWeb/Examples/youku/index.html" />
     <configuration name="study2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnWeb/html+css/study2.html" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.study2.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.study2.html" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.study2.html" />
       </list>
     </recent_temporary>
   </component>
@@ -430,15 +388,16 @@
       <workItem from="1526352624083" duration="3807000" />
       <workItem from="1526479775963" duration="4345000" />
       <workItem from="1526543327143" duration="25886000" />
-      <workItem from="1526607620945" duration="18443000" />
+      <workItem from="1526607620945" duration="20998000" />
+      <workItem from="1526695792491" duration="15671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="530149000" />
+    <option name="totallyTimeSpent" value="548375000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="165" y="22" width="1485" height="941" extended-state="0" />
+    <frame x="326" y="35" width="1485" height="941" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22029187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -495,13 +454,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Examples/night/css/scroll.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1562">
-          <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Examples/night/Scroll picture.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -577,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
           <caret line="42" column="55" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="520" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,16 +631,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/youku/images/upload2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Examples/two/style/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1144">
           <caret line="60" column="52" lean-forward="false" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="57" column="27" lean-forward="false" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="57" column="17" lean-forward="true" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,13 +670,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/arrow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="748">
           <caret line="34" column="30" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="34" selection-end-column="53" />
           <folding />
         </state>
@@ -751,12 +691,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/youku/images/upload1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/youku/images/user.png">
+    <entry file="file://$PROJECT_DIR$/Examples/youku/images/youku.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -766,31 +701,51 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/youku/images/youku.png">
+    <entry file="file://$PROJECT_DIR$/Examples/youku/images/user.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/youku/images/upload2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/youku/images/upload1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/youku/images/timg.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Examples/youku/js/youku.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/youku/css/youku.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="220" column="17" lean-forward="true" selection-start-line="220" selection-start-column="17" selection-end-line="220" selection-end-column="17" />
+        <state relative-caret-position="597">
+          <caret line="74" column="60" lean-forward="false" selection-start-line="74" selection-start-column="60" selection-end-line="74" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Examples/youku/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="62" column="41" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="41" />
+        <state relative-caret-position="484">
+          <caret line="97" column="39" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#li#2;n#ul#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#li#4;n#ul#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#li#4;n#ul#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#li#4;n#ul#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/youku/css/youku.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="298" column="19" lean-forward="true" selection-start-line="298" selection-start-column="19" selection-end-line="298" selection-end-column="19" />
           <folding />
         </state>
       </provider>

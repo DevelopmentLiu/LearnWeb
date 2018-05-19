@@ -10,9 +10,9 @@
 <body>
 <div class="title">
     <ul class="background">
-            <li><img src="images/1.jpg"></li>
-            <li class="hide"><img src="images/2.jpg"></li>
-            <li class="hide"><img src="images/3.jpg"></li>
+        <li><img src="images/1.jpg"></li>
+        <li class="hide"><img src="images/2.jpg"></li>
+        <li class="hide"><img src="images/3.jpg"></li>
     </ul>
     <div class="nav-box">
         <div class="box-log">
@@ -33,39 +33,90 @@
             <input type="button" value="搜库" class="input-button">
         </div>
         <div class="append-search-div"></div>
+        <div class="background-right-div">
+            <ul>
+                <li>这就是铁甲：撒贝宁洗脑郑爽</li>
+                <li>上海女子图鉴：立宪叫你回家</li>
+                <li>天意：韩信项羽初相遇</li>
+                <li>归来去：书澈冷眼嘲讽萧清</li>
+                <li>温暖的弦：温暖离开南弦</li>
+                <li>这就是街舞：袋鼠怒怼剪辑师</li>
+                <li>爆裂无声：章子怡亲荐悬疑片</li>
+                <li>奔跑吧：奔跑家族遇难题</li>
+            </ul>
+        </div>
         <div class="right-ul">
             <ul>
                 <li><a href="#"><img class="vip" src="images/VIP.jpg"></img>VIP</a></li>
                 <li><a href="#"><img class="read" src="images/read2.png"></img>订阅</a></li>
-                <li><a href="#"><img class="recording" src="images/note1.png"></img>记录</a></li>
-                <li><a href="#"><img class="upload" src="images/upload1.png"></img>上传</a></li>
-                <li><a href="#"><img class="clients" src="images/comupter1.png"></img>客户端</a></li>
+                <li class="recording-li">
+                    <a href="#"><img class="recording" src="images/note1.png"></img>记录</a>
+                    <div class="recording-div">
+                        <div class="triangle"></div>
+                        <div class='read-div-top'>
+                            <button type="button" value="登录">登录</button>
+                            <p>同步各端记录</p>
+                        </div>
+                        <div class='read-div-content'>
+                            <p class="read-div-content-p">您暂时还没有观看记录哟！</p>
+                            <img style="width: 89px;height: 89px" class="read-div-content-img" src="images/timg.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li class="upload-li">
+                    <a href="#"><img class="upload" src="images/upload1.png"></img>上传</a>
+                    <div class="upload-div">
+                        <div class="upload-div-triangle"></div>
+                        <div class="upload-div-top">
+                            <div class="upload-div-top-div"><span>上传视频</span></div>
+                            <div class="upload-div-top-div"><span>视频管理</span></div>
+                            <div class="upload-div-top-div"><span>我的频道</span></div>
+                            <div class="upload-div-top-div"><span>数据分析</span></div>
+                        </div>
+                        <div class="upload-div-center"></div>
+                        <div class="upload-div-footer">
+                            <p>下载PC客户端，上传视频更轻松</p>
+                            <a href="#">立即下载</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="port-li">
+                    <a href="#"><img class="clients" src="images/comupter1.png"></img>客户端</a>
+                    <div class="port-div">
+                        <div class="port-div-triangle"></div>
+                        <div class="port-div-content">
+                            <div class="port-div-content-all port-div-content-left">
+                                <img src="images/youku1.png" style="width: 100px; height: 100px;">
+                                <h3>优酷客户端</h3>
+                            </div>
+                            <span class="port-div-content-span"></span>
+                            <div class="port-div-content-all port-div-content-right">
+                                <img src="images/youku2.jpg" style="width: 80px; height: 80px;">
+                                <h3>优酷移动app</h3>
+                            </div>
+                        </div>
+                        <div class="port-div-foot">
+                            <img src="images/TV.png" style="width: 25px; height:25px;">
+                            <h3>优酷TV版</h3>
+                            <p>CIBN酷喵影视智能app</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <img src="images/user.png" class="user">
         </div>
-        <div class="recording-div">
-            <div class="triangle"></div>
-            <div class='read-div-top'>
-                <button type="button" value="登录">登录</button>
-                <p>同步各端记录</p>
-            </div>
-            <div class='read-div-content'></div>
-        </div>
-        <div class="upload-div">
-            <div class="upload-div-triangle"></div>
-            <div class="upload-div-top">
-                <div class="upload-div-top-div"><span>上传视频</span></div>
-                <div class="upload-div-top-div"><span>视频管理</span></div>
-                <div class="upload-div-top-div"><span>我的频道</span></div>
-                <div class="upload-div-top-div"><span>数据分析</span></div>
-            </div>
-            <div class="upload-div-center"></div>
-            <div class="upload-div-footer">
-                <p>下载PC客户端，上传视频更轻松</p>
-                <a href="#">立即下载</a>
-            </div>
-        </div>
+
+        <!--<div class="recording-div">-->
+        <!--<div class="triangle"></div>-->
+        <!--<div class='read-div-top'>-->
+        <!--<button type="button" value="登录">登录</button>-->
+        <!--<p>同步各端记录</p>-->
+        <!--</div>-->
+        <!--<div class='read-div-content'></div>-->
+        <!--</div>-->
+
         <div class="clients-div"></div>
+
     </div>
 </div>
 </body>

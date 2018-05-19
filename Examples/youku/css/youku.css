@@ -117,7 +117,7 @@ a{text-decoration:none;color: #656565;}
     width: 300px;
     height:160px;
     background: white;
-    position: relative;
+    position: absolute;
     left: 850px;
     top: 65px;
     display: none;
@@ -148,22 +148,37 @@ a{text-decoration:none;color: #656565;}
     border: none;
     float: left;
     position: relative;
-    left: -60px;
+    left: 40px;
     top: 10px;
 }
 .read-div-top p{
     float: left;
     position: relative;
-    left: 15px;
-    top: -15px;
+    left: 65px;
+    top: 15px;
     font-size: 13px;
     font-family: "Microsoft YaHei ", "微软雅黑";
 }
+.read-div-content {
+    width: 260px;
+    height: 109px;
+    margin: auto;
+}
+.read-div-content-img{
+    margin-top: 36px;
+    margin-left: 80px;
+
+}
+.read-div-content-p{
+    padding: 85px 30px 0px 30px;
+    margin-left: 30px;
+}
+
 .upload-div{
     width: 320px;
     height:240px;
     background-color: white;
-    position: relative;
+    position: absolute;
     left: 850px;
     top: 65px;
     display: none;
@@ -184,8 +199,6 @@ a{text-decoration:none;color: #656565;}
     display: flex;
     justify-content: center;
     background-color: white;
-    position: relative;
-    top: -59px;
 }
 .upload-div-top-div{
     float: left;
@@ -205,25 +218,89 @@ a{text-decoration:none;color: #656565;}
 .upload-div-center{
     width: 320px;
     height: 60px;
-    position: relative;
-    top: -60px;
+    /*position: relative;*/
     background: url("../images/4.jpg");
     background-size: 320px 60px;
 }
 .upload-div-footer{
     height: 60px;
-    background-color: #90EE90;
-    position: relative;
-    top: -59px;
 }
-upload-div-footer p{
+.upload-div-footer p{
     float: left;
-    width: 150px;
+    padding: 20px 20px;
+    /*width: 150px;*/
 }
-upload-div-footer a{
+.upload-div-footer a{
+    padding: 20px 20px;
     float: right;
-    width: 100px;
+    color: #4593FD;
 }
+
+.port-div{
+    width: 280px;
+    height:200px;
+    position: absolute;
+    left: 900px;
+    top: 65px;
+    display: none;
+    background-color: white;
+}
+.port-div-triangle{
+    width:0;
+    height:0;
+    border:8px solid;
+    border-style:dotted dotted solid dotted;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -16px;
+    left: 200px;
+}
+.port-div-content{
+    width: 280px;
+    height: 140px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.port-div-content-all{
+    width: 120px;
+    height:120px;
+    background-color: white;
+    margin: 10px 10px;
+    text-align: center;
+}
+.port-div-content-all:hover{
+    cursor: pointer;
+}
+.port-div-content-all h3{
+    margin-top:100px;
+    color: #444444;
+}
+.port-div-content-left img{
+    position: relative;
+    left: 19px;
+}
+.port-div-content-right img{
+    position: relative;
+    right: 30px;
+    margin-top: 10px;
+}
+.port-div-content-span{
+    height: 60px;
+    width: 1px;
+    background-color: #d3d3d3;
+    margin: auto;
+}
+.port-div-foot{
+    width: 280px;
+    height: 60px;
+    background-color: #90EE90;
+}
+.port-div-foot img{
+    padding-top: 145px;
+}
+
+
 
 
 .user{
@@ -260,6 +337,25 @@ upload-div-footer a{
     color: #999999;
     padding-right: 5px;
 }
-.search-div .search-div-number{
+    .search-div .search-div-number{
     color: red;
+}
+
+.background-right-div{
+    width: 220px;
+    height: 358px;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 80px;
+    right: 12px;
+    color: white;
+}
+.background-right-div li{
+    margin: 0px 10px;
+    border-bottom: 1px solid #999999;
+    padding:11px 0px;
+}
+.background-right-div li:last-child{
+    border-bottom: none;
 }
