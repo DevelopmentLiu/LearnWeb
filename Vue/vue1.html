@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <!--<div :title="'测试'+title">hello world</div>-->
+        <!--<input v-model="content"/>-->
+        <!--<div>{{content}}</div>-->
+
+        <!--姓：<input v-model="firstName">-->
+        <!--名：<input v-model="lastName">-->
+        <!--<div>{{fullName}}</div>-->
+        <!--<div>{{count}}</div>-->
+
+        <div v-show="show">hello world</div>
+        <ul>
+            <li v-for="(item, index) of list" :key="index">{{item}}</li>
+        </ul>
+        <button @click="handleClick">toggle</button>
+    </div>
+    <script>
+        new Vue({
+           el:"#root",
+            data:{
+               // title:"this is hello world",
+               //  content:"this is content"
+
+                // firstName:'',
+                // lastName:'',
+                // count:0
+
+                show:true,
+                list:[1,2,3]
+            },
+            // computed:{//计算属性
+            //    fullName:function () {
+            //     return this.firstName + ''+this.lastName
+            //    }
+            // },
+            // watch:{//侦听器，监听某一个数据的变化
+            //     fullName:function () {
+            //         this.count++
+            //     }
+            // }
+
+            methods:{
+                handleClick:function () {
+                    this.show = !this.show
+                }
+            }
+
+        });
+    </script>
+</body>
+</html>

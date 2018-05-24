@@ -14,10 +14,11 @@ a{text-decoration:none;color: #656565;}
 
 .title{
     width: 1520px;
-    height: 420px;
+    height: 475px;
 }
 .background img{
     width: 100%;
+    background-size: 1520px 420px;
 }
 
 .hide{
@@ -294,15 +295,26 @@ a{text-decoration:none;color: #656565;}
 .port-div-foot{
     width: 280px;
     height: 60px;
-    background-color: #90EE90;
+    background-color: #d3d3d3;
 }
 .port-div-foot img{
     padding-top: 145px;
+    padding-left: 20px;
 }
-
-
-
-
+.port-div-foot h3{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.port-div-foot p{
+    /*padding-left: 100px;*/
+    /*: 20px;*/
+    position: absolute;
+    top: 162px;
+    left: 120px;
+}
+.li-line-height{
+    line-height: 50px;
+}
 .user{
     width: 38px;
     height: 38px;
@@ -358,4 +370,166 @@ a{text-decoration:none;color: #656565;}
 }
 .background-right-div li:last-child{
     border-bottom: none;
+}
+
+/*---------------------------------------------------------------*/
+.list-div{
+    width: 1520px;
+    height: 68px;
+    margin-top: 10px;
+}
+.list-div-content{
+    height: 68px;
+    width: 1202px;
+    margin: auto;
+}
+.list-div-content ul{
+    width: 100%;
+    height: 68px;
+}
+.list-div-content .list-div-content-li{
+    /*background-color: #90EE90;*/
+    float: left;
+    width: 168px;
+    height: 48px;
+    /*border-right: 2px solid #E9E7E7;*/
+    position: relative;
+    left: -139px;
+    top: 10px;
+    padding-right: 18px;
+}
+.list-div-content .list-div-content-li span{
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0px 22px 0px 0px;
+    font-family: "Microsoft YaHei ", "微软雅黑";
+}
+.list-div-content-li p{
+    width: 2px;
+    height: 47px;
+    background-color:#E9E7E7 ;
+    float: right;
+    position: relative;
+    top: -49px;
+}
+.list-div-life-li{
+    float: left;
+    width: 64px;
+    height: 48px;
+    position: relative;
+    left: 613px;
+    top: -38px;
+    border-right: 2px solid #E9E7E7;
+}
+.list-div-life-li span{
+    line-height: 25px;
+    text-align: center;
+    font-family: "Microsoft YaHei ", "微软雅黑";
+    margin-left: 8px;
+}
+.list-div-right-li{
+    float: right;
+    width: 374px;
+    height: 48px;
+    position: relative;
+    top: -38px;
+    left: 310px;
+}
+.list-div-right-li span{
+    float: left;
+    width: 88px;
+    height: 48px;
+    margin-right: 5px;
+    text-align: center;
+}
+.list-div-right-li a{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: -10px;
+}
+.list-div-right-li-img{
+    position: relative;
+    top: -20px;
+    left: 45px;
+}
+
+.episode-div-triangle{
+    width:0;
+    height:0;
+    border:8px solid;
+    border-color: #4593FD transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    position: absolute;
+    top: -10px;
+    left: -552px;
+    display: none;
+}
+.episode-div-dl{
+    width: 300px;
+    height: 147px;
+    background-color: white;
+    position: absolute;
+    left: -570px;
+    top: -160px;
+    border-radius: 2px;
+    border-bottom: 3px solid #4593FD;
+    display: none;
+}
+.episode-div-dl-dt{
+    float: left;
+    line-height: 30px;
+    width: 240px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #4593FD;
+}
+.episode-div-dl-dd{
+    float: left;
+    width: 130px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.episode-div-dl-dr{
+    float: right;
+    width: 110px;
+    text-align: left;
+}
+.video{
+    width: 1202px;
+    height: 224px;
+    margin:auto;
+    position: relative;
+    top: 20px;
+}
+.video-h2{
+    font-family: "Microsoft YaHei ", "微软雅黑";
+    font-weight: normal;
+    position: absolute;
+    font-size: 24px;
+}
+.video-hotspot{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    top: 8px;
+}
+.video-hotspot-div{
+    width: 192px;
+    height: 190px;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+.video-hotspot-div span{
+    font-size: 12px;
+}
+.title-a{
+    font-family: "Microsoft YaHei ", "微软雅黑";
+}
+.title-span{
+    color: #999999;
 }

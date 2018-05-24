@@ -74,5 +74,19 @@ $(function () {
     $(".port-div-content-right").mouseleave(function () {
         $(".port-div-content-right h3").css("color","#444444");
     });
+
+    $(".one").hover(function () {
+        $(".one").addClass("li-line-height");
+    });
+
+    $(".episode").mouseenter(function () {
+        $(".episode-div-triangle").show();
+        $(".episode-div-dl").show();
+
+    });
+    $(".episode").mouseleave(function () {
+        $(".episode-div-triangle").hide();
+        $(".episode-div-dl").hide();
+    });
 });
 
